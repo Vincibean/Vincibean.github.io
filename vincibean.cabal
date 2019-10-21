@@ -1,19 +1,19 @@
-name:                myblog
+name:                vincibean
 version:             0.1.0.0
 -- synopsis:
 -- description:
-homepage:            https://github.com/githubuser/myblog#readme
-license:             BSD3
+homepage:            https://vincibean.github.io/
+license:             GPL-3.0
 license-file:        LICENSE
-author:              Author name here
-maintainer:          example@example.com
-copyright:           2019 Author name here
+author:              Andre Bessi
+maintainer:          andrebessi00@gmail.com
+copyright:           2019 Andre Bessi
 category:            Web
 build-type:          Simple
 extra-source-files:  README.md
 cabal-version:       >=1.10
 
-executable myblog
+executable vincibean
   main-is:             site.hs
   default-language:    Haskell2010
   ghc-options:         -threaded

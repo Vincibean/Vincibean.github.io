@@ -30,7 +30,7 @@ jobs:
           command: stack build --pedantic
       - run:
           name: Generate Static Site
-          command: stack exec site build
+          command: stack exec vincibean build
       - run:
           name: Publish GitHub Pages
           working_directory: './_site'

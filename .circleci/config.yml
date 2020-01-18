@@ -1,4 +1,4 @@
-version: 2
+version: 2.1
 jobs:
   build:
     docker:
@@ -15,9 +15,10 @@ jobs:
             # when missing reuse the latest cache
             - stack-
       - run:
-          name: Resolve/Update Dependencies
-          command: stack setup
-          command: stack build --dependencies-only
+          name: Resolve and Update Dependencies
+          command: |
+            stack setup
+            stack build --dependencies-only
       - save_cache:
           name: Cache Dependencies
           key: stack-{{ .Branch }}-{{ checksum "stack.yaml" }}

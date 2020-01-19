@@ -41,6 +41,8 @@ jobs:
           name: Publish GitHub Pages
           working_directory: './_site'
           command: |
+            # Establishing authenticity of host 'github.com'
+            mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
             # initalize repo
             git init
             git config user.name  'CircleCI'

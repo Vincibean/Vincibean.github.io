@@ -15,6 +15,9 @@ jobs:
             # when missing reuse the latest cache
             - stack-
       - run:
+          name: Update and Install SSH
+          command: apt-get update && apt-get install --yes ssh
+      - run:
           name: Resolve and Update Dependencies
           command: |
             stack setup

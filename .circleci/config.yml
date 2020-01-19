@@ -4,6 +4,9 @@ jobs:
     docker:
       - image: fpco/stack-build:lts
     steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "97:ad:3f:6c:59:f6:d8:66:3c:f6:e5:74:ef:b5:c5:ab"
       - checkout
       - restore_cache:
           name: Restore Cached Dependencies
@@ -17,9 +20,6 @@ jobs:
       - run:
           name: Update and Install SSH
           command: apt-get update && apt-get install --yes ssh
-      - add_ssh_keys:
-          fingerprints:
-            - "97:ad:3f:6c:59:f6:d8:66:3c:f6:e5:74:ef:b5:c5:ab"
       - run:
           name: Resolve and Update Dependencies
           command: |

@@ -4,9 +4,15 @@ jobs:
     docker:
       - image: fpco/stack-build:lts
     steps:
+      - run:
+          name: Update and Install SSH
+          command: apt-get update && apt-get install --yes ssh
       - add_ssh_keys:
           fingerprints:
             - "97:ad:3f:6c:59:f6:d8:66:3c:f6:e5:74:ef:b5:c5:ab"
+      - run:
+          name: Establishing authenticity of Github
+          command: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
       - checkout
       - restore_cache:
           name: Restore Cached Dependencies
@@ -17,9 +23,6 @@ jobs:
             - stack-{{ .Branch }}-
             # when missing reuse the latest cache
             - stack-
-      - run:
-          name: Update and Install SSH
-          command: apt-get update && apt-get install --yes ssh
       - run:
           name: Resolve and Update Dependencies
           command: |
@@ -41,8 +44,6 @@ jobs:
           name: Publish GitHub Pages
           working_directory: './_site'
           command: |
-            # Establishing authenticity of host 'github.com'
-            mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
             # initalize repo
             git init
             git config user.name  'CircleCI'

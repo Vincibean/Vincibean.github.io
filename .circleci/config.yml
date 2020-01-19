@@ -17,6 +17,9 @@ jobs:
       - run:
           name: Update and Install SSH
           command: apt-get update && apt-get install --yes ssh
+      - add_ssh_keys:
+          fingerprints:
+            - "dc:aa:9d:e6:6d:d8:96:2e:3b:e2:4c:55:8a:bc:1e:fe"
       - run:
           name: Resolve and Update Dependencies
           command: |

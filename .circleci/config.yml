@@ -12,7 +12,7 @@ jobs:
             - "97:ad:3f:6c:59:f6:d8:66:3c:f6:e5:74:ef:b5:c5:ab"
       - run:
           name: Establishing authenticity of Github
-          command: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+          command: echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
       - checkout
       - restore_cache:
           name: Restore Cached Dependencies

@@ -43,8 +43,8 @@ main = hakyll $ do
                 >>= relativizeUrls
 
 
-    match "posts/*" $ do
-        route idRoute
+    match "pages/index.html" $ do
+        route (constRoute "index.html")
         compile $ do
             posts <- recentFirst =<< loadAll "posts/*"
             let indexCtx =

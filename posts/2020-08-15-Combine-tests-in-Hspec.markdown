@@ -1,4 +1,4 @@
-`---
+---
 title: How to combine tests in Hspec? 
 ---
 

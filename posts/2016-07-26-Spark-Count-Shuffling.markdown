@@ -44,7 +44,7 @@ Now, does shuffling occur? Let's open Spark's [Web UI](http://spark.apache.org/d
 From here, let's click on the "Stages" tab and select the "count at WordCount.scala" stage.
 Finally, let's open the Event Timeline.
 
-![Spark Event Timeline]({{ site.url }}/assets/img/2016-07-26/event-timeline.png)
+![Spark Event Timeline](../assets/img/2016-07-26/event-timeline.png)
 
 Durations may vary a lot here, executor computing time may increase or decrease, but no shuffling write time was spent.
 

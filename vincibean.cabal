@@ -17,6 +17,6 @@ executable vincibean
   hs-source-dirs:      site
   main-is:             site.hs
   default-language:    Haskell2010
-  ghc-options:         -threaded
+  ghc-options:         -threaded -j1
   build-depends:       base >= 4.7 && < 5,
                        hakyll

@@ -5,11 +5,11 @@ import           Hakyll
 
 main :: IO ()
 main = hakyll $ do
-  match "images/*" $ do
+  match "assets/img/*" $ do
     route idRoute
     compile copyFileCompiler
 
-  match "css/*" $ do
+  match "assets/css/*" $ do
     route idRoute
     compile compressCssCompiler
 

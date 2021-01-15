@@ -1,10 +1,12 @@
 ---
 title: How I Built A Blog with Jekyll avoiding Headaches, and Why You Should Too!
 site_title: Test
+site_logo: Test
 site_description: Test
 author: Vincibean
 author_image: Test
 author_bio: Test
+page_url: Test
 ---
 Oddly enough, one of the most rewarding activities for a software developer (or for me, at least) is creating software with little to no coding effort. Probably, it's due to the intrinsic laziness I have to deal with. 
 In this sense, [Jekyll](https://jekyllrb.com/) is great: it allows you to build minimal, static blogs to be hosted on GitHub.  

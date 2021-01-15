@@ -1,10 +1,12 @@
 ---
 title: Some Thoughts about Variance in Scala 
 site_title: Test
+site_logo: Test
 site_description: Test
 author: Vincibean
 author_image: Test
 author_bio: Test
+page_url: Test
 ---
 Some time ago (so long ago!) I was asked by a fledgling (at the time) Scala developer to explain how covariance, 
 contravariance and invariance work in Scala. Just like me, he came from Java, so getting all the technicalities of 

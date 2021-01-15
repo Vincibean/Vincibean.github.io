@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-  $partial("head.html")$
+  $partial("templates/head.html")$
   <body itemscope itemtype="http://schema.org/Article">
-    $partial("header.html")$
+    $partial("templates/header.html")$
     <main class="content" role="main">
       <article class="post">
         $if(page_image)$
@@ -48,9 +48,9 @@
       <div class="inner">
         <h1 class="blog-title">$site_title$</h1>
         <h2 class="blog-description">$site_description$</h2>
-        <a href="/" class="btn">Back to Overview</a>
+        <a href="/index.html" class="btn">Back to Overview</a>
       </div>
     </div>
-    $partial("javascripts.html")$
+    $partial("templates/javascripts.html")$
   </body>
 </html>

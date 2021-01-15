@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-  $partial("head.html")$
+  $partial("templates/head.html")$
   <body itemscope itemtype="http://schema.org/Article">
-    $partial("header.html")$
+    $partial("templates/header.html")$
     <main class="content" role="main">
       <article class="post">
         $if(page_image)$
@@ -51,14 +51,14 @@
         </section>
         <footer class="post-footer">
           <section class="share">
-            <!-- $for(site_social)$
-              $if(social_share_url)$
+            <!--for(site_social)
+              if(social_share_url)
                 <a class="icon-{{ social.icon }}" href="{{ social.share_url }}{% if social.share_title %}{{ social.share_title }}{{page.title | cgi_escape}}{% endif %}{{ social.share_link }}{{site.url}}{{site.baseurl}}{{page.id}}"
                   onclick="window.open(this.href, '{{ social.icon }}-share', 'width=550,height=255');return false;">
                 <i class="fa fa-{{ social.icon }}"></i><span class="hidden">{{ social.icon }}</span>
                 </a>
-              $endif$
-            $endfor$ -->
+              endif
+            endfor -->
           </section>
         </footer>
         <div class="bottom-teaser cf">
@@ -111,7 +111,7 @@
         <a href="/" class="btn">Back to Overview</a>
       </div>
     </div>
-    $partial("javascripts.html")$
+    $partial("templates/javascripts.html")$
   </body>
 </html>
 

@@ -1,5 +1,10 @@
 ---
 title: How to combine tests in Hspec? 
+site_title: Test
+site_description: Test
+author: Vincibean
+author_image: Test
+author_bio: Test
 ---
 
 **TL;DR**

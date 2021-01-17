@@ -4,17 +4,18 @@ site_title: Test
 site_logo: Test
 site_description: Test
 page_url: Test
+site_cover: ../assets/img/geometric.jpg
 ---
 
 <div class="teaserimage">
-    <div class="teaserimage-image" $if(site_cover)$ style="background-image: $site_cover$" $endif$ >
+    <div class="teaserimage-image" $if(site_cover)$ style="background-image: url('$site_cover$')" $endif$ >
         Teaser Image
     </div>
 </div>
 
 <header class="blog-header">
     $if(site_logo)$
-      <a class="blog-logo" href="/index.html" style="background-image: $site_logo$"> $site_title$ </a>
+      <a class="blog-logo" href="/index.html" style="background-image: url('$site_logo$')"> $site_title$ </a>
     $endif$
     <h1 class="blog-title"> $site_title$ </h1>
     <h2 class="blog-description"> $site_description$ </h2>

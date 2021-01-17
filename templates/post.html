@@ -7,16 +7,32 @@
       <article class="post">
         $if(page_image)$
         <div class="article-image">
-          <div class="post-image-image" style="background-image: $if(page_image)$ $page_image$ $endif$">
-            Article Image
-          </div>
-          <div class="post-image-image2" style="background-image: $if(page_image2)$ $page_image2$ $endif$">
+          <div class="post-image-image" $if(page_image)$ style="background-image: url('$page_image$')" $endif$>
             Article Image
           </div>
           <div class="post-meta">
             <h1 class="post-title">$title$</h1>
             <div class="cf post-meta-text">
-              <div class="author-image" style="background-image: $author_image$">Blog Logo</div>
+              <div class="author-image" style="background-image: url('$author_image$')">Blog Logo</div>
+              <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">$author$</h4>
+              on
+              <time datetime="$date$">$date$</time>
+            </div>
+            <div style="text-align:center">
+              <a href="#topofpage" class="topofpage"><i class="fa fa-angle-down"></i></a>
+            </div>
+          </div>
+        </div>
+        $else$
+        $if(site_cover)$
+        <div class="article-image">
+          <div class="post-image-image" $if(site_cover)$ style="background-image: url('$site_cover$')" $endif$>
+            Article Image
+          </div>
+          <div class="post-meta">
+            <h1 class="post-title">$title$</h1>
+            <div class="cf post-meta-text">
+              <div class="author-image" style="background-image: url('$author_image$')">Blog Logo</div>
               <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">$author$</h4>
               on
               <time datetime="$date$">$date$</time>
@@ -31,7 +47,7 @@
           <div class="post-meta">
             <h1 class="post-title">$title$</h1>
             <div class="cf post-meta-text">
-              <div class="author-image" style="background-image: $author_image$">Blog Logo</div>
+              <div class="author-image" style="background-image: url('$author_image$')">Blog Logo</div>
               <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">$author$</h4>
               on
               <time datetime="$date$">$date$</time>
@@ -41,6 +57,7 @@
         <br>
         <br>
         <br>
+        $endif$
         $endif$
         <section class="post-content">
           <div class="post-reading">
@@ -65,7 +82,7 @@
           <div class="isLeft">
             <h5 class="index-headline featured"><span>Written by</span></h5>
             <section class="author">
-              <div class="author-image" style="background-image: $author_image$">Blog Logo</div>
+              <div class="author-image" style="background-image: url('$author_image$')">Blog Logo</div>
               <h4>$author$</h4>
               <p class="bio">$author_bio$</p>
               <hr>
@@ -102,7 +119,7 @@
       </article>
     </main>
     <div class="bottom-closer">
-      <div class="background-closer-image" $if(site_cover)$ style="background-image: $site_cover$" $endif$ >
+      <div class="background-closer-image" $if(site_cover)$ style="background-image: url('$site_cover$')" $endif$ >
         Image
       </div>
       <div class="inner">

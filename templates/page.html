@@ -7,13 +7,13 @@
       <article class="post">
         $if(page_image)$
         <div class="article-image">
-          <div class="post-image-image" style="background-image: $if(page_image)$ $page_image$ $endif$">
+          <div class="post-image-image" $if(page_image)$ style="background-image: url('$page_image$')" $endif$ >
             Article Image
           </div>
           <div class="post-meta">
             <h1 class="post-title">$title$</h1>
             <div class="cf post-meta-text">
-              <div class="author-image" style="background-image: $author_image$">Blog Logo</div>
+              <div class="author-image" style="background-image: url('$author_image$')">Blog Logo</div>
               <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">$author$</h4>
             </div>
             <div style="text-align:center">
@@ -26,7 +26,7 @@
           <div class="post-meta">
             <h1 class="post-title">$title$</h1>
             <div class="cf post-meta-text">
-              <div class="author-image" style="background-image: $author_image$">Blog Logo</div>
+              <div class="author-image" style="background-image: url('$author_image$')">Blog Logo</div>
               <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">$author$</h4>
             </div>
           </div>
@@ -42,7 +42,7 @@
       </article>
     </main>
     <div class="bottom-closer">
-      <div class="background-closer-image" $if(site_cover)$ style="background-image: $site_cover$" $endif$ >
+      <div class="background-closer-image" $if(site_cover)$ style="background-image: url('$site_cover$')" $endif$ >
         Image
       </div>
       <div class="inner">

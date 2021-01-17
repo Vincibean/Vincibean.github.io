@@ -5,13 +5,9 @@ import           Hakyll
 
 main :: IO ()
 main = hakyll $ do
-  match "assets/img/**" $ do
+  match "assets/**" $ do
     route idRoute
     compile copyFileCompiler
-
-  match "assets/css/*" $ do
-    route idRoute
-    compile compressCssCompiler
 
   match (fromList ["about.markdown", "contact.markdown"]) $ do
     route $ setExtension "html"

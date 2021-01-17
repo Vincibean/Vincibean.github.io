@@ -7,6 +7,7 @@ author: Vincibean
 author_image: Test
 author_bio: Test
 page_url: Test
+site_cover: ../assets/img/geometric.jpg
 ---
 
 **TL;DR**

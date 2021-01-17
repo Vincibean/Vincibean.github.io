@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- (1) Optimize for mobile versions: http://goo.gl/EOpFl -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- (1) force latest IE rendering engine: bit.ly/1c8EiC9 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+    <title>
+         
+        How to combine tests in Hspec? 
+        
+    </title>
+    <meta name="description" content />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    
+    <meta property="og:site_name" content="Vincibean" />
+    <meta property="og:title" content=" How to combine tests in Hspec? " />
+    
+      
+      <meta property="og:description" content="Just a Bunch of Tips" />
+      
+    
+    <meta property="og:image" content=" ../assets/img/icosaedron.svg " />
+    <meta property="og:url" content="https://vincibean.github.io">
+    <meta property="og:type" content="blog" />
+    
+  
+    <link rel="canonical" href="https://vincibean.github.io" />
+    <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Linux+Libertine:400,400i,700,700i/Open+Sans:400,400i,700,700i">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  
+    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" media="print" href="../assets/css/print.css" />
+  </head>
+  
+  <body itemscope itemtype="http://schema.org/Article">
+    <a href="../index.html" class="logo-readium"><span class="logo" style="background-image: url('../assets/img/home.svg')"></span></a>
+    <main class="content" role="main">
+      <article class="post">
+        
+        
+        <div class="article-image">
+          <div class="post-image-image" style="background-image: url('../assets/img/geometric.jpg')">
+            Article Image
+          </div>
+          <div class="post-meta">
+            <h1 class="post-title">How to combine tests in Hspec?</h1>
+            <div class="cf post-meta-text">
+              <div class="author-image" style="background-image: url('../assets/img/Vincibean.jpeg')">Blog Logo</div>
+              <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">Vincibean</h4>
+              on
+              <time datetime="August 15, 2020">August 15, 2020</time>
+            </div>
+            <div style="text-align:center">
+              <a href="#topofpage" class="topofpage"><i class="fa fa-angle-down"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        
+        <section class="post-content">
+          <div class="post-reading">
+            <span class="post-reading-time"></span> read
+          </div>
+          <a name="topofpage"></a>
+          <p><strong>TL;DR</strong></p>
+<p>you can use <code>(&gt;&gt;)</code>:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb1-1" title="1">(<span class="dv">1</span> <span class="ot">`shouldBe`</span> <span class="dv">1</span>) <span class="fu">&gt;&gt;</span> ( <span class="dv">1</span> <span class="ot">`shouldBe`</span> <span class="dv">3</span>)</a></code></pre></div>
+<p>or (in a more idiomatic way) you can use <code>do</code>:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb2-1" title="1">it <span class="st">&quot;counterEx 1&quot;</span> <span class="fu">$</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb2-2" title="2">  <span class="dv">1</span> <span class="ot">`shouldBe`</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb2-3" title="3">  <span class="dv">1</span> <span class="ot">`shouldBe`</span> <span class="dv">1</span></a></code></pre></div>
+<hr />
+<p>I started to know (and, frankly, to appreciate) <a href="https://en.wikipedia.org/wiki/Behavior-driven_development">behavior-driven development</a> when I started to write Scala code.</p>
+<p>My favourite testing library in Scala is <a href="https://etorreborre.github.io/specs2/">specs2</a>. Using the <a href="https://medium.com/@etorreborre_99063/becoming-reasonable-361d7f674ee0">words</a> of its creator: &gt; One thing which sets specs2 apart from other test libraries is its data model. At its heart it is a stream of “fragments” where a <code>Fragment</code> is a “description” and an “execution” which can return a “result”.</p>
+<p>My typical specs2 test will look like this:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode scala"><code class="sourceCode scala"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">class</span> HelloWorldSpec <span class="kw">extends</span> Specification { <span class="kw">def</span> is = s2<span class="st">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb3-2" title="2"></a>
+<a class="sourceLine" id="cb3-3" title="3">  This is a specification <span class="kw">for</span> the 'Hello world' string</a>
+<a class="sourceLine" id="cb3-4" title="4"></a>
+<a class="sourceLine" id="cb3-5" title="5">  The 'Hello world' string should</a>
+<a class="sourceLine" id="cb3-6" title="6">    contain <span class="dv">11</span> characters                             $e1</a>
+<a class="sourceLine" id="cb3-7" title="7">    start <span class="kw">with</span> 'Hello'                                $e2</a>
+<a class="sourceLine" id="cb3-8" title="8">    end <span class="kw">with</span> 'world'                                  $e3</a>
+<a class="sourceLine" id="cb3-9" title="9">                                                      <span class="st">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb3-10" title="10">  <span class="kw">def</span> e1 = <span class="st">&quot;Hello world&quot;</span> must <span class="fu">haveSize</span>(<span class="dv">11</span>)</a>
+<a class="sourceLine" id="cb3-11" title="11">  <span class="kw">def</span> e2 = <span class="st">&quot;Hello world&quot;</span> must <span class="fu">startWith</span>(<span class="st">&quot;Hello&quot;</span>)</a>
+<a class="sourceLine" id="cb3-12" title="12">  <span class="kw">def</span> e3 = <span class="st">&quot;Hello world&quot;</span> must <span class="fu">endWith</span>(<span class="st">&quot;world&quot;</span>)</a></code></pre></div>
+<p>However, in time, I started to appreciate the value of combining test results together, like this:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode scala"><code class="sourceCode scala"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">class</span> HelloWorldSpec <span class="kw">extends</span> Specification { <span class="kw">def</span> is = s2<span class="st">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb4-2" title="2"></a>
+<a class="sourceLine" id="cb4-3" title="3">  This is a specification <span class="kw">for</span> the 'Hello world' string</a>
+<a class="sourceLine" id="cb4-4" title="4"></a>
+<a class="sourceLine" id="cb4-5" title="5">  The 'Hello world' string should</a>
+<a class="sourceLine" id="cb4-6" title="6">    contain <span class="dv">11</span> greeting characters                      $e1</a>
+<a class="sourceLine" id="cb4-7" title="7">                                                        <span class="st">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb4-8" title="8">  <span class="kw">def</span> e1 = (<span class="st">&quot;Hello world&quot;</span> must <span class="fu">haveSize</span>(<span class="dv">11</span>)).<span class="fu">and</span>(<span class="st">&quot;Hello world&quot;</span> must <span class="fu">startWith</span>(<span class="st">&quot;Hello&quot;</span>))</a></code></pre></div>
+<p>So it only seems natural that, while coding in Haskell, I would find myself trying to apply the same pattern.</p>
+<p>In particular, I want to combine test results in <a href="https://hspec.github.io/">Hspec</a> just like specs2 (<code>test1.and(test2)</code>).</p>
+<p>However, I couldn’t find any specific function for that in Hspec’s API.</p>
+<p>Haskell <em>does</em> have an <code>and</code> operator, but it has a <a href="https://hackage.haskell.org/package/base-4.14.0.0/docs/Prelude.html#v:and">totally different meaning</a>.</p>
+<p>We could combine the test results in the most naive way, turning everything into <code>Bool</code>s and then “combining” them with <code>&amp;&amp;</code>:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb5-1" title="1">it <span class="st">&quot;Bad&quot;</span> <span class="fu">$</span> </a>
+<a class="sourceLine" id="cb5-2" title="2">  (<span class="dv">1</span> <span class="fu">==</span> <span class="dv">1</span>) <span class="fu">&amp;&amp;</span> ( <span class="dv">1</span> <span class="fu">==</span> <span class="dv">22</span> )</a></code></pre></div>
+<p>but the result we’d get would be:</p>
+<pre><code>Bad FAILED [1]
+...
+Failures:
+  1) Ch15.Ch15, Combination test, Bad</code></pre>
+<p>The error message tells us that a failure occurred, but it doesn’t even tell us what the error is. Yuk!</p>
+<p>Let’s dig a bit deeper into the library.</p>
+<p>Hspec’s <code>shouldBe</code> returns an <a href="https://hackage.haskell.org/package/hspec-expectations-0.8.2/docs/Test-Hspec-Expectations.html#v:shouldBe">Expectation</a>.</p>
+<p><code>Expectation</code> is a <a href="https://hackage.haskell.org/package/hspec-expectations-0.8.2/docs/Test-Hspec-Expectations.html#t:Expectation">type alias</a> of <a href="https://hackage.haskell.org/package/HUnit">HUnit</a>’s <code>Assertion</code>.</p>
+<p><code>Assertion</code> is a <a href="https://hackage.haskell.org/package/HUnit-1.5.0.0/docs/Test-HUnit-Lang.html#t:Assertion">type alias</a> of <code>IO ()</code>.</p>
+<p><code>IO</code> has an instance of <a href="https://hackage.haskell.org/package/base-4.9.0.0/docs/Control-Monad.html#t:Monad">Monad</a>.</p>
+<p>Of all functions exposed by <code>Monad</code>, the best fit to me seems <code>(&gt;&gt;)</code>, whose documentation says:</p>
+<pre><code>(&gt;&gt;) :: forall a b. m a -&gt; m b -&gt; m
+
+Sequentially compose two actions, discarding any value produced by the first, like sequencing operators (such as the semicolon) in imperative languages.</code></pre>
+<p>If we try it out in Hspec:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb8-1" title="1">it <span class="st">&quot;Good&quot;</span> <span class="fu">$</span> </a>
+<a class="sourceLine" id="cb8-2" title="2">  (<span class="dv">1</span> <span class="ot">`shouldBe`</span> <span class="dv">1</span>) <span class="fu">&gt;&gt;</span> ( <span class="dv">1</span> <span class="ot">`shouldBe`</span> <span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb8-3" title="3">it <span class="st">&quot;counterEx 1&quot;</span> <span class="fu">$</span> </a>
+<a class="sourceLine" id="cb8-4" title="4">  (<span class="dv">1</span> <span class="ot">`shouldBe`</span> <span class="dv">2</span>) <span class="fu">&gt;&gt;</span> ( <span class="dv">1</span> <span class="ot">`shouldBe`</span> <span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb8-5" title="5">it <span class="st">&quot;counterEx 2&quot;</span> <span class="fu">$</span> </a>
+<a class="sourceLine" id="cb8-6" title="6">  (<span class="dv">1</span> <span class="ot">`shouldBe`</span> <span class="dv">1</span>) <span class="fu">&gt;&gt;</span> ( <span class="dv">1</span> <span class="ot">`shouldBe`</span> <span class="dv">3</span>)</a></code></pre></div>
+<p>We get this result:</p>
+<pre><code>    Good
+    counterEx 1 FAILED [2]
+    counterEx 2 FAILED [3]
+    ...
+  1) Ch15.Ch15, Combination test, counterEx 1
+       expected: 2
+        but got: 1
+
+  ...
+
+  test/Ch15/Ch15Spec.hs:138:29: 
+  2) Ch15.Ch15, Combination test, counterEx 2
+       expected: 3
+        but got: 1</code></pre>
+<p>Exactly what we want!</p>
+<p>But there’s more! Since we now know that we are dealing with <code>IO</code> and <code>Monad</code>, we can sugar things up a bit and use Haskell’s <a href="https://en.wikibooks.org/wiki/Haskell/do_notation">do notation</a>:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb10-1" title="1">it <span class="st">&quot;Good&quot;</span> <span class="fu">$</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb10-2" title="2">  <span class="dv">1</span> <span class="ot">`shouldBe`</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb10-3" title="3">  <span class="dv">1</span> <span class="ot">`shouldBe`</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb10-4" title="4">it <span class="st">&quot;counterEx 1&quot;</span> <span class="fu">$</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb10-5" title="5">  <span class="dv">1</span> <span class="ot">`shouldBe`</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb10-6" title="6">  <span class="dv">1</span> <span class="ot">`shouldBe`</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb10-7" title="7">it <span class="st">&quot;counterEx 2&quot;</span> <span class="fu">$</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb10-8" title="8">  <span class="dv">1</span> <span class="ot">`shouldBe`</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb10-9" title="9">  <span class="dv">1</span> <span class="ot">`shouldBe`</span> <span class="dv">3</span></a></code></pre></div>
+<p>The result, of course, it the same:</p>
+<pre><code>    Good
+    counterEx 1 FAILED [2]
+    counterEx 2 FAILED [3]
+    ...
+  1) Ch15.Ch15, Combination test, counterEx 1
+       expected: 2
+        but got: 1
+
+  ...
+
+  test/Ch15/Ch15Spec.hs:138:29: 
+  2) Ch15.Ch15, Combination test, counterEx 2
+       expected: 3
+        but got: 1</code></pre>
+<p>In summary, we don’t need something like my revered <code>and</code> operator for combining tests; the Haskell ecosystem already provides <code>(&gt;&gt;)</code> and <code>do notation</code>.</p>
+        </section>
+        <footer class="post-footer">
+          <section class="share">
+            <!--for(site_social)
+              if(social_share_url)
+                <a class="icon-{{ social.icon }}" href="{{ social.share_url }}{% if social.share_title %}{{ social.share_title }}{{page.title | cgi_escape}}{% endif %}{{ social.share_link }}{{site.url}}{{site.baseurl}}{{page.id}}"
+                  onclick="window.open(this.href, '{{ social.icon }}-share', 'width=550,height=255');return false;">
+                <i class="fa fa-{{ social.icon }}"></i><span class="hidden">{{ social.icon }}</span>
+                </a>
+              endif
+            endfor -->
+          </section>
+        </footer>
+        <div class="bottom-teaser cf">
+          <div class="isLeft">
+            <h5 class="index-headline featured"><span>Written by</span></h5>
+            <section class="author">
+              <div class="author-image" style="background-image: url('../assets/img/Vincibean.jpeg')">Blog Logo</div>
+              <h4>Vincibean</h4>
+              <p class="bio"></p>
+              <hr>
+              <p class="published">Published <time datetime="August 15, 2020">August 15, 2020</time></p>
+            </section>
+          </div>
+
+          <div class="isRight">
+            <h5 class="index-headline featured"><span>Supported by</span></h5>
+            <footer class="site-footer">
+              <section class="poweredby">Proudly published with <a href="http://jaspervdj.be/hakyll">Hakyll</a></section>
+              <!-- <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}"> <span class="tooltip"> <i class="fa fa-rss"></i> You should subscribe to my feed.</span></a> -->
+              <div class="inner">
+                <section class="copyright">All content copyright <a href="../">Vincibean</a> &copy; August 15, 2020<br>All rights reserved.</section>
+              </div>
+            </footer>
+          </div>
+        </div>
+        <!-- {%if site.disqus %}
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = '{{site.disqus}}'; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        {% endif %} -->
+      </article>
+    </main>
+    <div class="bottom-closer">
+      <div class="background-closer-image" style="background-image: url('../assets/img/geometric.jpg')">
+        Image
+      </div>
+      <div class="inner">
+        <h1 class="blog-title">Vincibean</h1>
+        <h2 class="blog-description">Just a Bunch of Tips</h2>
+        <a href="../index.html" class="btn">Back to Overview</a>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../assets/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="../assets/js/index.js"></script>
+<script type="text/javascript" src="../assets/js/readingTime.min.js"></script>
+<script type="text/javascript" src="../assets/js/postImage.js"></script>
+
+  </body>
+</html>
+
+<!-- See a typo? Have a suggestion? Edit this page on Github -->

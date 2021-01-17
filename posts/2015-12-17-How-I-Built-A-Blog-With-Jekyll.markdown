@@ -1,8 +1,5 @@
 ---
 title: How I Built A Blog with Jekyll avoiding Headaches, and Why You Should Too!
-site_title: Test
-site_logo: Test
-site_description: Test
 author: Vincibean
 author_image: Test
 author_bio: Test

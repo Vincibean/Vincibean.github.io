@@ -1,8 +1,5 @@
 ---
 title: Hello World!
-site_title: Test
-site_logo: Test
-site_description: Test
 author: Vincibean
 author_image: Test
 author_bio: Test

@@ -219,7 +219,7 @@ body {
     z-index: 99;
     text-indent: -9999px;
     border: 3px solid #fff;
-    background-color: #fff;
+    background-color: #4A4A4A;
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); }

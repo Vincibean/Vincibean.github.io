@@ -1,65 +1,57 @@
 {-# LANGUAGE OverloadedStrings #-}
 
-import           Data.Monoid                    ( mappend )
 import           Hakyll
 
 main :: IO ()
 main = hakyll $ do
-  match "assets/img/**" $ do
+  match "assets/**" $ do
     route idRoute
     compile copyFileCompiler
-
-  match "assets/css/*" $ do
-    route idRoute
-    compile compressCssCompiler
-
-  match (fromList ["about.rst", "contact.markdown"]) $ do
+  match ("about.markdown" .||. "contact.markdown") $ do
     route $ setExtension "html"
     compile
       $   pandocCompiler
-      >>= loadAndApplyTemplate "templates/default.html" defaultContext
+      >>= loadAndApplyTemplate "templates/page.html" context
       >>= relativizeUrls
-
   match "posts/*" $ do
     route $ setExtension "html"
     compile
       $   pandocCompiler
-      >>= loadAndApplyTemplate "templates/post.html"    postCtx
-      >>= loadAndApplyTemplate "templates/default.html" postCtx
+      >>= loadAndApplyTemplate "templates/post.html" context
       >>= relativizeUrls
-
-  create ["archive.html"] $ do
-    route idRoute
-    compile $ do
-      posts <- recentFirst =<< loadAll "posts/*"
-      let archiveCtx =
-            listField "posts" postCtx (return posts)
-              `mappend` constField "title" "Archives"
-              `mappend` defaultContext
-
-      makeItem ""
-        >>= loadAndApplyTemplate "templates/archive.html" archiveCtx
-        >>= loadAndApplyTemplate "templates/default.html" archiveCtx
-        >>= relativizeUrls
-
-
   match "pages/index.html" $ do
     route (constRoute "index.html")
     compile $ do
       posts <- recentFirst =<< loadAll "posts/*"
       let indexCtx =
-            listField "posts" postCtx (return posts)
-              `mappend` constField "title" "Home"
-              `mappend` defaultContext
-
+            listField "posts" context (return posts)
+              <> constField "title" "Home"
+              <> context
+              <> defaultContext
       getResourceBody
         >>= applyAsTemplate indexCtx
         >>= loadAndApplyTemplate "templates/default.html" indexCtx
         >>= relativizeUrls
+  match ("includes/*" .||. "templates/*") $ compile templateCompiler
 
-  match "templates/*" $ compile templateCompiler
+context :: Context String
+context = authorCtx <> postCtx <> siteCtx
 
+authorCtx :: Context String
+authorCtx =
+  constField "author" "Vincibean"
+    <> constField "author_image" "../assets/img/Vincibean.jpeg"
+    <> constField "author_bio"   ""
+    <> defaultContext
 
 postCtx :: Context String
-postCtx = dateField "date" "%B %e, %Y" `mappend` defaultContext
+postCtx = dateField "date" "%B %e, %Y" <> defaultContext
 
+siteCtx :: Context String
+siteCtx =
+  constField "site_title" "Vincibean"
+    <> constField "site_logo"        "../assets/img/icosaedron.svg"
+    <> constField "site_description" "Just a Bunch of Tips"
+    <> constField "site_cover"       "../assets/img/geometric.jpg"
+    <> constField "page_url"         "https://vincibean.github.io"
+    <> defaultContext

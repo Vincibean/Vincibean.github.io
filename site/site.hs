@@ -9,7 +9,7 @@ main = hakyll $ do
     route idRoute
     compile copyFileCompiler
 
-  match (fromList ["about.markdown", "contact.markdown"]) $ do
+  match ("about.markdown" .||. "contact.markdown") $ do
     route $ setExtension "html"
     compile
       $   pandocCompiler
@@ -37,8 +37,7 @@ main = hakyll $ do
         >>= loadAndApplyTemplate "templates/default.html" indexCtx
         >>= relativizeUrls
 
-  match "templates/*" $ compile templateCompiler
-  match "includes/*" $ compile templateCompiler
+  match ("includes/*" .||. "templates/*") $ compile templateCompiler
 
 
 postCtx :: Context String

@@ -1,8 +1,5 @@
 ---
 title: Apache Spark - Does Shuffling Occur When Count Actions are Performed?
-author: Vincibean
-author_image: Test
-author_bio: Test
 ---
 While [Apache Spark](http://spark.apache.org/)’s level of abstraction eases the development of jobs running on
 distributed data, it's not always easy to figure out how to optimize them, or how to avoid common pitfalls.

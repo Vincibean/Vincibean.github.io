@@ -1,8 +1,5 @@
 ---
 title: Why Am I Looping Through Options??
-author: Vincibean
-author_image: Test
-author_bio: Test
 ---
 For those like me who started with imperative programming, functional programming may seem like a minefield, 
 especially when familiar concepts gain different meanings. Recently, I had the opportunity to learn a couple of things about Scala, 

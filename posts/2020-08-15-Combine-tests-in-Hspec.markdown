@@ -1,8 +1,5 @@
 ---
 title: How to combine tests in Hspec? 
-author: Vincibean
-author_image: Test
-author_bio: Test
 ---
 
 **TL;DR**

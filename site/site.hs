@@ -19,7 +19,8 @@ main = hakyll $ do
     route $ setExtension "html"
     compile
       $   pandocCompiler
-      >>= loadAndApplyTemplate "templates/post.html" (postCtx <> authorCtx <> siteCtx)
+      >>= loadAndApplyTemplate "templates/post.html"
+                               (postCtx <> authorCtx <> siteCtx)
       >>= relativizeUrls
 
   match "pages/index.html" $ do
@@ -44,7 +45,15 @@ postCtx :: Context String
 postCtx = dateField "date" "%B %e, %Y" <> defaultContext
 
 siteCtx :: Context String
-siteCtx = constField "site_title" "Vincibean" <> constField "site_logo" "../assets/img/icosaedron.svg" <> constField "site_description" "Just a Bunch of Tips" <> constField "site_cover" "../assets/img/geometric.jpg" <> defaultContext
+siteCtx =
+  constField "site_title" "Vincibean"
+    <> constField "site_logo"        "../assets/img/icosaedron.svg"
+    <> constField "site_description" "Just a Bunch of Tips"
+    <> constField "site_cover"       "../assets/img/geometric.jpg"
+    <> defaultContext
 
 authorCtx :: Context String
-authorCtx = constField "author" "Vincibean" <> constField "author_image" "../assets/img/Vincibean.jpeg" <> constField "author_bio" ""
+authorCtx =
+  constField "author" "Vincibean"
+    <> constField "author_image" "../assets/img/Vincibean.jpeg"
+    <> constField "author_bio"   ""

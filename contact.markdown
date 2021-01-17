@@ -6,7 +6,6 @@ site_description: Test
 author: Vincibean
 author_image: Test
 author_bio: Test
-page_url: Test
 ---
 
 I live in a small hut in the mountains of Kumano Kodō on Kii Hantō and would not

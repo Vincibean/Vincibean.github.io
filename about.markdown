@@ -6,7 +6,6 @@ site_description: Test
 author: Vincibean
 author_image: Test
 author_bio: Test
-page_url: Test
 ---
 ## Hello
 I'm Vincibean.

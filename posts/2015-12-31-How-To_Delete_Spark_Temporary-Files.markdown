@@ -6,7 +6,6 @@ site_description: Test
 author: Vincibean
 author_image: Test
 author_bio: Test
-page_url: Test
 ---
 My colleagues and I are working on a system that should interoperate with Apache Spark. The idea behind this interoperability
 is to send [Spark Job Server](https://github.com/spark-jobserver/spark-jobserver) a JAR package containing classes that, whenever invoked from the system, should deal with Spark.

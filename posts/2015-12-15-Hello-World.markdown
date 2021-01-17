@@ -6,7 +6,6 @@ site_description: Test
 author: Vincibean
 author_image: Test
 author_bio: Test
-page_url: Test
 ---
 As tradition has it, the first post HAS to be a "Hello World".  
 This is my personal site, built with [Jekyll](https://jekyllrb.com/) on top of [GitHub](https://github.com/) (yeah, I know: everybody already knows GitHub, so this last link wasn't required at all; truth is, I'm trying to become confident with [Markdown](http://daringfireball.net/projects/markdown/) syntax!).  

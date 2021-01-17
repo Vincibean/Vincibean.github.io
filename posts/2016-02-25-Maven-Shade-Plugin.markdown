@@ -6,7 +6,6 @@ site_description: Test
 author: Vincibean
 author_image: Test
 author_bio: Test
-page_url: Test
 ---
 Shit Happens. Especially when dealing with many dependencies in a complex system, shit happens.   
 As Java developers, we usually don’t deal with all the intricacies of versioning; this is due to the fact that deprecated methods and classes are simply annotated as @Deprecated, but maintained for backward compatibility. Yet, there is no actual requirement in this sense, so it may happen that the new version of a library deletes a method or a class (instead of annotating it as deprecated). This is exactly what happened to me during these days: I had a piece of software that made use of Guava, I needed to upload that software to a Spark cluster, and the cluster already had its version of Guava. While this usually doesn’t lead to any error (you could keep the newer version), in the case of Guava it sometimes happens that [something is removed between a version and the other](http://docs.guava-libraries.googlecode.com/git/javadoc/deprecated-list.html). What should you do then? Keep the most updated one? You would lose those methods that, in the meantime, became deprecated and were removed. Keep the older one? You may lose those new methods on which your software might depend.   

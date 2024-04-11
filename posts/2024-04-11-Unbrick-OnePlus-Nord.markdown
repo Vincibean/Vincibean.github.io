@@ -13,7 +13,7 @@ In summary, it's a mess!
 
 However, I somehow did it and now the WiFi firmware on my phone is up to date.
 
-In the unlikely event that I will ever need to go through this procedure again, I'm leaving here a short guide on how to do that again, just like I did with my old Samsung Galaxy II.
+In the unlikely event that I will ever need to go through this procedure again, I'm leaving here a short guide on how to do that again, just like I [did](https://github.com/Vincibean/i9100) with my old Samsung Galaxy II.
 Unfortunately, this time around I cannot leave the files here on GitHub (even after zipping everything, it's still a whopping 3GB!) and according to GitHub my repository is "over its data quota"; therefore, this time around I'm leaving the files on Google Drive; hopefully I'll remember not to delete them.
 
 > **_Disclaimer:_** By attempting any of the processes listed in this post you accept full responsibility for your actions. I will not be held responsible if your device stops working, catches fire, or turns into a hipster and claims to have been modified before it was cool.

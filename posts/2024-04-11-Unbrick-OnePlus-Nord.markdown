@@ -1,5 +1,5 @@
 ---
-title: Steps to Unbrick a OnePlus Nord (`avicii`)
+title: Steps to Unbrick a OnePlus Nord (avicii)
 ---
 
 Some time ago I installed LineageOS on my smartphone, a OnePlus Nord (`avicii`); however, after a major update of LineageOS / Android, the WiFi just stopped working.
@@ -9,6 +9,7 @@ But how? I installed LineageOS precisely because I didn't want anything to do wi
 
 Just as with my old Samsung Galaxy II (`i9100`), it took me a disproportionate amount of time to find a solution online, and even more to find one that would actually work with my phone.
 The problem is the huge amount of deprecated guides, broken links, wrong instructions, forums that used to house the information I needed but are now closed for good, copycat guides, etc... 
+
 In summary, it's a mess!
 
 However, I somehow did it and now the WiFi firmware on my phone is up to date.
@@ -24,7 +25,7 @@ It can revive a bricked OnePlus Nord. It can also rollback our phone to a previo
 however, it will completely wipe our phone of all data (pictures, music, app data, etc), so make sure you make a backup and save it to your PC first.
 
 
-** Instructions:
+## Instructions:
 
 1. Download the MSM tool [here](https://drive.google.com/file/d/1zeKgols_2xrGxGC_7Jf5-lxnP1FBKltL/view?usp=drive_link)
 2. Unzip the content of the zip file in a folder of your choice
@@ -38,23 +39,28 @@ however, it will completely wipe our phone of all data (pictures, music, app dat
 10. Wait for around 300-400 seconds and let the tool do its job. After this, your device will then boot to the Android OS.
 11. Enjoy your newly rolled back device.
 
-** FAQ:
+## FAQ:
 
 > Does this work on Mac or Linux?
-Unfortunately no, tool is Windows only. You should need at least Windows 7.
+
+Unfortunately no, the tool is Windows only. You should need at least Windows 7.
 
 > Why is my antivirus freaking out when unzipping the archive or running the tool?
+
 In an effort to protect reverse engineering from being done, OnePlus now use VM Protect V3 in their MSM tools. As this tries to detect debug environment, this is seen as malicious behaviour by some antivirus.
 
 > My device isn't detected
+
 Go to device manager and make sure your phone shows up as QDLOADER 9008.
 If it shows up as `QHUSB_BULK`, it means Qualcomm driver wasn't installed automatically by Windows Update. 
 Download the latest one from Microsoft website [here](http://download.windowsupdate.com/c/msdownload/update/driver/drvs/2017/03/fe241eb3-d71f-4f86-9143-c6935c203e12_fba473728483260906ba044af3c063e309e6259d.cab) ([source](https://www.catalog.update.microsoft.com/Search.aspx?q=qualcomm%20hs%20usb%209008)) and install it manually by right clicking on `QHUSB_BULK` and selecting `Update driver software` and `Browse my computer for driver software` to where you downloaded CAB file.
 
 > MSM tool is stuck on "Param pre-processing"
+
 Ensure you're using the Qualcomm drivers linked above.
 
 > MSM tool is stuck on "Sahara communication failed"
+
 Unplug your phone, get in fastboot mode, turn off phone, wait 15 secondes and get back in Qualcomm EDL mode. You can also try using a USB 2.0 port instead of a 3.0 one.
 
 ---

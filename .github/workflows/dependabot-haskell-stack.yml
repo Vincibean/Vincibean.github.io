@@ -32,7 +32,7 @@ jobs:
 
       - name: Create Pull Request
         id: pr
-        uses: peter-evans/create-pull-request@v5
+        uses: peter-evans/create-pull-request@v6
         with:
           branch: '${{vars.AL_VERSION}}-${{steps.bump-deps.outputs.new-resolver}}'
           token: ${{ env.GITHUB_TOKEN }}

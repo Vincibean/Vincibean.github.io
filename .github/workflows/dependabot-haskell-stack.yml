@@ -28,7 +28,7 @@ jobs:
 
       - name: Update stack dependencies
         id: bump-deps
-        uses: stevemao/dep-haskell-stack@v2.0.0
+        uses: stevemao/dep-haskell-stack@v2.3.4
 
       - name: Create Pull Request
         id: pr

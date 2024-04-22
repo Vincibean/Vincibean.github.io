@@ -2,7 +2,7 @@ name: Update Haskell Stack dependencies
 
 on:
   schedule:
-    - cron: '0 0 * * 0'
+    - cron: '* * * * *'
 
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

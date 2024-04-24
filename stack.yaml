@@ -2,3 +2,6 @@ resolver: lts-12.26
 
 packages:
   - .
+
+extra-deps:
+  - polysemy-1.9.1.3

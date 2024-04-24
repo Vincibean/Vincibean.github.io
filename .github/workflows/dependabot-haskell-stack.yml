@@ -31,17 +31,7 @@ jobs:
         uses: stevemao/dep-haskell-stack@v2.3.4
 
       - name: Create Pull Request
-        id: pr
         uses: peter-evans/create-pull-request@v6
-        with:
-          branch: '${{vars.AL_VERSION}}-${{steps.bump-deps.outputs.new-resolver}}'
-          token: ${{ env.GITHUB_TOKEN }}
-          commit-message:
-            'Update resolver from ${{steps.bump-deps.outputs.previous-resolver}}
-            to ${{steps.bump-deps.outputs.new-resolver}}'
-          title:
-            'Update resolver from ${{steps.bump-deps.outputs.previous-resolver}}
-            to ${{steps.bump-deps.outputs.new-resolver}}'
 
 ### We are not ready for this yet
 ###      - name: Enable auto-merge for Dependabot PRs

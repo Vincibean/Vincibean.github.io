@@ -1,4 +1,5 @@
-resolver: lts-22.18
+resolver: lts-22.22
 
 packages:
   - .
+extra-deps: null

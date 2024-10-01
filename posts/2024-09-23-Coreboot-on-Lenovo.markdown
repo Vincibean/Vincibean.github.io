@@ -2,6 +2,170 @@
 title: I Installed Coreboot on a Lenovo t440p 
 ---
 
+*This will guide you through the process of installing `coreboot` on the Lenovo t440p with a Raspberry Pi 3 and some of the
+accessories that are sold with a `CH341a`.* 
+
+*Using a CH341a is discouraged because it has 5V logic levels on data lines instead of the recommended 3.3V and therefore will
+damage your SPI flash and also the southbridge that it's connected to, plus anything else that it's connected to.*
+
+*A Rasperry Pi instead has the recommended 3.3V and hence it can be used instead of the CH341a.*
+
+# Introduction
+
+The [Lenovo ThinkPad t440p](https://support.lenovo.com/nz/en/solutions/pd100280-detailed-specifications-thinkpad-t440p) is a great laptop 
+that I bought years ago for the incredible upgradability that it offers, which makes it the perfect workstation for devs and tinkerers.
+
+One of the options I was extremely excited about is the possibility to add a custom BIOS.
+I wanted to replace the BIOS because Lenovo's default BIOS comes with a Wi-Fi whitelist that would prevent me from upgrading
+the existing Wi-Fi card to a new, more powerful one; so I thought I might as well install a (mostly) Open Source BIOS.
+
+`coreboot`, according to its [Wikipedia page](https://en.wikipedia.org/wiki/Coreboot), is a software project aimed at 
+replacing proprietary firmware (BIOS or UEFI) found in most computers with a lightweight firmware designed to perform only 
+the minimum number of tasks necessary to load and run a modern 32-bit or 64-bit operating system. Since coreboot initializes 
+the bare hardware, it must be ported to every chipset and motherboard that it supports. As a result, coreboot is available only
+for a limited number of hardware platforms and motherboard models. 
+
+I quickly found [a nice video on YouTube](https://www.youtube.com/watch?v=pqjsM18pKCE) detailing how to do it. 
+In laymen terms, I would have to connect the BIOS chip to another computer via a flasher and a "clip"; the flasher and clip would
+transmit electric impulses to the BIOS chip, and these electric impulses would write ("flash") the new BIOS onto the chip.
+
+I soon found (and bought) the flasher I needed: a [CH341a](https://www.amazon.co.uk/KeeYees-SOIC8-EEPROM-CH341A-Programmer/dp/B07SNTL5V6).
+
+With that done, I thought I was ready to flash my new BIOS. Then I finally realized that using the CH341a - the flasher I bought - was discouraged.
+According to the [Libreboot documentation](https://libreboot.org/docs/install/spi.html#do-not-use-ch341a) 
+(`Libreboot` being one of the coreboot variants partly free of proprietary blobs), using a CH341a is discouraged 
+because this flasher has 5V logic levels on data lines instead of the recommended 3.3V and therefore will damage the SPI flash and also the 
+southbridge that it’s connected to, plus anything else that it’s connected to.
+
+This was disheartening. I'm not an expert on this topic and the CH341a was the only flasher I knew thanks to the guides I found. 
+Despite my best efforts I couldn't find a flasher that would use the recommended 3.3V. In fact, the CH341a was the _only_ flasher I could find.
+It's crazy how popular this flasher is considering how dangerous it can be!
+Other guides would either not mention different flashers, or mention flashers that I couldn't find on Amazon.
+
+It should be noted that it _could_ have been possible to make my flasher send 3.3V instead of 5V if I had applied [this](https://www.eevblog.com/forum/repair/ch341a-serial-memory-programmer-power-supply-fix/msg1323775/#msg1323775)
+fix and bypassed the 1117-3.3V regulator. However, as I mentioned before, I'm not an expert on this topic and I have a very
+rough idea of what "bypassing the 1117-3.3V regulator" means; plus, achieving that requires soldering skills that, sadly, I don't have.
+So this option was also out of the question.
+
+To make things more complicated, I really wanted to reuse the accessories the CH341a came with: while using the CH341a is undoubtedly dangerous,
+as far as I could tell the accessories were just fine and could be safely used for flashing a coreboot BIOS. I already wasted some money on the flasher
+itself, I didn't want to buy some new accessories too!
+
+Then I finally found the most popular flasher around: the Raspberry Pi!
+
+Sounds crazy, uh? But the Raspberry Pi is very suitable for this kind of thing as it has a SPI interface and is able to run Linux. 
+And, as luck would have it, I already had a Rasperry Pi 3 lying around!
+
+I quickly found [a couple](https://tomvanveen.eu/flashing-bios-chip-raspberry-pi/) [of guides](https://www.instructables.com/Lenovo-T420-Coreboot-WRaspberry-Pi/) 
+on how to flash a BIOS chip with a Raspberry Pi. I still had the video guide I mentioned before, plus the 
+[(written) guide](https://blog.0xcb.dev/lenovo-t440p-coreboot/) that was used for that video.
+All I had to do was mixing them all together. 
+
+So here you have it!
+
+----------------------------------------------------------
+
+
+
+```
+sudo nala install git build-essential gnat flex bison libncurses5-dev wget zlib1g-dev
+```
+
+----------------------------------------------------------------------------------------------
+
+sudo apt update
+sudo apt install nala
+sudo nala upgrade
+sudo reboot
+sudo nala upgrade
+sudo raspi-config 
+sudo nala install git build-essentials gnat flex bison libncurses5-dev wget zlib1g-dev
+sudo nala install git build-essential gnat flex bison libncurses5-dev wget zlib1g-dev
+sudo poweroff
+sudo nala upgrade
+sudo raspi-config
+cd work/roms/
+flashrom -p linu_spi:dev=/dev/spidev0.0,spispeed=512
+flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512
+sudo reboot
+cd work/roms/
+flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512
+flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -r 4mb_backup1.bin
+flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -r 4mb_backup2.bin
+diff 4mb_backup1.bin 4mb_backup2.bin 
+sudo poweroff
+which flashrom
+cd work/roms/
+flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512
+ls
+ls -latr
+flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -r 8mb_backup1.bin
+flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -c "W25Q64.v" -r 8mb_backup1.bin
+flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -c "W25Q64.V" -r 8mb_backup1.bin
+flashrom -L
+flashrom -L | less
+flashrom -v
+flashrom --version
+flashrom --help
+cd ../
+git clone https://github.com/flashrom/flashrom.git
+sudo nala remove flashrom
+cd flashrom/
+make
+ls
+sudo make install
+meson setup builddir
+meson compile -C builddir
+which flashrom
+meson test -C builddir
+meson install -C builddir
+sudo nala install libmocka
+sudo nala install libcmocka
+sudo nala install cmocka
+sudo nala install libcmocka-dev
+meson setup builddir
+meson compile -C builddir
+meson test -C builddir
+meson install -C builddir
+sudo su
+meson install -C builddir
+sudo meson install -C builddir
+cd work/roms/
+ls
+cd ../flashrom/
+meson install -C builddir
+cd ../flashrom/
+cd work/roms/
+cd ../flashrom/
+meson install -C builddir
+cd /home/dre/work/roms/
+pwd
+sudo nala install xscreensaver
+sudo reboot
+cd work/coreboot/build/
+dd if=coreboot.rom of=bottom.rom bs=1M count=8
+dd if=coreboot.rom of=top.rom bs=1M skip=8 
+flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512
+sudo reboot
+flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512
+cd work/coreboot/build/
+flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -w top.rom 
+flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -c "W25Q32BV/W25Q32CV/W25Q32DV" -w top.rom 
+flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -w top.rom 
+flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -c "W25Q32FV" -w top.rom 
+sudo poweroff
+cd work/coreboot/build/
+flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -c "W25Q32FV"
+flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -c "W25Q32FV" -w top.rom 
+sudo poweroff
+cd work/coreboot/build/
+flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512
+flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -c "W25Q64BV/W25Q64CV/W25Q64FV" -w bottom.rom 
+sudo poweroff
+
+
+----------------------------------------------------------------------------------------------------------------------
+
 Coreboot is an open source bios replacement. This guide will describe the steps needed to install it on a Lenovo T440p.
 
 Before you start you should be comfortable using a Linux terminal as well as disassembling your laptop.
@@ -449,3 +613,5 @@ Sources:
 - [https://www.instructables.com/Lenovo-T420-Coreboot-WRaspberry-Pi/](https://www.instructables.com/Lenovo-T420-Coreboot-WRaspberry-Pi/)
 - [https://www.youtube.com/watch?v=pqjsM18pKCE](https://www.youtube.com/watch?v=pqjsM18pKCE)
 - [https://blog.0xcb.dev/lenovo-t440p-coreboot/](https://blog.0xcb.dev/lenovo-t440p-coreboot/)
+- [https://web.archive.org/web/20231019205252/https://octoperf.com/blog/2018/11/07/thinkpad-t440p-buyers-guide/](https://web.archive.org/web/20231019205252/https://octoperf.com/blog/2018/11/07/thinkpad-t440p-buyers-guide/)
+- [https://libreboot.org/docs/install/spi.html#do-not-use-ch341a](https://libreboot.org/docs/install/spi.html#do-not-use-ch341a)

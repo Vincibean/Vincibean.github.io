@@ -65,9 +65,9 @@ So here you have it!
 
 # Materials
 - Lenovo ThinkPad T440p
-- CH341a SPI flasher - only the accessories
+- CH341a SPI flasher - only the accessories. As I previously mentioned, I used [this one](https://www.amazon.co.uk/dp/B07SNTL5V6)
 - Raspberry Pi - I've used a Raspberry Pi 3 Model B, but you should be fine with any Rasperry Pi really
-- Female to Female Breadboard Jumper Cables, also known as Dupont wires - I've used these
+- Female to Female Breadboard Jumper Cables, also known as Dupont wires - I used [these](https://www.amazon.co.uk/dp/B0BY8VKW68)
 - Phillips Screwdriver for dissassembling the Lenovo ThinkPad t440p
 - (Potentially) Another PC, preferably running a Linux Distro - we are going to need this to build coreboot: the Raspberry Pi 3 doesn't have
 enough horsepower to pull this off. If you're using a newer Raspberry Pi your mileage may vary. You could build coreboot on the T440p, just make sure

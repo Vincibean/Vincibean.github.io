@@ -63,9 +63,19 @@ All I had to do was mixing them all together.
 
 So here you have it!
 
+# Materials
+- Lenovo ThinkPad T440p
+- CH341a SPI flasher - only the accessories
+- Raspberry Pi - I've used a Raspberry Pi 3 Model B, but you should be fine with any Rasperry Pi really
+- Female to Female Breadboard Jumper Cables, also known as Dupont wires - I've used these
+- Phillips Screwdriver for dissassembling the Lenovo ThinkPad t440p
+- (Potentially) Another PC, preferably running a Linux Distro - we are going to need this to build coreboot: the Raspberry Pi 3 doesn't have
+enough horsepower to pull this off. If you're using a newer Raspberry Pi your mileage may vary. You could build coreboot on the T440p, just make sure
+that you build coreboot and move the resulting artifacts to the Raspberry Pi or its SD card before you disassemble the T440p
+
 ----------------------------------------------------------
 
-
+ - running the latest version or Raspberry Pi OS - Instructions on installing can be found here.
 
 ```
 sudo nala install git build-essential gnat flex bison libncurses5-dev wget zlib1g-dev

@@ -10,6 +10,8 @@ damage your SPI flash and also the southbridge that it's connected to, plus anyt
 
 *A Rasperry Pi instead has the recommended 3.3V and hence it can be used instead of the CH341a.*
 
+*Even with all these precautions, there is always a chance that this will brick your laptop. Do this at your own risk.*
+
 # Introduction
 
 The [Lenovo ThinkPad t440p](https://support.lenovo.com/nz/en/solutions/pd100280-detailed-specifications-thinkpad-t440p) is a great laptop 
@@ -63,6 +65,10 @@ All I had to do was mixing them all together.
 
 So here you have it!
 
+**Note**
+
+**Even with all these precautions, there is always a chance that this will brick your laptop. Do this at your own risk.**
+
 # Materials
 - Lenovo ThinkPad T440p
 - CH341a SPI flasher - only the accessories. As I previously mentioned, I used [this one](https://www.amazon.co.uk/dp/B07SNTL5V6)
@@ -73,13 +79,175 @@ So here you have it!
 enough horsepower to pull this off. If you're using a newer Raspberry Pi your mileage may vary. You could build coreboot on the T440p, just make sure
 that you build coreboot and move the resulting artifacts to the Raspberry Pi or its SD card before you disassemble the T440p
 
+# Update the Embedded Controller on the T440p
+It is a good idea to update the Embedded Controller to the latest version. The easiest way to do this is install the latest version of the factory bios. Coreboot is unable to touch the EC. You will be unable to update it after flashing unless you revert to the factory bios.
+
+# Prepare the Raspberry Pi
+Prepare your Raspberry Pi with the latest version of Raspberry Pi OS. I got mine from [here](https://www.raspberrypi.com/software/).
+
+Once that is done, boot your Raspberry Pi and update the OS with:
+
+```bash
+sudo apt update
+sudo apt dist-upgrade
+```
+
+In order to read/write to the bios chip you need to enable some kernel modules.
+
+Access the raspberry pi config utility:
+
+```bash
+sudo raspi-config
+```
+In `raspi-config` select `Interfacing options`
+
+Under interface options enable:
+- `P4 SPI`
+- `P5 I2C`
 ----------------------------------------------------------
 
- - running the latest version or Raspberry Pi OS - Instructions on installing can be found here.
+Then install the dependencies needed to build coreboot.
 
+```bash
+sudo apt install git build-essential gnat flex bison libncurses5-dev wget zlib1g-dev
 ```
-sudo nala install git build-essential gnat flex bison libncurses5-dev wget zlib1g-dev
+
+Make a directory in your home dir to work in. For this example I will be calling it `work`. You will also want a directory to store the factory images. I will call that directory `roms`. You can do this in one line to save time:
+
+```bash
+mkdir -p ~/work/roms
 ```
+
+Move into the work directory:
+
+```bash
+cd ~/work
+```
+
+Download the latest version of coreboot:
+
+```bash
+git clone https://review.coreboot.org/coreboot
+```
+
+Move into the coreboot directory:
+
+```bash
+cd ~/work/coreboot
+```
+
+Download the required submodules:
+
+```bash
+git submodule update --init --checkout
+```
+# Connect the Raspberry Pi to the Clip.
+Power off the Pi
+
+**Note: it is important to power off the Pi before you connect it to the BIOS chip. Failing to do so
+may damage your motherboard and brick your laptop, so don't forget to POWER YOUR PI OFF!**
+
+Use the 6 female to female wire to connect the clip to the Pi:
+- Pi 17 > Bios 8
+- Pi 19 > Bios 5
+- Pi 21 > Bios 2
+- Pi 23 > Bios 7
+- Pi 24 > Bios 1
+- Pi 25 > Bios 4
+
+Pins 3 and 7 on the BIOS are not used.
+
+# Prepare the Lenovo ThinkPad T440p
+Take out the battery and unscrew the access door of your Lenovo ThinkPad T440p.
+Take it apart until you see both `EEPROM`-chips next to the RAM:
+
+
+
+Connect the SPI flasher to the 4MB (also called top) chip and connect it to your PC
+```
+cd ~/t4/
+
+sudo flashrom --programmer ch341a_spi -r 4mb_backup1.bin
+
+sudo flashrom --programmer ch341a_spi -r 4mb_backup2.bin
+
+diff 4mb_backup1.bin 4mb_backup2.bin
+```
+Only if diff outputs nothing continue - else retry
+Then connect to the 8MB (also called bottom) chip and repeat:
+```
+sudo flashrom --programmer ch341a_spi -r 8mb_backup1.bin
+
+sudo flashrom --programmer ch341a_spi -r 8mb_backup2.bin
+
+diff 8mb_backup1.bin 8mb_backup2.bin
+```
+Again: only if it outputs nothing continue
+
+# Read the Flash Chip
+Power on the Pi
+
+Open a terminal and move to the roms folder we created before:
+
+```bash
+cd ~/work/roms
+```
+
+To read and write the chip you will need to use a program called `Flashrom`. Let's first make sure it is installed:
+
+```bash
+sudo apt install flashrom
+```
+
+Use flashrom to probe the chip and make sure it is connected
+Use the -c option to specify your flash chip. Make sure to enter everything between the quotes
+
+```bash
+flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -c "W25Q32BV/W25Q32CV/W25Q32DV"
+```
+
+If no error message is displayed, we are ready to read the flash chip.
+We are going to take two reads and then compare the two.
+Each read will take some time depending on the chip. It could even take between 30 and 45 min. Don't worry if it seems like the Pi is hung.
+
+```bash
+flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -c "W25Q32BV/W25Q32CV/W25Q32DV" -r 4mb_backup1.bin
+flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -c "W25Q32BV/W25Q32CV/W25Q32DV" -r 4mb_backup2.bin
+```
+
+Next you want to compare the 2 files to make sure you had a good read / connections:
+
+```bash
+diff 4mb_backup1.bin 4mb_backup2.bin
+```
+
+Only if `diff` outputs nothing continue - else retry.
+
+Power off the Pi, disconnect the clip from the top chip and connect it to the bottom chip, then turn the Pi on again.
+
+Open a terminal and move to the roms folder we created before:
+
+```bash
+cd ~/work/roms
+```
+
+Once again, use flashrom to probe the chip and make sure it is connected
+
+```bash
+flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -c "W25Q32BV/W25Q32CV/W25Q32DV"
+```
+
+If no error message is displayed, we are ready to read the flash chip.
+We are going to take two reads and then compare the two:
+
+```bash
+flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -c "W25Q64BV/W25Q64CV/W25Q64FV" -r 8mb_backup1.bin 
+flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -c "W25Q64BV/W25Q64CV/W25Q64FV" -r 8mb_backup2.bin 
+
+diff 8mb_backup1.bin 8mb_backup2.bin
+```
+
+Only if `diff` outputs nothing continue - else retry.
 
 ----------------------------------------------------------------------------------------------
 
@@ -176,50 +344,9 @@ sudo poweroff
 
 ----------------------------------------------------------------------------------------------------------------------
 
-Coreboot is an open source bios replacement. This guide will describe the steps needed to install it on a Lenovo T440p.
-
-Before you start you should be comfortable using a Linux terminal as well as disassembling your laptop.
-
-There is a chance that this will brick your laptop you do this at your own risk.
-
-## Supplies
-- Ponoma 5250 Test Clip - For connecting to the bios chip.
-- Female to Female Breadboard Jumper Cables - Also known as Dupont wires.
-- Phillips Screwdriver
-- Lenovo T440p
-- Computer running Linux. "Main PC"
-- Raspberry Pi(3 or 4) - running the latest version or Raspberry Pi OS - Instructions on installing can be found here.
-
-## Step 1: Update the Embedded Controller on the T440p
-
-It is a good idea to update the Embedded Controller to the latest version. The easiest way to do this is install the latest version of the factory bios. Coreboot is unable to touch the EC. You will be unable to update it after flashing unless you revert to the factory bios.
-
-## Step 2: Prepare the Raspberry Pi for Flashing. (ON RPI)
-
-In order to read/write to the bios chip you need to enable some kernel modules.
-
-Access the raspberry pi config utility.
-```
-sudo raspi-config
-```
-Under interface options enable :
-- P2 SSH - if you will be running the pi headless
-- P4 SPI
-- P5 I2C
-- P8 Remote GPIO - If using ssh to connect to the pi
-
 ## Step 3: Prepare the 'Main' Computer for Building Coreboot (On Main PC)
 
-First thing to do is install the dependencies needed to build coreboot.
 
-For a Debian based system
-```
-sudo apt install git build-essential gnat flex bison libncurses5-dev wget zlib1g-dev
-```
-For an Arch based system
-```
-sudo pacman -S base-devel gcc-ada flex bison ncurses wget zlib git
-```
 Make a directory in your home dir to work in. For this example I will be calling it 'work'. You will also want a directory to store the factory images. I will call that directory 'roms' You can do this in one line to save time
 ```
 mkdir -p ~/work/roms
@@ -232,7 +359,7 @@ Download the latest version of ME_Cleaner from github
 ```
 git clone https://github.com/corna/me_cleaner
 ```
-Download the latest version of Coreboot
+  * [ ] Download the latest version of Coreboot
 ```
 git clone  https://review.coreboot.org/coreboot
 ```
@@ -253,59 +380,6 @@ Build the ifd tool. This will be used to split the factory bios into it's differ
 cd ~/work/coreboot/utils/ifdtool
 make
 ```
-## Step 4: Wire Up the Clip.
-
-Use the 6 female to female wire to connect the clip to the Pi:
-- Bios 1 > Pi 24
-- Bios 2 > Pi 21
-- Bios 4 > Pi 25
-- Bios 5 > Pi 19
-- Bios 7 > Pi 23
-- Bios 8 > Pi 17
-
-Pins 3 and 7 on the Bios are not used.
-
-## Step 5: Access the Bios Chip
-With the Pi powered OFF connect the clip to the bios chip.
-
-## Step 7: Read the Flash Chip (On RPI)
-Power on the Pi
-
-Create a roms directory and move to it .
-```
-mkdir -p ~/work/roms
-
-cd ~/work/roms
-```
-To read and write the chip you will need to use a program called Flashrom. First make sure it is installed
-```
-sudo apt install flashrom
-```
-Use flashrom to probe the chip and make sure it is connected
-```
-flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=128
-```
-Read the factory bios off the chip 2 times and save them as factory1.rom and factory2.rom
-
-Use the -c option to specify your flash chip. Make sure to enter everything between the quotes
-
-Each read will take some time depending on the chip it could be between 30-45 min each read. Dont worry if it seems like the pi is hung.
-```
-flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=128 -c <chip name> -r factory1.rom
-
-flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=128 -c <chip name> -r factory2.rom
-```
-
-## Step 8: Compare the 3 Files (On RPI)
-
-Next you want to compare the 2 files to make sure you had a good read / connections
-```
-sha512sum factory*.rom
-```
-If they all match copy them to the main computer in the ~/work/roms directory.
-
-Power off the Pi. You can leave the clip connected.
-
 ## Step 12: Build Coreboot (On Main PC)
 
 Time to compile!
@@ -343,55 +417,6 @@ Congrats you have just flashed Coreboot.
 
 ------
 
-This will guide you through the process of installing coreboot on the Lenovo t440p.
-
-The T440p features great upgradability which makes it the perfect dev workstation.
-
-## Materials
-- ch341a SPI flasher always disconnect the programmer from the USB port before connecting/disconnecting it from the EEPROM and check if it uses 3.3V
-- Alternativly use a Raspberry PI as SPI programmer https://tomvanveen.eu/flashing-bios-chip-raspberry-pi/
-- Screwdriver for dissassembly according to the hardware maintenance manual
-- Coreboot
-- A PC running a Linux Distro (install flashrom with your package manager)
-- also install these with your package manager
-
-```
-sudo pacman -S base-devel curl git gcc-ada ncurses zlib nasm sharutils unzip flashrom
-```
-
-## Organization
-
-To make rebuilding easier create a directory for your backups and blobs. I've called mine ~/t4/
-
-mkdir ~/t4/
-
-## The process
-### Disassembly and reading
-
-Next take out the battery and unscrew the access door.
-Take it apart until you see both EEPROM-chips next to the RAM:
-
-Assemble the SPI flasher and make sure it's the 3.3v variant:
-Connect the SPI flasher to the 4MB (also called top) chip and connect it to your PC. Then:
-```
-cd ~/t4/
-
-sudo flashrom --programmer ch341a_spi -r 4mb_backup1.bin
-
-sudo flashrom --programmer ch341a_spi -r 4mb_backup2.bin
-
-diff 4mb_backup1.bin 4mb_backup2.bin
-```
-Only if diff outputs nothing continue - else retry
-Then connect to the 8MB (also called bottom) chip and repeat:
-```
-sudo flashrom --programmer ch341a_spi -r 8mb_backup1.bin
-
-sudo flashrom --programmer ch341a_spi -r 8mb_backup2.bin
-
-diff 8mb_backup1.bin 8mb_backup2.bin
-```
-Again: only if it outputs nothing continue
 ### Original ROM
 
 Combine the files to one ROM (the System sees these chips combined anyway)

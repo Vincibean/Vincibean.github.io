@@ -104,42 +104,11 @@ In `raspi-config` select `Interfacing options`
 Under interface options enable:
 - `P4 SPI`
 - `P5 I2C`
-----------------------------------------------------------
 
-Then install the dependencies needed to build coreboot.
-
-```bash
-sudo apt install git build-essential gnat flex bison libncurses5-dev wget zlib1g-dev
-```
-
-Make a directory in your home dir to work in. For this example I will be calling it `work`. You will also want a directory to store the factory images. I will call that directory `roms`. You can do this in one line to save time:
+Make a directory in your home dir to work in and store the factory images. For this example I will be calling it `t4`:
 
 ```bash
-mkdir -p ~/work/roms
-```
-
-Move into the work directory:
-
-```bash
-cd ~/work
-```
-
-Download the latest version of coreboot:
-
-```bash
-git clone https://review.coreboot.org/coreboot
-```
-
-Move into the coreboot directory:
-
-```bash
-cd ~/work/coreboot
-```
-
-Download the required submodules:
-
-```bash
-git submodule update --init --checkout
+mkdir ~/t4
 ```
 # Connect the Raspberry Pi to the Clip.
 Power off the Pi
@@ -249,6 +218,125 @@ diff 8mb_backup1.bin 8mb_backup2.bin
 
 Only if `diff` outputs nothing continue - else retry.
 
+# Obtain The Original ROM
+Combine the files to one ROM (the System sees these chips combined anyway):
+
+```bash
+cat 8mb_backup1.bin 4mb_backup1.bin > t440p-original.rom
+```
+
+**SAVE THE ROM SOMEWHERE SAFE and in multiple locations!**
+
+# Build Blobs 
+
+It's now time to switch to your other PC. Remember? The PC that is preferably running a Linux Distro. We are going to need this PC to build coreboot: the Raspberry Pi 3 doesn't have enough horsepower to pull this off.
+
+Turn on that PC.
+
+Firstly, we are going to need the files that you have on your Pi. Turn off your Pi, then insert your SD card on your PC; if you can't, then just transfer
+the files to your PC in a different way. 
+
+Then install the dependencies needed to build coreboot:
+
+```bash
+sudo apt install git build-essential gnat flex bison libncurses5-dev wget zlib1g-dev base-devel curl gcc-ada ncurses zlib nasm sharutils unzip flashrom
+```
+
+We are going to create the same folders we had on the Pi, just for consistency's sake.
+
+Make a directory in your home dir to work in. For this example I will be calling it `work`. You will also want a directory to store the factory images. I will call that directory `roms`. You can do this in one line to save time:
+
+```bash
+mkdir -p ~/work/roms
+```
+
+Transfer the roms you have extracted into this directory:
+
+```bash
+cd ~/work/roms
+cp /path/to/your/rom .
+```
+
+Then move into the work directory:
+
+```bash
+cd ~/work
+```
+
+Download the latest version of coreboot:
+
+```bash
+git clone https://review.coreboot.org/coreboot
+```
+
+Move into the coreboot directory:
+
+```bash
+cd coreboot
+```
+
+Download the required submodules:
+
+```bash
+git submodule update --init --checkout
+```
+
+Build the `ifd` tool. This will be used to split the factory bios into it's different regions.
+
+```bash
+cd util/ifdtool && make
+```
+
+Use the rom from before to export the blobs and move them to your `roms` folder:
+
+```bash
+./ifdtool -x ~/work/roms/t440p-original.rom
+
+mv flashregion_0_flashdescriptor.bin ~/work/roms/ifd.bin
+
+mv flashregion_2_intel_me.bin ~/work/roms/me.bin
+
+mv flashregion_3_gbe.bin ~/work/roms/gbe.bin
+```
+
+Next, we need a `mrc.bin` file. We'll obtain this blob from a haswell Chromebook firmware image (peppy in this case) but first we need to
+build the `cbfstool` for extraction:
+
+```bash
+cd ~/coreboot
+
+make -C util/cbfstool
+
+cd util/chromeos
+
+./crosfirmware.sh peppy
+
+../cbfstool/cbfstool coreboot-*.bin extract -f mrc.bin -n mrc.bin -r RO_SECTION
+
+mv mrc.bin ~/work/roms/mrc.bin
+```
+# Configure Coreboot
+---
+## Step 12: Build Coreboot (On Main PC)
+
+**Note: if you run into issues with Python you may need to run: `sudo apt install python-is-python3` **
+
+Time to compile!
+
+First built the gcc toolchain
+```
+make crossgcc-i386 CPUS=X
+```
+X = the number of threads your CPU has.
+
+Build coreboot
+```
+make iasl
+make
+```
+This will produce a file ~/work/coreboot/build/coreboot.rom.
+
+Power on the Pi and copy that file to your ~/work/roms directory.
 ----------------------------------------------------------------------------------------------
 
 sudo apt update
@@ -344,60 +432,6 @@ sudo poweroff
 
 ----------------------------------------------------------------------------------------------------------------------
 
-## Step 3: Prepare the 'Main' Computer for Building Coreboot (On Main PC)
-
-
-Make a directory in your home dir to work in. For this example I will be calling it 'work'. You will also want a directory to store the factory images. I will call that directory 'roms' You can do this in one line to save time
-```
-mkdir -p ~/work/roms
-```
-Move into the work directory
-```
-cd ~/work
-```
-Download the latest version of ME_Cleaner from github
-```
-git clone https://github.com/corna/me_cleaner
-```
-  * [ ] Download the latest version of Coreboot
-```
-git clone  https://review.coreboot.org/coreboot
-```
-Move into the coreboot directory
-```
-cd ~/work/coreboot
-```
-Download the required submodules
-```
-git submodule update --init --checkout
-```
-Make a directory to hold some files specific to your T440p it will be needed later.
-```
-mkdir -p ~/work/coreboot/3rdparty/blobs/mainboard/lenovo/t420
-```
-Build the ifd tool. This will be used to split the factory bios into it's different regions.
-```
-cd ~/work/coreboot/utils/ifdtool
-make
-```
-## Step 12: Build Coreboot (On Main PC)
-
-Time to compile!
-
-First built the gcc toolchain
-```
-make crossgcc-i386 CPUS=X
-```
-X = the number of threads your CPU has.
-
-Build coreboot
-```
-make iasl
-make
-```
-This will produce a file ~/work/coreboot/build/coreboot.rom.
-
-Power on the Pi and copy that file to your ~/work/roms directory.
 ## Step 13: Write Coreboot to T440p (On RPI)
 Move to the roms directory
 ```
@@ -417,54 +451,6 @@ Congrats you have just flashed Coreboot.
 
 ------
 
-### Original ROM
-
-Combine the files to one ROM (the System sees these chips combined anyway)
-```
-cat 8mb_backup1.bin 4mb_backup1.bin > t440p-original.rom
-```
-SAVE THE ROM SOMEWHERE SAFE and in multiple locations!!!
-
-###Export blobs
-
-Clean old attepts, pull from github, checkout to master and build ifdtool
-```
-cd
-rm -rf ~/coreboot
-
-git clone https://review.coreboot.org/coreboot 
-cd ~/coreboot
-git checkout e1e762716cf925c621d58163133ed1c3e006a903
-git submodule update --init --checkout
-
-cd util/ifdtool && make
-```
-Use the rom from before, export the blobs and move them to your t4 folder:
-```
-./ifdtool -x ~/t4/t440p-original.rom
-
-mv flashregion_0_flashdescriptor.bin ~/t4/ifd.bin
-
-mv flashregion_2_intel_me.bin ~/t4/me.bin
-
-mv flashregion_3_gbe.bin ~/t4/gbe.bin
-```
-### Obtaining mrc.bin
-
-We'll obtain this blob from a haswell chromebook firmware image (peppy in this case) but first we need to build the cbfstool for extraction:
-```
-cd ~/coreboot
-
-make -C util/cbfstool
-
-cd util/chromeos
-
-./crosfirmware.sh peppy
-
-../cbfstool/cbfstool coreboot-*.bin extract -f mrc.bin -n mrc.bin -r RO_SECTION
-
-mv mrc.bin ~/t4/mrc.bin
-```
 ### Configuration
 
 Now the fun part :)
@@ -585,7 +571,7 @@ Then flash new ROM:
 sudo flashrom -p internal:laptop=force_I_want_a_brick -w ~/coreboot/build/coreboot.rom
 ```
 
-##Reverting to Stock
+## Reverting to Stock
 
 Remember the backup you made? Good thing you still have it ;)
 Either you messed up and can't boot - then you need to hardware flash, or you just want to have the old bios back so you can run hackintosh or whatever...

@@ -221,6 +221,10 @@ Use the -c option to specify your flash chip. Make sure to enter everything betw
 flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -c "W25Q32BV/W25Q32CV/W25Q32DV"
 ```
 
+**Note: if you get an error it may be due to a faulty connection; the clip may not be properly in place. 
+Try to reconnect the clip in this way: 
+power off your Raspberry Pi; disconnect the clip; connect it again; turn on your Raspberry Pi.**
+
 If no error message is displayed, we are ready to read the flash chip.
 We are going to take two reads and then compare the two.
 Each read will take some time depending on the chip. It could even take between 30 and 45 min. Don't worry if it seems like the Pi is hung.

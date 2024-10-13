@@ -79,6 +79,8 @@ So here you have it!
 enough horsepower to pull this off. If you're using a newer Raspberry Pi your mileage may vary. You could build coreboot on the T440p, just make sure
 that you build coreboot and move the resulting artifacts to the Raspberry Pi or its SD card before you disassemble the T440p
 
+![Some of the Materials Needed: Raspberry Pi, SD Card, Female to Female Breadboard Jumper Cables, Some of the Accessories for the CH341a SPI Flasher](../assets/img/2024-10-13/materials.jpg)
+
 # Update the Embedded Controller on the T440p
 It is a good idea to update the Embedded Controller to the latest version. The easiest way to do this is install the latest version of the factory bios. Coreboot is unable to touch the EC. You will be unable to update it after flashing unless you revert to the factory bios.
 
@@ -102,7 +104,7 @@ sudo raspi-config
 
 In `raspi-config` select `Interfacing options`
 
-![raspi-config - interfacing options](../assets/img/2024-10-13/raspi-config-interfacing-options.png)
+![raspi-config - Interfacing Options](../assets/img/2024-10-13/raspi-config-interfacing-options.png)
 
 _(credits: [tomvanveen](https://tomvanveen.eu/flashing-bios-chip-raspberry-pi/))_
 
@@ -110,7 +112,7 @@ Under interface options enable:
 - `P4 SPI`
 - `P5 I2C`
 
-![raspi-config - options to enable](../assets/img/2024-10-13/raspi-config-options-to-enable.png)
+![raspi-config - Options to Enable](../assets/img/2024-10-13/raspi-config-options-to-enable.png)
 
 _(credits: [tomvanveen](https://tomvanveen.eu/flashing-bios-chip-raspberry-pi/))_
 
@@ -121,7 +123,7 @@ mkdir ~/t4
 ```
 
 # Connect the Raspberry Pi to the Clip.
-Power off the Pi
+Power off the Pi.
 
 **Note: it is important to power off the Pi before you connect it to the BIOS chip. Failing to do so
 may damage your motherboard and brick your laptop, so don't forget to POWER YOUR PI OFF!**
@@ -134,13 +136,39 @@ Use the 6 female to female wire to connect the clip to the Pi:
 - Pi 24 > BIOS 1
 - Pi 25 > BIOS 4
 
+I've used this accessory from the CH341a SPI flasher. As you can see these numbers correspond to the numbers in the table above,
+so all the `BIOS N` in the table above correspond to the numbers on this socket:
+
+![Socket - Top](../assets/img/2024-10-13/socket-top.jpg)
+
+However, we cannot use the top of the socket: that's for the cable that is connected to the CH341a SPI clip.
+
+We will have to use the bottom pins:
+
+![Socket - Bottom](../assets/img/2024-10-13/socket-bottom.jpg)
+
+In the end it should look like this:
+
+![Socket with Cables](../assets/img/2024-10-13/socket-with-cables.jpg)
+
+For the Raspberry Pi, use this pinout diagram:
+
 ![Raspberry Pi - GPIO Pinout Diagram](../assets/img/2024-10-13/rpi-gpio-pinout-diagram.png)
 
 _(credits: [Raspberry Pi](https://www.raspberrypi.com/documentation/computers/images/GPIO-Pinout-Diagram-2.png?hash=df7d7847c57a1ca6d5b2617695de6d46))_
 
+So in the table above all the `Pi NN` refer to the numbers on this diagram.
+
 Pins 3 and 7 on the BIOS are not used.
 
-# Prepare the Lenovo ThinkPad T440p
+In the end, your Raspberry Pi should look like this:
+
+![Raspberry Pi with Cables - Left View](../assets/img/2024-10-13/pi-with-cables-lx.jpg)
+![Raspberry Pi with Cables - Right View](../assets/img/2024-10-13/pi-with-cables-rx.jpg)
+
+Finally, connect the clip to the socket. It can only connect in one way.
+
+# Prepare) the Lenovo ThinkPad T440p
 Take out the battery and unscrew the access door of your Lenovo ThinkPad T440p.
 Take it apart until you see both `EEPROM`-chips next to the RAM:
 

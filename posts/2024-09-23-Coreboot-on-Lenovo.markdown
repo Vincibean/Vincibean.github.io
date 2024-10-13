@@ -103,6 +103,7 @@ sudo raspi-config
 In `raspi-config` select `Interfacing options`
 
 ![raspi-config - interfacing options](../assets/img/2024-10-13/raspi-config-interfacing-options.png)
+
 _(credits: [tomvanveen](https://tomvanveen.eu/flashing-bios-chip-raspberry-pi/))_
 
 Under interface options enable:
@@ -110,6 +111,7 @@ Under interface options enable:
 - `P5 I2C`
 
 ![raspi-config - options to enable](../assets/img/2024-10-13/raspi-config-options-to-enable.png)
+
 _(credits: [tomvanveen](https://tomvanveen.eu/flashing-bios-chip-raspberry-pi/))_
 
 Make a directory in your home dir to work in and store the factory images. For this example I will be calling it `t4`:
@@ -133,6 +135,7 @@ Use the 6 female to female wire to connect the clip to the Pi:
 - Pi 25 > BIOS 4
 
 ![Raspberry Pi - GPIO Pinout Diagram](../assets/img/2024-10-13/rpi-gpio-pinout-diagram.png)
+
 _(credits: [Raspberry Pi](https://www.raspberrypi.com/documentation/computers/images/GPIO-Pinout-Diagram-2.png?hash=df7d7847c57a1ca6d5b2617695de6d46))_
 
 Pins 3 and 7 on the BIOS are not used.
@@ -142,6 +145,7 @@ Take out the battery and unscrew the access door of your Lenovo ThinkPad T440p.
 Take it apart until you see both `EEPROM`-chips next to the RAM:
 
 ![Raspberry Pi - GPIO Pinout Diagram](../assets/img/2024-10-13/t440p_all_flash_chips.jpg)
+
 _(credits: [Conor Burns](https://blog.0xcb.dev/lenovo-t440p-coreboot/))_
 
 Now you can connect the clip to the 4MB (also called top) BIOS chip.

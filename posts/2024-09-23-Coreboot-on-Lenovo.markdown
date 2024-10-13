@@ -577,9 +577,15 @@ sudo flashrom -p internal:laptop=force_I_want_a_brick -w ~/t4/t440p-original.rom
 
 Done.
 
----
+# Acknowledgements
+This article wouldn't have been possible without the hard work of a lot of people before me. 
+I've listed them all as Sources in the section below.
 
-Sources:
+As you may have noticed if you've opened even one of them, this article is pretty much just a glorified mash-up of all those sources.
+Therefore, if you've found this article useful, please thank the authors of those other sources: they are the real ones.
+On the other hand, if you haven't found this article useful (due to errors, for instance, or bad explanations) the blame is all mine.
+
+# Sources
 - [https://hackaday.com/2023/03/06/programming-spi-flash-chips-use-your-pico/](https://hackaday.com/2023/03/06/programming-spi-flash-chips-use-your-pico/)
 - [https://www.eevblog.com/forum/repair/ch341a-serial-memory-programmer-power-supply-fix/msg1323775/#msg1323775](https://www.eevblog.com/forum/repair/ch341a-serial-memory-programmer-power-supply-fix/msg1323775/#msg1323775)
 - [https://github.com/OpenIPC/wiki/blob/master/en/flash-chip-interfacing.md](https://github.com/OpenIPC/wiki/blob/master/en/flash-chip-interfacing.md)

@@ -189,7 +189,7 @@ In the end, your Raspberry Pi should look like this:
 
 Finally, connect the clip to the socket. It can only connect in one way.
 
-# Prepare) the Lenovo ThinkPad T440p
+# Prepare the Lenovo ThinkPad T440p
 Take out the battery and unscrew the access door of your Lenovo ThinkPad T440p.
 Take it apart until you see both `EEPROM`-chips next to the RAM:
 

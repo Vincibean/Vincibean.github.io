@@ -17,7 +17,7 @@ damage your SPI flash and also the southbridge that it's connected to, plus anyt
 - [Update the Embedded Controller on the T440p](#update-the-embedded-controller-on-the-t440p)
 - [Prepare the Raspberry Pi](#prepare-the-raspberry-pi)
 - [Connect the Raspberry Pi to the Clip.](#connect-the-raspberry-pi-to-the-clip)
-- [Prepare) the Lenovo ThinkPad T440p](#prepare--the-lenovo-thinkpad-t440p)
+- [Prepare the Lenovo ThinkPad T440p](#prepare--the-lenovo-thinkpad-t440p)
 - [Read the Flash Chip](#read-the-flash-chip)
 - [Obtain The Original ROM](#obtain-the-original-rom)
 - [Build Blobs](#build-blobs)

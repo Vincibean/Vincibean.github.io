@@ -129,12 +129,15 @@ Power off the Pi.
 may damage your motherboard and brick your laptop, so don't forget to POWER YOUR PI OFF!**
 
 Use the 6 female to female wire to connect the clip to the Pi:
-- Pi 17 > BIOS 8
-- Pi 19 > BIOS 5
-- Pi 21 > BIOS 2
-- Pi 23 > BIOS 7
-- Pi 24 > BIOS 1
-- Pi 25 > BIOS 4
+
+| Raspberry Pi | CH341a SPI Socket |
+|--------------|-------------------|
+| Pi 17        | BIOS 8            |
+| Pi 19        | BIOS 5            |
+| Pi 21        | BIOS 2            |
+| Pi 23        | BIOS 7            |
+| Pi 24        | BIOS 1            |
+| Pi 25        | BIOS 4            |
 
 I've used this accessory from the CH341a SPI flasher. As you can see these numbers correspond to the numbers in the table above,
 so all the `BIOS N` in the table above correspond to the numbers on this socket:

@@ -176,9 +176,7 @@ In the end it should look like this:
 
 For the Raspberry Pi, use this pinout diagram:
 
-![Raspberry Pi - GPIO Pinout Diagram](../assets/img/2024-10-13/rpi-gpio-pinout-diagram.png)
-
-_(credits: [Raspberry Pi](https://www.raspberrypi.com/documentation/computers/images/GPIO-Pinout-Diagram-2.png?hash=df7d7847c57a1ca6d5b2617695de6d46))_
+![Raspberry Pi - GPIO Pinout Diagram (credits: [Raspberry Pi](https://www.raspberrypi.com/documentation/computers/images/GPIO-Pinout-Diagram-2.png?hash=df7d7847c57a1ca6d5b2617695de6d46))](../assets/img/2024-10-13/rpi-gpio-pinout-diagram.png)
 
 So in the table above all the `Pi NN` refer to the numbers on this diagram.
 

@@ -266,6 +266,7 @@ cd ~/work
 Download the latest version of coreboot:
 
 ```bash
+cd ~
 git clone https://review.coreboot.org/coreboot
 ```
 
@@ -316,171 +317,36 @@ cd util/chromeos
 mv mrc.bin ~/work/roms/mrc.bin
 ```
 # Configure Coreboot
----
-## Step 12: Build Coreboot (On Main PC)
+You will have to configure coreboot before you can build it for you T440o.
 
-**Note: if you run into issues with Python you may need to run: `sudo apt install python-is-python3` **
+You can either add this known working config to `~/coreboot/.config` or you configure coreboot yourself via `nconfig`.
 
-Time to compile!
+## Easier Route: Preconfigured .config
+go back to the coreboot folder and open .config in nano or vim:
 
-First built the gcc toolchain
-```
-make crossgcc-i386 CPUS=X
-```
-X = the number of threads your CPU has.
-
-Build coreboot
-```
-make iasl
-make
-```
-This will produce a file ~/work/coreboot/build/coreboot.rom.
-
-Power on the Pi and copy that file to your ~/work/roms directory.
-----------------------------------------------------------------------------------------------
-
-sudo apt update
-sudo apt install nala
-sudo nala upgrade
-sudo reboot
-sudo nala upgrade
-sudo raspi-config 
-sudo nala install git build-essentials gnat flex bison libncurses5-dev wget zlib1g-dev
-sudo nala install git build-essential gnat flex bison libncurses5-dev wget zlib1g-dev
-sudo poweroff
-sudo nala upgrade
-sudo raspi-config
-cd work/roms/
-flashrom -p linu_spi:dev=/dev/spidev0.0,spispeed=512
-flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512
-sudo reboot
-cd work/roms/
-flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512
-flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -r 4mb_backup1.bin
-flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -r 4mb_backup2.bin
-diff 4mb_backup1.bin 4mb_backup2.bin 
-sudo poweroff
-which flashrom
-cd work/roms/
-flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512
-ls
-ls -latr
-flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -r 8mb_backup1.bin
-flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -c "W25Q64.v" -r 8mb_backup1.bin
-flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -c "W25Q64.V" -r 8mb_backup1.bin
-flashrom -L
-flashrom -L | less
-flashrom -v
-flashrom --version
-flashrom --help
-cd ../
-git clone https://github.com/flashrom/flashrom.git
-sudo nala remove flashrom
-cd flashrom/
-make
-ls
-sudo make install
-meson setup builddir
-meson compile -C builddir
-which flashrom
-meson test -C builddir
-meson install -C builddir
-sudo nala install libmocka
-sudo nala install libcmocka
-sudo nala install cmocka
-sudo nala install libcmocka-dev
-meson setup builddir
-meson compile -C builddir
-meson test -C builddir
-meson install -C builddir
-sudo su
-meson install -C builddir
-sudo meson install -C builddir
-cd work/roms/
-ls
-cd ../flashrom/
-meson install -C builddir
-cd ../flashrom/
-cd work/roms/
-cd ../flashrom/
-meson install -C builddir
-cd /home/dre/work/roms/
-pwd
-sudo nala install xscreensaver
-sudo reboot
-cd work/coreboot/build/
-dd if=coreboot.rom of=bottom.rom bs=1M count=8
-dd if=coreboot.rom of=top.rom bs=1M skip=8 
-flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512
-sudo reboot
-flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512
-cd work/coreboot/build/
-flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -w top.rom 
-flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -c "W25Q32BV/W25Q32CV/W25Q32DV" -w top.rom 
-flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -w top.rom 
-flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -c "W25Q32FV" -w top.rom 
-sudo poweroff
-cd work/coreboot/build/
-flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -c "W25Q32FV"
-flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -c "W25Q32FV" -w top.rom 
-sudo poweroff
-cd work/coreboot/build/
-flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512
-flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -c "W25Q64BV/W25Q64CV/W25Q64FV" -w bottom.rom 
-sudo poweroff
-
-
-----------------------------------------------------------------------------------------------------------------------
-
-## Step 13: Write Coreboot to T440p (On RPI)
-Move to the roms directory
-```
-cd ~/work/roms
-```
-Probe the chip to make sure its detected
-```
-flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=128
-```
-Write the coreboot image. This will take longer then reading the image.
-```
-flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=128 -c <chip name> -w coreboot.rom
-```
-After the write is verified power off the pi. Remove the Clip and reassemble the T440p.
-
-Congrats you have just flashed Coreboot.
-
-------
-
-### Configuration
-
-Now the fun part :)
-Either you add my known working config to ~/coreboot/.config, or you configure coreboot yourself via nconfig.
-
-### Easy and working route: my .config
-
-go back to the coreboot folder and open .config in nano or vim ...
-```
+```bash
 cd ~/coreboot
 nano .config
 ```
-Paste my config and edit the path to the t4 folder to reflect your path (if you followed me here so far you should just have to change the username to yours). Omit the last two lines if you have no bootsplash image - here is mine
-```
+
+Paste this config and edit the path to the t4 folder to reflect your path. You will also have to change the username to yours:
+
+```text
 CONFIG_USE_OPTION_TABLE=y
 CONFIG_TIMESTAMPS_ON_CONSOLE=y
 CONFIG_VENDOR_LENOVO=y
 CONFIG_CBFS_SIZE=0x200000
 CONFIG_LINEAR_FRAMEBUFFER_MAX_HEIGHT=1600
 CONFIG_LINEAR_FRAMEBUFFER_MAX_WIDTH=2560
-CONFIG_IFD_BIN_PATH="/home/conor/t4/ifd.bin"
-CONFIG_ME_BIN_PATH="/home/conor/t4/me.bin"
-CONFIG_GBE_BIN_PATH="/home/conor/t4/gbe.bin"
+CONFIG_IFD_BIN_PATH="/home/dre/work/roms/ifd.bin"
+CONFIG_ME_BIN_PATH="/home/dre/work/roms/me.bin"
+CONFIG_GBE_BIN_PATH="/home/dre/work/roms/gbe.bin"
 CONFIG_CONSOLE_CBMEM_BUFFER_SIZE=0x20000
 CONFIG_TIANOCORE_BOOT_TIMEOUT=2
 CONFIG_HAVE_IFD_BIN=y
 CONFIG_BOARD_LENOVO_THINKPAD_T440P=y
-CONFIG_TIANOCORE_BOOTSPLASH_FILE="/home/conor/t4/bootsplash.bmp"
 CONFIG_HAVE_MRC=y
-CONFIG_MRC_FILE="/home/conor/t4/mrc.bin"
+CONFIG_MRC_FILE="/home/dre/work/roms/mrc.bin"
 CONFIG_UART_PCI_ADDR=0x0
 CONFIG_VALIDATE_INTEL_DESCRIPTOR=y
 CONFIG_H8_SUPPORT_BT_ON_WIFI=y
@@ -500,125 +366,215 @@ CONFIG_PAYLOAD_TIANOCORE=y
 CONFIG_TIANOCORE_BOOT_MANAGER_ESCAPE=y
 CONFIG_TIANOCORE_SD_MMC_TIMEOUT=1000
 ```
-run nconfig to populate the other options and exit
-```
+
+run `nconfig` to populate the other options and exit:
+
+```bash
 make nconfig
 ```
-(save with F6 and exit with F9)
 
-#### Normal route: your .config
+(save with `F6` and exit with `F9`)
 
-Go back to the coreboot folder and run nconfig, select the device (Mainboard: Lenovo, Mainboard model: T440p, Chipset: add the blobs paths from before)
-Then configure to your liking...
-```
+**Note: some of the config options are deprecated; I will try to update them soon**
+
+## Harder Route: Your .config
+Go back to the coreboot folder and run `nconfig`, select the device (Mainboard: Lenovo, Mainboard model: T440p, Chipset: add the blobs paths from before)
+Then configure it to your liking:
+
+```bash
 cd ~/coreboot
-
 make nconfig
 ```
-(save with F6 and exit with F9)
 
-### Building and flashing
+(save with `F6` and exit with `F9`)
+
+# Building and flashing
+Time to compile!
+
+First: build the `gcc` toolchain:
+
+```bash
+make crossgcc-i386 CPUS=X
 ```
-make crossgcc-i386 CPUS=16
 
+where `X` is the number of threads your CPU has (e.g. 16) so please change it to your PC's specs.
+
+Then, build coreboot:
+
+```bash
+make iasl
 make
 ```
-(CPUS is the number of threads to use so please change it to your PC's specs)
 
-(Skip to "Update process" now if you already have coreboot installed)
-Split the built ROM for the 8MB chip (bottom) and the 4MB chip (top)
+**Note: if you run into issues with Python you may need to run: `sudo apt install python-is-python3` **
+
+This will produce a file `~/coreboot/build/coreboot.rom`.
+
+Copy that file to your Pi, in your `~/work/roms` directory. To be on the safe side, here I'm copying the whole `build` folder:
+
+```bash
+cp build/ /media/dre/rootfs/home/dre/work/coreboot/
 ```
+
+# Back to the Raspberry Pi: Flash Coreboot
+This is the last thing we needed to do on the PC. 
+You can now turn this device off and insert the SD card back into your Raspberry Pi.
+
+While we are at it, connect your Pi to the 4MB BIOS chip (top): we are going to need it soon.
+
+With that done, power up your Pi. 
+
+We first need to split the built ROM for the 8MB chip (bottom) and the 4MB chip (top)
+
+```bash
 cd ~/coreboot/build
-
 dd if=coreboot.rom of=bottom.rom bs=1M count=8
-
 dd if=coreboot.rom of=top.rom bs=1M skip=8 
 ```
-Connect the programmer to the 4MB chip and run:
-```
-sudo flashrom --programmer ch341a_spi -w top.rom
-```
-Connect the programmer to the 8MB chip and run:
-```
-sudo flashrom --programmer ch341a_spi -w bottom.rom
+
+With that done we are almost ready to flash.
+Before doing the actual flashing we are going to probe the chip, just like before.
+Run:
+
+```bash
+flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512
 ```
 
-### Boot
+If probing didn't give any error, run:
 
-and hope for the best ;D
+```bash
+cd work/coreboot/build/
+flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -c "W25Q32FV" -w top.rom 
+```
 
-## Update process
+Then, power off your Raspberry Pi and connect the clip to the 8MB BIOS chip (bottom):
+
+```bash
+sudo poweroff
+```
+
+Like before, we are going to probe the BIOS chip before doing any flashing.
+
+Turn on your Pi and run:
+
+```bash
+flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512
+```
+
+If probing didn't give any error, run:
+
+```bash
+cd work/coreboot/build/
+flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -c "W25Q64BV/W25Q64CV/W25Q64FV" -w bottom.rom 
+```
+
+Congrats! You have just flashed coreboot.
+
+After the write is verified power off the Pi, remove the clip and reassemble the T440p.
+
+It's now time to...
+
+# Boot
+and hope for the best ;-D
+
+# What To Do From Here
+
+## Update Process
+
+**Note: this section hasn't been tested**
 
 Build a new coreboot ROM.
-Then set the kernel to iomem=relaxed so it allows internal flashing.
+Then set the kernel to `iomem=relaxed` so it allows internal flashing.
 
-In /etc/default/grub add iomem=relaxed to the space seperated list:
-```
+In `/etc/default/grub` add `iomem=relaxed` to the space seperated list:
+
+```bash
 GRUB_CMDLINE_LINUX_DEFAULT="iomem=relaxed quit splash"
 ```
+
 Then apply the config:
-```
+
+```bash
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
+
 Reboot.
 
 Make a backup of the known working ROM:
-```
+
+```bash
 sudo flashrom -p internal:laptop=force_I_want_a_brick -r ~/t4/coreboot-backup.rom
 ```
-Then flash new ROM:
-```
+
+Then flash the new ROM:
+
+```bash
 sudo flashrom -p internal:laptop=force_I_want_a_brick -w ~/coreboot/build/coreboot.rom
 ```
 
-## Reverting to Stock
+## Revert to Stock
+
+**Note: this section hasn't been tested**
 
 Remember the backup you made? Good thing you still have it ;)
 Either you messed up and can't boot - then you need to hardware flash, or you just want to have the old bios back so you can run hackintosh or whatever...
-(In this tutorial the orignal ROM was named t440p.rom but in this part I'll refer to it as original_backup.rom)
+(In this tutorial the orignal ROM was named `t440p.rom` but in this part I'll refer to it as `original_backup.rom`)
 
 ### Can't boot
 
-Good thing you saved the t440p-original.rom in multiple places right?
+Good thing you saved the `t440p-original.rom` in multiple places right?
 Take you backup ROM and split it so you have a part for the 4MB chip and a part for the 8MB chip (the backup.rom should be 12MB):
-```
-dd if=t440p-original.rom of=bottom.rom bs=1M count=8
 
+```bash
+dd if=t440p-original.rom of=bottom.rom bs=1M count=8
 dd if=t440p-original.rom of=top.rom bs=1M skip=8 
 ```
+
 Connect the programmer to the 4MB chip and run:
-```
+
+```bash
 sudo flashrom --programmer ch341a_spi -w top.rom
 ```
+
 Connect the programmer to the 8MB chip and run:
-```
+
+```bash
 sudo flashrom --programmer ch341a_spi -w bottom.rom
 ```
+
 Done.
 
 ### Can boot
 
-Take your t440p-original (12MB)
-Then set the kernel to iomem=relaxed so it allows internal flashing.
+Take your `t440p-original.rom` (12MB)
+Then set the kernel to `iomem=relaxed` so it allows internal flashing.
 
-In /etc/default/grub add iomem=relaxed to the space seperated list:
-```
+In `/etc/default/grub` add `iomem=relaxed` to the space seperated list:
+
+```bash
 GRUB_CMDLINE_LINUX_DEFAULT="iomem=relaxed quit splash"
 ```
+
 Then apply the config:
-```
+
+```bash
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
+
 Reboot.
 
 Make a backup of the known working ROM:
-```
+
+```bash
 sudo flashrom -p internal:laptop=force_I_want_a_brick -r ~/t4/coreboot-backup.rom
 ```
+
 Then flash the backup ROM:
-```
+
+```bash
 sudo flashrom -p internal:laptop=force_I_want_a_brick -w ~/t4/t440p-original.rom
 ```
+
 Done.
 
 ---

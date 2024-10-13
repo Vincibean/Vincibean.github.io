@@ -12,6 +12,29 @@ damage your SPI flash and also the southbridge that it's connected to, plus anyt
 
 *Even with all these precautions, there is always a chance that this will brick your laptop. Do this at your own risk.*
 
+- [Introduction](#introduction)
+- [Materials](#materials)
+- [Update the Embedded Controller on the T440p](#update-the-embedded-controller-on-the-t440p)
+- [Prepare the Raspberry Pi](#prepare-the-raspberry-pi)
+- [Connect the Raspberry Pi to the Clip.](#connect-the-raspberry-pi-to-the-clip)
+- [Prepare) the Lenovo ThinkPad T440p](#prepare--the-lenovo-thinkpad-t440p)
+- [Read the Flash Chip](#read-the-flash-chip)
+- [Obtain The Original ROM](#obtain-the-original-rom)
+- [Build Blobs](#build-blobs)
+- [Configure Coreboot](#configure-coreboot)
+  * [Easier Route: Preconfigured .config](#easier-route--preconfigured-config)
+  * [Harder Route: Your .config](#harder-route--your-config)
+- [Building and flashing](#building-and-flashing)
+- [Back to the Raspberry Pi: Flash Coreboot](#back-to-the-raspberry-pi--flash-coreboot)
+- [Boot](#boot)
+- [What To Do From Here](#what-to-do-from-here)
+  * [Update Process](#update-process)
+  * [Revert to Stock](#revert-to-stock)
+    + [Can't boot](#can-t-boot)
+    + [Can boot](#can-boot)
+- [Acknowledgements](#acknowledgements)
+- [Sources](#sources)
+
 # Introduction
 
 The [Lenovo ThinkPad t440p](https://support.lenovo.com/nz/en/solutions/pd100280-detailed-specifications-thinkpad-t440p) is a great laptop 

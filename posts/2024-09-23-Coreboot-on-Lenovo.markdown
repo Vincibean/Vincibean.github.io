@@ -99,17 +99,25 @@ Access the raspberry pi config utility:
 ```bash
 sudo raspi-config
 ```
+
 In `raspi-config` select `Interfacing options`
+
+![raspi-config - interfacing options](../assets/img/2024-10-13/raspi-config-interfacing-options.png)
+_(credits: [tomvanveen](https://tomvanveen.eu/flashing-bios-chip-raspberry-pi/))_
 
 Under interface options enable:
 - `P4 SPI`
 - `P5 I2C`
+
+![raspi-config - options to enable](../assets/img/2024-10-13/raspi-config-options-to-enable.png)
+_(credits: [tomvanveen](https://tomvanveen.eu/flashing-bios-chip-raspberry-pi/))_
 
 Make a directory in your home dir to work in and store the factory images. For this example I will be calling it `t4`:
 
 ```bash
 mkdir ~/t4
 ```
+
 # Connect the Raspberry Pi to the Clip.
 Power off the Pi
 
@@ -117,12 +125,15 @@ Power off the Pi
 may damage your motherboard and brick your laptop, so don't forget to POWER YOUR PI OFF!**
 
 Use the 6 female to female wire to connect the clip to the Pi:
-- Pi 17 > Bios 8
-- Pi 19 > Bios 5
-- Pi 21 > Bios 2
-- Pi 23 > Bios 7
-- Pi 24 > Bios 1
-- Pi 25 > Bios 4
+- Pi 17 > BIOS 8
+- Pi 19 > BIOS 5
+- Pi 21 > BIOS 2
+- Pi 23 > BIOS 7
+- Pi 24 > BIOS 1
+- Pi 25 > BIOS 4
+
+![Raspberry Pi - GPIO Pinout Diagram](../assets/img/2024-10-13/rpi-gpio-pinout-diagram.png)
+_(credits: [Raspberry Pi](https://www.raspberrypi.com/documentation/computers/images/GPIO-Pinout-Diagram-2.png?hash=df7d7847c57a1ca6d5b2617695de6d46))_
 
 Pins 3 and 7 on the BIOS are not used.
 
@@ -130,31 +141,13 @@ Pins 3 and 7 on the BIOS are not used.
 Take out the battery and unscrew the access door of your Lenovo ThinkPad T440p.
 Take it apart until you see both `EEPROM`-chips next to the RAM:
 
+![Raspberry Pi - GPIO Pinout Diagram](../assets/img/2024-10-13/t440p_all_flash_chips.jpg)
+_(credits: [Conor Burns](https://blog.0xcb.dev/lenovo-t440p-coreboot/))_
 
-
-Connect the SPI flasher to the 4MB (also called top) chip and connect it to your PC
-```
-cd ~/t4/
-
-sudo flashrom --programmer ch341a_spi -r 4mb_backup1.bin
-
-sudo flashrom --programmer ch341a_spi -r 4mb_backup2.bin
-
-diff 4mb_backup1.bin 4mb_backup2.bin
-```
-Only if diff outputs nothing continue - else retry
-Then connect to the 8MB (also called bottom) chip and repeat:
-```
-sudo flashrom --programmer ch341a_spi -r 8mb_backup1.bin
-
-sudo flashrom --programmer ch341a_spi -r 8mb_backup2.bin
-
-diff 8mb_backup1.bin 8mb_backup2.bin
-```
-Again: only if it outputs nothing continue
+Now you can connect the clip to the 4MB (also called top) BIOS chip.
 
 # Read the Flash Chip
-Power on the Pi
+Power on the Pi.
 
 Open a terminal and move to the roms folder we created before:
 
@@ -168,8 +161,8 @@ To read and write the chip you will need to use a program called `Flashrom`. Let
 sudo apt install flashrom
 ```
 
-Use flashrom to probe the chip and make sure it is connected
-Use the -c option to specify your flash chip. Make sure to enter everything between the quotes
+Use flashrom to probe the chip and make sure it is connected.
+Use the -c option to specify your flash chip. Make sure to enter everything between the quotes:
 
 ```bash
 flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -c "W25Q32BV/W25Q32CV/W25Q32DV"
@@ -200,7 +193,7 @@ Open a terminal and move to the roms folder we created before:
 cd ~/work/roms
 ```
 
-Once again, use flashrom to probe the chip and make sure it is connected
+Once again, use flashrom to probe the chip and make sure it is connected:
 
 ```bash
 flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -c "W25Q32BV/W25Q32CV/W25Q32DV"
@@ -212,7 +205,6 @@ We are going to take two reads and then compare the two:
 ```bash
 flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -c "W25Q64BV/W25Q64CV/W25Q64FV" -r 8mb_backup1.bin 
 flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -c "W25Q64BV/W25Q64CV/W25Q64FV" -r 8mb_backup2.bin 
-
 diff 8mb_backup1.bin 8mb_backup2.bin
 ```
 
@@ -292,11 +284,8 @@ Use the rom from before to export the blobs and move them to your `roms` folder:
 
 ```bash
 ./ifdtool -x ~/work/roms/t440p-original.rom
-
 mv flashregion_0_flashdescriptor.bin ~/work/roms/ifd.bin
-
 mv flashregion_2_intel_me.bin ~/work/roms/me.bin
-
 mv flashregion_3_gbe.bin ~/work/roms/gbe.bin
 ```
 
@@ -305,17 +294,13 @@ build the `cbfstool` for extraction:
 
 ```bash
 cd ~/coreboot
-
 make -C util/cbfstool
-
 cd util/chromeos
-
 ./crosfirmware.sh peppy
-
 ../cbfstool/cbfstool coreboot-*.bin extract -f mrc.bin -n mrc.bin -r RO_SECTION
-
 mv mrc.bin ~/work/roms/mrc.bin
 ```
+
 # Configure Coreboot
 You will have to configure coreboot before you can build it for you T440o.
 

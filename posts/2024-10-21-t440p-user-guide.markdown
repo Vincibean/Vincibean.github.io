@@ -2,14 +2,9 @@
 title: Thinkpad T440p Ultimate Buyer's Guide
 ---
 
-I’ve compiled all **Thinkpad T440p** mods, hardware upgrades and software tweaks in one single always up-to-date post
+[Jérôme Loisel](https://github.com/jloisel)
 
-Thinkpad T440p Ultimate Buyer's Guide
-=====================================
-
- [Jérôme Loisel](https://github.com/jloisel)
-
-Like most people, I like fast [laptops](https://web.archive.org/web/20231019205252/https://en.wiktionary.org/wiki/laptop "laptops"). But damn, those can be [really expensive](https://web.archive.org/web/20231019205252/https://www.acer.com/ac/en/US/content/predator-series/predator21x "really expensive")! Is there an alternative? The short answer is: **Yes**.
+Like most people, I like fast laptops. But damn, those can be really expensive! Is there an alternative? The short answer is: **Yes**.
 
 Unknown to most people, the [Thinkpad T440p](https://web.archive.org/web/20231019205252/https://www.notebookcheck.net/Review-Lenovo-ThinkPad-T440p-20AN-006VGE-Notebook.108423.0.html "Thinkpad T440p") is a classic business laptop made in November `2013` (5 years!) by [Lenovo](https://web.archive.org/web/20231019205252/https://www.lenovo.com/ "Lenovo"). It’s one of the most customizable [Thinkpad T Series](https://web.archive.org/web/20231019205252/https://en.wikipedia.org/wiki/ThinkPad_T_series "Thinkpad T Series") I’ve ever seen!
 

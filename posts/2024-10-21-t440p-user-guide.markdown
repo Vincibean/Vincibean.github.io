@@ -6,9 +6,9 @@ title: Thinkpad T440p Ultimate Buyer's Guide
 
 Like most people, I like fast laptops. But damn, those can be really expensive! Is there an alternative? The short answer is: **Yes**.
 
-Unknown to most people, the [Thinkpad T440p](https://web.archive.org/web/20231019205252/https://www.notebookcheck.net/Review-Lenovo-ThinkPad-T440p-20AN-006VGE-Notebook.108423.0.html "Thinkpad T440p") is a classic business laptop made in November `2013` (5 years!) by [Lenovo](https://web.archive.org/web/20231019205252/https://www.lenovo.com/ "Lenovo"). It’s one of the most customizable [Thinkpad T Series](https://web.archive.org/web/20231019205252/https://en.wikipedia.org/wiki/ThinkPad_T_series "Thinkpad T Series") I’ve ever seen!
+Unknown to most people, the [Thinkpad T440p](https://www.notebookcheck.net/Review-Lenovo-ThinkPad-T440p-20AN-006VGE-Notebook.108423.0.html "Thinkpad T440p") is a classic business laptop made in November `2013` (5 years!) by [Lenovo](https://www.lenovo.com/ "Lenovo"). It’s one of the most customizable [Thinkpad T Series](https://en.wikipedia.org/wiki/ThinkPad_T_series "Thinkpad T Series") I’ve ever seen!
 
-Let’s see how we can **mod and upgrade** a used [T440p](https://web.archive.org/web/20231019205252/http://www.thinkwiki.org/wiki/Category:T440p "T440p") to build a **cheap but powerful laptop** (about `500€`) that can match nowadays high-end laptop performance.
+Let’s see how we can **mod and upgrade** a used [T440p](http://www.thinkwiki.org/wiki/Category:T440p "T440p") to build a **cheap but powerful laptop** (about `500€`) that can match nowadays high-end laptop performance.
 
 Buying a Unit
 -------------
@@ -21,21 +21,21 @@ The first thing to do obviously is to acquire a _used T440p_. And there are many
 
 This model also rapidly caught my attention because it’s:
 
-*   **Rock Solid**: it’s been designed to meet military specs ([MIL-SPEC](https://web.archive.org/web/20231019205252/https://en.wikipedia.org/wiki/United_States_Military_Standard "MIL-SPEC")) including extreme vibration, humidity, temperature and altitude tests. Much more resistant than any _crappy laptop_ you can buy for `500€`,
-*   **Easily Upgradable**: installing a new [Intel Haswell CPU](https://web.archive.org/web/20231019205252/https://ark.intel.com/fr/products/series/75023/4th-Generation-Intel-Core-i7-Processors#@mobile "Intel Haswell CPU"), RAM or SSD is _like a breeze_,
-*   **Dirt Cheap**: you can grab a used unit with an i5 / 4GB RAM / spinning HDD for around `150€` on [Ebay](https://web.archive.org/web/20231019205252/https://ebay.com/ "Ebay"),
+*   **Rock Solid**: it’s been designed to meet military specs ([MIL-SPEC](https://en.wikipedia.org/wiki/United_States_Military_Standard "MIL-SPEC")) including extreme vibration, humidity, temperature and altitude tests. Much more resistant than any _crappy laptop_ you can buy for `500€`,
+*   **Easily Upgradable**: installing a new [Intel Haswell CPU](https://ark.intel.com/fr/products/series/75023/4th-Generation-Intel-Core-i7-Processors#@mobile "Intel Haswell CPU"), RAM or SSD is _like a breeze_,
+*   **Dirt Cheap**: you can grab a used unit with an i5 / 4GB RAM / spinning HDD for around `150€` on [Ebay](https://ebay.com/ "Ebay"),
 *   **Powerful**: well, once CPU, RAM, Disk and LCD have been upgraded,
 *   **Proven Reliability**: when you buy new hardware, you’re never quite sure if it will last. When it’s `4` years old and still working like a charm, it’s a different story,
-*   **Repairable**: laptops today are [increasingly difficult to repair](https://web.archive.org/web/20231019205252/https://repair.org/stand-up/ "increasingly difficult to repair"), that’s a shame. I want something I can fix myself without any special tools (other than screwdrivers) needed,
+*   **Repairable**: laptops today are [increasingly difficult to repair](https://repair.org/stand-up/ "increasingly difficult to repair"), that’s a shame. I want something I can fix myself without any special tools (other than screwdrivers) needed,
 *   And **Quiet**: I don’t like to work near a `Jet Turbine` constantly spinning up and down each time I press a keyboard key,
 
 But, there’s also some bad news:
 
-> The **factory hardware sucks**. The _dual-core i5_ is completely outdated and the `HD+ 1600x900` [TN LCD Panel](https://web.archive.org/web/20231019205252/https://www.tnpanel.com/ "TN LCD Panel") is completely garbage. Needless to say `4GB RAM` is pretty tight nowadays too. The [spinning HDD](https://web.archive.org/web/20231019205252/https://en.wikipedia.org/wiki/Hard_disk_drive "spinning HDD") is terribly slow.
+> The **factory hardware sucks**. The _dual-core i5_ is completely outdated and the `HD+ 1600x900` [TN LCD Panel](https://www.tnpanel.com/ "TN LCD Panel") is completely garbage. Needless to say `4GB RAM` is pretty tight nowadays too. The [spinning HDD](https://en.wikipedia.org/wiki/Hard_disk_drive "spinning HDD") is terribly slow.
 
 The **good thing** is it’s **awesomely upgradeable** laptop base which supports high-end mobile CPUs, Sata 3 SSDs and tons of RAM (well `16GB max`, but that’s still good enough) for **almost nothing**. Plus, I like the idea of reusing old hardware instead of _throwing them in a landfill_.
 
-Overall, the T440p build quality is great, even [better than the T430](https://web.archive.org/web/20231019205252/https://medium.com/@n4ru/the-definitive-t430-modding-guide-3dff3f6a8e2e "better than the T430") for several reasons:
+Overall, the T440p build quality is great, even [better than the T430](https://medium.com/@n4ru/the-definitive-t430-modding-guide-3dff3f6a8e2e "better than the T430") for several reasons:
 
 *   Faster CPUs,
 *   Better build quality,
@@ -46,14 +46,14 @@ Overall, the T440p build quality is great, even [better than the T430](https://w
 
 ### Where to Buy
 
-![Ebay Auctions](https://web.archive.org/web/20231019205252im_/https://octoperf.com/img/blog/thinkpad-t440p-buyers-guide/ebay-auction.jpg "Ebay Auctions")
+![Ebay Auctions](../assets/img/2024-10-21/ebay-auction.jpg "Ebay Auctions")
 
-Fortunately, that’s pretty easy. There are [tons of them on Ebay](https://web.archive.org/web/20231019205252/https://www.ebay.fr/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313.TR12.TRC2.A0.H0.Xt440p.TRS0&_nkw=t440p&_sacat=0 "tons of them on Ebay"). In the USA, you can find some on [Craigslist](https://web.archive.org/web/20231019205252/https://craigslist.org/ "Craigslist") too. In France, we have [Leboncoin](https://web.archive.org/web/20231019205252/https://leboncoin.com/ "Leboncoin") which is pretty similar.
+Fortunately, that’s pretty easy. There are [tons of them on Ebay](https://www.ebay.fr/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313.TR12.TRC2.A0.H0.Xt440p.TRS0&_nkw=t440p&_sacat=0 "tons of them on Ebay"). In the USA, you can find some on [Craigslist](https://craigslist.org/ "Craigslist") too. In France, we have [Leboncoin](https://leboncoin.com/ "Leboncoin") which is pretty similar.
 
 **Ebay** is my favorite place to scour for used laptops:
 
-*   **Tons of sellers**: while ebay has widely declined in use, it’s still an awesome place for [used computer hardware](https://web.archive.org/web/20231019205252/https://www.ebay.com/bhp/computer-parts "used computer hardware"). You can find pretty much every single piece of hardware there. There are private used as well a companies selling there,
-*   **Secure Transactions**: always make sure to pay via [Paypal](https://web.archive.org/web/20231019205252/https://paypal.com/ "Paypal"). If you don’t have any `Paypal` account, go create one now. Paypal protects you in case you never receive the good or if it’s damaged.
+*   **Tons of sellers**: while ebay has widely declined in use, it’s still an awesome place for [used computer hardware](https://www.ebay.com/bhp/computer-parts "used computer hardware"). You can find pretty much every single piece of hardware there. There are private used as well a companies selling there,
+*   **Secure Transactions**: always make sure to pay via [Paypal](https://paypal.com/ "Paypal"). If you don’t have any `Paypal` account, go create one now. Paypal protects you in case you never receive the good or if it’s damaged.
 
 > If you see items listed on ebay with a **price too low to be true**, with _Wire Transfer_ payment, this is **probably a scam**. Don’t buy anything on Ebay without Paypal or you could end up being scammed.
 
@@ -69,13 +69,13 @@ I made the greatest deals by buying stuff via `Free Auctions` or `Make an Offer`
 
 ### Which Price
 
-A used T440p with [Intel I5 4300m](https://web.archive.org/web/20231019205252/https://ark.intel.com/fr/products/76347/Intel-Core-i5-4300M-Processor-3M-Cache-up-to-3-30-GHz- "Intel I5 4300m"), 4GB RAM and an HDD (usually `320GB`) can be found around `150€` shipped to your home. You will see many units sold as `Immediate Buy` for much more. Simply ignore them.
+A used T440p with [Intel I5 4300m](https://ark.intel.com/fr/products/76347/Intel-Core-i5-4300M-Processor-3M-Cache-up-to-3-30-GHz- "Intel I5 4300m"), 4GB RAM and an HDD (usually `320GB`) can be found around `150€` shipped to your home. You will see many units sold as `Immediate Buy` for much more. Simply ignore them.
 
 **Greatest deals** are around `100€` shipped for a used unit in good condition. (more about that later)
 
-> **Tip**: when looking for items on ebay, use the search `Show Only > Sold Items` option. Example: [Sold T440p](https://web.archive.org/web/20231019205252/https://www.ebay.com/sch/i.html?_from=R40&_nkw=t440p&_sacat=0&rt=nc&LH_Sold=1&LH_Complete=1 "Sold T440p"). That way, you can estimate the current price at which items are sold.
+> **Tip**: when looking for items on ebay, use the search `Show Only > Sold Items` option. Example: [Sold T440p](https://www.ebay.com/sch/i.html?_from=R40&_nkw=t440p&_sacat=0&rt=nc&LH_Sold=1&LH_Complete=1 "Sold T440p"). That way, you can estimate the current price at which items are sold.
 
-![Ebay Items Sold](https://web.archive.org/web/20231019205252im_/https://octoperf.com/img/blog/thinkpad-t440p-buyers-guide/ebay-sold-thinkpad-t440p.png "Ebay Items Sold")
+![Ebay Items Sold](../assets/img/2024-10-21/ebay-sold-thinkpad-t440p.png "Ebay Items Sold")
 
 It seems like this guide is transforming into an **Ebay buyer’s guide**! Just to make things clear: I’m not endorsed by Ebay in any sort. It’s just that **Ebay is a great place to buy used computer parts**.
 
@@ -85,9 +85,9 @@ Always be vigilent when the price seems too low. **Double-check the description 
 
 ### Used Laptop Grades
 
-![Damaged Phone](https://web.archive.org/web/20231019205252im_/https://octoperf.com/img/blog/thinkpad-t440p-buyers-guide/damaged-phone.jpeg "Damaged Phone")
+![Damaged Phone](../assets/img/2024-10-21/damaged-phone.jpeg "Damaged Phone")
 
-[Used Laptop Grades](https://web.archive.org/web/20231019205252/https://filmar.com/2017/01/15/grade-a-laptop/ "Used Laptop Grades") is a letter (`A`, `B` or `C`) which defines the overall state of the laptop:
+[Used Laptop Grades](https://filmar.com/2017/01/15/grade-a-laptop/ "Used Laptop Grades") is a letter (`A`, `B` or `C`) which defines the overall state of the laptop:
 
 *   **Grade A**: usually as new, or in mint condition. Safe to buy but usually much more expensive (because obviously rarer),
 *   **Grade B**: fully functional but may show some minor signs or wear, cosmetic damages like scratches, used keyboard, dents on covers and more. The unit is perfectly working but shows minor signs of use. While those are usually safe to buy, always **check the pictures** provided along with the item description to make sure it’s not damaged too much,
@@ -95,7 +95,7 @@ Always be vigilent when the price seems too low. **Double-check the description 
 
 Try to stick with Grade `A` or `B` items. While great deals can be found on Grade `C` items, those items can quickly be expensive to fix. Covers and others body laptop parts can be expensive.
 
-![Used Thinkpad T440p on Ebay](https://web.archive.org/web/20231019205252im_/https://octoperf.com/img/blog/thinkpad-t440p-buyers-guide/thinkpad-t440p-great-deals.png "Used Thinkpad T440p on Ebay")
+![Used Thinkpad T440p on Ebay](../assets/img/2024-10-21/thinkpad-t440p-great-deals.png "Used Thinkpad T440p on Ebay")
 
 _Cheap, but no battery and no optical drive are provided_
 
@@ -105,9 +105,9 @@ If you intend to buy a damaged laptop (but fully functional), make sure it’s l
 
 Don’t be afraid by items described in `German` or any other language. The wider you expand your research field, the most likely you are going to find the greatest deals. You just have to be aware that:
 
-*   **Keyboard may need to be replaced**: In France, we have [AZERTY](https://web.archive.org/web/20231019205252/https://en.wikipedia.org/wiki/AZERTY "AZERTY") keyboards, in Germany it’s `QWERTZ` and most other countries use `QWERTY` keyboards,
+*   **Keyboard may need to be replaced**: In France, we have [AZERTY](https://en.wikipedia.org/wiki/AZERTY "AZERTY") keyboards, in Germany it’s `QWERTZ` and most other countries use `QWERTY` keyboards,
 *   **Power Adapter may be needed**: UK units for example may need a replacement power cable as the electrical norms are not the same. Check the AC adapter supports both `110v` and `220v` input,
-*   **Operating System language**: while [Windows 10 Pro](https://web.archive.org/web/20231019205252/https://www.microsoft.com/fr-fr/p/windows-10-professionnel/df77x4d43rkt "Windows 10 Pro") language can be changed, beware of `Family Edition` which cannot.
+*   **Operating System language**: while Windows 10 Pro language can be changed, beware of `Family Edition` which cannot.
 
 Other than those points, laptops should be identical between countries. Make sure to add the price of those changes into the balance when evaluating an item total price. Laptop Keyboards are usually expensive (`50€+`). If you are keen to use a `QWERTY` keyboard, it’s can save you quite a bit of money.
 
@@ -118,11 +118,11 @@ Let’s see all the components which the `T440P` contains and how each can be up
 
 ### Disassembly
 
-![Thinkpad T440p Disassembly](https://web.archive.org/web/20231019205252im_/https://octoperf.com/img/blog/thinkpad-t440p-buyers-guide/lenovo-thinkpad-t440p-disassembly.jpg "Thinkpad T440p Disassembly")
+![Thinkpad T440p Disassembly](../assets/img/2024-10-21/lenovo-thinkpad-t440p-disassembly.jpg "Thinkpad T440p Disassembly")
 
 _Disassembly is easy: only 2 screws to get access to almost all the components!_
 
-[Thinkpad T440p Disassembly](https://web.archive.org/web/20231019205252/http://www.myfixguide.com/manual/lenovo-thinkpad-t440-disassembly/ "Thinkpad T440p Disassembly") is an extremely easy process:
+[Thinkpad T440p Disassembly](http://www.myfixguide.com/manual/lenovo-thinkpad-t440-disassembly/ "Thinkpad T440p Disassembly") is an extremely easy process:
 
 1.  Unscrew the two screws on the back,
 2.  Remove back-panel,
@@ -130,35 +130,35 @@ _Disassembly is easy: only 2 screws to get access to almost all the components!_
 
 You instantly gain access to most of the components:
 
-*   **CPU**: The [central processing unit](https://web.archive.org/web/20231019205252/https://en.wikipedia.org/wiki/Central_processing_unit "central processing unit") is the brain of the computer, performing all the computation. Performance varies depending on the type of CPU you use. Can be upgraded up to [I7 4910MQ](https://web.archive.org/web/20231019205252/https://ark.intel.com/fr/products/78939/Intel-Core-i7-4910MQ-Processor-8M-Cache-up-to-3-90-GHz- "I7 4910MQ"),
+*   **CPU**: The [central processing unit](https://en.wikipedia.org/wiki/Central_processing_unit "central processing unit") is the brain of the computer, performing all the computation. Performance varies depending on the type of CPU you use. Can be upgraded up to [I7 4910MQ](https://ark.intel.com/fr/products/78939/Intel-Core-i7-4910MQ-Processor-8M-Cache-up-to-3-90-GHz- "I7 4910MQ"),
 *   **CPU Heatsink**: removable without tearing-down the entire computer,
 *   **RAM**: 2 sodimm DDR3L (`1.35v`) supporting up to `16GB 2133Mhz DDR3` (See _Corsair Vengeance 2133Mhz DDR3 Sodimm_),
-*   **Storage**: supports one SATA3 HDD or [SSD](https://web.archive.org/web/20231019205252/https://en.wikipedia.org/wiki/Solid-state_drive "SSD"). Prefer the later one, performance difference between HDD and SSD is like **night and day**,
-*   **And WLAN card**: contains an Intel card by default, people willing to [hackintosh](https://web.archive.org/web/20231019205252/https://hackintosh.gitbook.io/-r-hackintosh-vanilla-desktop-guide/ "hackintosh") it will use [DW1560](https://web.archive.org/web/20231019205252/https://www.ebay.fr/itm/New-Broadcom-BCM94352Z-M-2-NGFF-802-11AC-867Mbps-BT-4-0-DW1560-f-Mac-Hackintosh-/252319175707 "DW1560") wifi card instead (compatible with macOS).
+*   **Storage**: supports one SATA3 HDD or [SSD](https://en.wikipedia.org/wiki/Solid-state_drive "SSD"). Prefer the later one, performance difference between HDD and SSD is like **night and day**,
+*   **And WLAN card**: contains an Intel card by default, people willing to hackintosh it will use [DW1560](https://www.ebay.fr/itm/New-Broadcom-BCM94352Z-M-2-NGFF-802-11AC-867Mbps-BT-4-0-DW1560-f-Mac-Hackintosh-/252319175707 "DW1560") wifi card instead (compatible with macOS).
 
 ### CPU
 
-The factory CPU is usually a boring I5 4300m, sometimes an [I7 4600M](https://web.archive.org/web/20231019205252/https://ark.intel.com/fr/products/76349/Intel-Core-i7-4600M-Processor-4M-Cache-up-to-3-60-GHz- "I7 4600M"). Both are dual core CPUs who lack a bit horsepower, but come with a nice `37W TDP`.What is that exactly?
+The factory CPU is usually a boring I5 4300m, sometimes an [I7 4600M](https://ark.intel.com/fr/products/76349/Intel-Core-i7-4600M-Processor-4M-Cache-up-to-3-60-GHz- "I7 4600M"). Both are dual core CPUs who lack a bit horsepower, but come with a nice `37W TDP`.What is that exactly?
 
 > CPU TDP is an estimation of the heat being generated by the CPU while running at full throttle. Given we’re in a laptop with limited cooling capabilities, `37W TDP` is nice to keep temperature low (as well as fan noise).
 
-The T440P supports [Haswell Mobile family](https://web.archive.org/web/20231019205252/https://ark.intel.com/products/codename/42174/Haswell#@mobile "Haswell Mobile family") CPUs on socket `FCPGA946`. Basically, any mobile `I7 4XXXMQ` will do just fine. there are pretty interesting replacement CPUs to consider:
+The T440P supports [Haswell Mobile family](https://ark.intel.com/products/codename/42174/Haswell#@mobile "Haswell Mobile family") CPUs on socket `FCPGA946`. Basically, any mobile `I7 4XXXMQ` will do just fine. there are pretty interesting replacement CPUs to consider:
 
-*   [I7 4702MQ](https://web.archive.org/web/20231019205252/https://ark.intel.com/products/75119/Intel-Core-i7-4702MQ-Processor-6M-Cache-up-to-3-20-GHz- "I7 4702MQ"): 4 cores, 8 threads, 3.2Ghz Turbo, 37W TDP. This is a reduced TDP quad-core CPU which is topping at `3.2Ghz` turbo boost. A very good performance to heat ratio,
-*   [I7 4712MQ](https://web.archive.org/web/20231019205252/https://ark.intel.com/products/78933/Intel-Core-i7-4712MQ-Processor-6M-Cache-up-to-3-30-GHz- "I7 4712MQ"): 4 cores, 8 threads, 3.3Ghz Turbo, 37W TDP. Slightly faster than the 4702MQ, 100Mhz more. Also a great balance between CPU power and heat.
+*   [I7 4702MQ](https://ark.intel.com/products/75119/Intel-Core-i7-4702MQ-Processor-6M-Cache-up-to-3-20-GHz- "I7 4702MQ"): 4 cores, 8 threads, 3.2Ghz Turbo, 37W TDP. This is a reduced TDP quad-core CPU which is topping at `3.2Ghz` turbo boost. A very good performance to heat ratio,
+*   [I7 4712MQ](https://ark.intel.com/products/78933/Intel-Core-i7-4712MQ-Processor-6M-Cache-up-to-3-30-GHz- "I7 4712MQ"): 4 cores, 8 threads, 3.3Ghz Turbo, 37W TDP. Slightly faster than the 4702MQ, 100Mhz more. Also a great balance between CPU power and heat.
 
-Those CPUs have `6MB SmartCache` and all support up to `32GB RAM` (4x slots needed, thought). Both can be found around `100€` on ebay. But, those are pretty rare. If you want a bit more [horsepower](https://web.archive.org/web/20231019205252/https://en.wikipedia.org/wiki/Horsepower "horsepower"), you can take a look at those CPUS:
+Those CPUs have `6MB SmartCache` and all support up to `32GB RAM` (4x slots needed, thought). Both can be found around `100€` on ebay. But, those are pretty rare. If you want a bit more [horsepower](https://en.wikipedia.org/wiki/Horsepower "horsepower"), you can take a look at those CPUS:
 
-*   [I7 4810MQ](https://web.archive.org/web/20231019205252/https://ark.intel.com/products/78937/Intel-Core-i7-4810MQ-Processor-6M-Cache-up-to-3-80-GHz- "I7 4810MQ"): 4 cores, 8 threads, 3.8Ghz Turbo, 47W TDP,
-*   or even [I7 4910MQ](https://web.archive.org/web/20231019205252/https://ark.intel.com/products/78939/Intel-Core-i7-4910MQ-Processor-8M-Cache-up-to-3-90-GHz- "I7 4910MQ"): 4 cores, 8 threads, 3.9Ghz Turbo, 47W TDP.
+*   [I7 4810MQ](https://ark.intel.com/products/78937/Intel-Core-i7-4810MQ-Processor-6M-Cache-up-to-3-80-GHz- "I7 4810MQ"): 4 cores, 8 threads, 3.8Ghz Turbo, 47W TDP,
+*   or even [I7 4910MQ](https://ark.intel.com/products/78939/Intel-Core-i7-4910MQ-Processor-8M-Cache-up-to-3-90-GHz- "I7 4910MQ"): 4 cores, 8 threads, 3.9Ghz Turbo, 47W TDP.
 
-I’m not even mentioning the intermediate CPUs like `4700MQ`, `4800MQ` or `4900MQ`. All those have a 47W TDP: they generate more heat, which means more fan noise to cool them down. While the **T440P** can handle those CPUs, I strongely recommend you to use a good thermal paste like [Artic MX4](https://web.archive.org/web/20231019205252/https://www.arctic.ac/eu_en/mx-4.html "Artic MX4").
+I’m not even mentioning the intermediate CPUs like `4700MQ`, `4800MQ` or `4900MQ`. All those have a 47W TDP: they generate more heat, which means more fan noise to cool them down. While the **T440P** can handle those CPUs, I strongely recommend you to use a good thermal paste like [Artic MX4](https://www.arctic.ac/eu_en/mx-4.html "Artic MX4").
 
-> A word on [Grizzly Thermal Conductonaut](https://web.archive.org/web/20231019205252/http://www.thermal-grizzly.com/en/products/26-conductonaut-en "Grizzly Thermal Conductonaut"): while providing much better thermal conductivity, this thermal paste is electrically conductive. Any leak from the CPU core and it can short the motherboard. **I wouldn’t recommend it**: if it leaks from the CPU, it could short the motherboard.
+> A word on [Grizzly Thermal Conductonaut](http://www.thermal-grizzly.com/en/products/26-conductonaut-en "Grizzly Thermal Conductonaut"): while providing much better thermal conductivity, this thermal paste is electrically conductive. Any leak from the CPU core and it can short the motherboard. **I wouldn’t recommend it**: if it leaks from the CPU, it could short the motherboard.
 
-> On the other side, [Grizzly Thermal Kryonaut](https://web.archive.org/web/20231019205252/http://www.thermal-grizzly.com/en/products/16-kryonaut-en "Grizzly Thermal Kryonaut") is one of the best thermal paste available with `12,5 W/mk` thermal conductivity. See expected gains for more information.
+> On the other side, [Grizzly Thermal Kryonaut](http://www.thermal-grizzly.com/en/products/16-kryonaut-en "Grizzly Thermal Kryonaut") is one of the best thermal paste available with `12,5 W/mk` thermal conductivity. See expected gains for more information.
 
-Those CPUs have an [integrated 4600HD graphic card](https://web.archive.org/web/20231019205252/https://www.notebookcheck.net/Intel-HD-Graphics-4600.86106.0.html "integrated 4600HD graphic card") which is plenty enough for a development workstation, web browsing, video and photo editing.
+Those CPUs have an [integrated 4600HD graphic card](https://www.notebookcheck.net/Intel-HD-Graphics-4600.86106.0.html "integrated 4600HD graphic card") which is plenty enough for a development workstation, web browsing, video and photo editing.
 
 The `Extreme` variants like the `4940MX` should **be avoided**: with a `57W TDP`, those beasts are running pretty hot. The T440P simply cannot cool them properly (but they fit). Also, you will have to upgrade the AC Adapter if doing so (135w or 170w AC Adapter recommended, look for `Thinkpad w540` AC Adapter).
 
@@ -166,32 +166,32 @@ The `4702MQ` or `4712MQ` are sweet-spot. They provide a great performance boost 
 
 Officially, those CPUs are not listed by Lenovo as compatible. But all have reported to work fine.
 
-> There is always a trade-off. Faster CPU means more heat, which in turn means hotter operational temperature. This could lead to [thermal throttling](https://web.archive.org/web/20231019205252/https://www.techspot.com/article/1638-what-is-thermal-throttling/ "thermal throttling"), thus reducing performance gains to nothing.
+> There is always a trade-off. Faster CPU means more heat, which in turn means hotter operational temperature. This could lead to [thermal throttling](https://www.techspot.com/article/1638-what-is-thermal-throttling/ "thermal throttling"), thus reducing performance gains to nothing.
 
 ### HD4600 or GT730m
 
 The T440P is available in 2 versions:
 
 *   **Intel HD Graphics**: the graphic card used is the one integrated to the CPU. In this case heatsink with part number `00HM902` is used,
-*   **Intel HD4600 + NVidia GT730M**: using [Nvidia Optimus](https://web.archive.org/web/20231019205252/https://en.wikipedia.org/wiki/Nvidia_Optimus "Nvidia Optimus"), graphic card being used is dynamically switching from HD4600 to [Nvidia GT730M](https://web.archive.org/web/20231019205252/https://www.geforce.com/hardware/notebook-gpus/geforce-gt-730m "Nvidia GT730M") depending on the load. Heatsink part number `00HM903` is used.
+*   **Intel HD4600 + NVidia GT730M**: using [Nvidia Optimus](https://en.wikipedia.org/wiki/Nvidia_Optimus "Nvidia Optimus"), graphic card being used is dynamically switching from HD4600 to [Nvidia GT730M](https://www.geforce.com/hardware/notebook-gpus/geforce-gt-730m "Nvidia GT730M") depending on the load. Heatsink part number `00HM903` is used.
 
-[Some users reported](https://web.archive.org/web/20231019205252/https://www.reddit.com/r/thinkpad/comments/7joaev/the_t440p_is_among_the_best_thinkpads_ive_ever/ "Some users reported") the GT730m was _only slightly_ faster than the HD4600, while still being unable to run most video games. Given GT730m is an added component prone to failure (and graphic cards fail often), it’s probably better to **stick with an HD4600 only motherboard**. The simpler the better!
+[Some users reported](https://www.reddit.com/r/thinkpad/comments/7joaev/the_t440p_is_among_the_best_thinkpads_ive_ever/ "Some users reported") the GT730m was _only slightly_ faster than the HD4600, while still being unable to run most video games. Given GT730m is an added component prone to failure (and graphic cards fail often), it’s probably better to **stick with an HD4600 only motherboard**. The simpler the better!
 
-> If you plan to install [macOS](https://web.archive.org/web/20231019205252/https://www.apple.com/macos/ "macOS"), it’s better to stick with the HD4600 version only. [Nvidia Optimus](https://web.archive.org/web/20231019205252/https://en.wikipedia.org/wiki/Nvidia_Optimus "Nvidia Optimus") GPU switching isn’t supported on macOS (they use a proprietary equivalent named GMUX).
+> If you plan to install [macOS](https://www.apple.com/macos/ "macOS"), it’s better to stick with the HD4600 version only. [Nvidia Optimus](https://en.wikipedia.org/wiki/Nvidia_Optimus "Nvidia Optimus") GPU switching isn’t supported on macOS (they use a proprietary equivalent named GMUX).
 
 Meanwhile, you can still upgrade the fan to the Nvidia variant at the same time ;)
 
 ### Heatsink / Fan
 
-According to [Lenovo T440P specs](https://web.archive.org/web/20231019205252/https://download.lenovo.com/parts/ThinkPad/t440p_frubom_20160614.pdf "Lenovo T440P specs"), they have four iGPU versions: `004X1853` (Toshiba fan, deprecated), `00HM902` (Toshiba), `04X3915` (AVC) and `04X3917` (Delta). The dGPU version are: `004X1854` (Toshiba fan, deprecated), `00HM903` (Toshiba), `04X3916` (AVC) and `04X3918` (Delta).
+According to [Lenovo T440P specs](https://download.lenovo.com/parts/ThinkPad/t440p_frubom_20160614.pdf "Lenovo T440P specs"), they have four iGPU versions: `004X1853` (Toshiba fan, deprecated), `00HM902` (Toshiba), `04X3915` (AVC) and `04X3917` (Delta). The dGPU version are: `004X1854` (Toshiba fan, deprecated), `00HM903` (Toshiba), `04X3916` (AVC) and `04X3918` (Delta).
 
 From user experience, the **Delta** and **Toshiba** variants are the quietest. `Toshiba fan, deprecated` should be avoided as those are fans reputable for making a lot of noise.
 
-![Thinkpad T440p Disassembly](https://web.archive.org/web/20231019205252im_/https://octoperf.com/img/blog/thinkpad-t440p-buyers-guide/t440p-fan-comparison.jpg "Thinkpad T440p Disassembly")
+![Thinkpad T440p Disassembly](../assets/img/2024-10-21/t440p-fan-comparison.jpg "Thinkpad T440p Disassembly")
 
 _With Nvidia GPU cooling left, and iGPU only on the right_
 
-According to a user who [upgraded the heatsink](https://web.archive.org/web/20231019205252/https://imgur.com/a/apRoNVf "upgraded the heatsink"):
+According to a user who [upgraded the heatsink](https://imgur.com/a/apRoNVf "upgraded the heatsink"):
 
 > The only problem for me is that the dGPU (Nvidia Discrete GPU) fan makes a terrible noise in my opinion, so I decided to replace it by the iGPU (Intel only) fan.
 
@@ -199,15 +199,15 @@ So the best solution is probably a mix: use the iGPU fan, while using the dGPU h
 
 ### RAM
 
-The T440p supports So-dimm DDR3L (1.35v) RAM modules with up to 16GB Total RAM (2x 8GB). Max supported speed is [2133Mhz](https://web.archive.org/web/20231019205252/https://www.reddit.com/r/thinkpad/comments/5q2l2k/if_you_still_in_doubt_about_overclocked_ram/ "2133Mhz") according to some users who successfully ran G-skill 2133Mhz 8GB CAS11 sticks.
+The T440p supports So-dimm DDR3L (1.35v) RAM modules with up to 16GB Total RAM (2x 8GB). Max supported speed is [2133Mhz](https://www.reddit.com/r/thinkpad/comments/5q2l2k/if_you_still_in_doubt_about_overclocked_ram/ "2133Mhz") according to some users who successfully ran G-skill 2133Mhz 8GB CAS11 sticks.
 
-![Thinkpad T440p 2133Mhz RAM](https://web.archive.org/web/20231019205252im_/https://octoperf.com/img/blog/thinkpad-t440p-buyers-guide/thinkpad-t440p-2133mhz-ram.jpg "Thinkpad T440p 2133Mhz RAM")
+![Thinkpad T440p 2133Mhz RAM](../assets/img/2024-10-21/thinkpad-t440p-2133mhz-ram.jpg "Thinkpad T440p 2133Mhz RAM")
 
 _G Skill 2133Mhz RAM installed and running!_
 
 While `2133Mhz` RAM can increase performance a bit, those sticks are extremely hard to find and very expensive (be prepared to pay up to `200€` for 16GB RAM). Standard `16GB 1600Mhz 1.35v Sodimm` cost about `80€` on Ebay.
 
-If you find cheap `2133Mhz` RAM, go for it. Otherwise, given [RAM speed barely improves performance](https://web.archive.org/web/20231019205252/https://techbuyersguru.com/does-ram-speed-matter-ddr3-1600-vs-1866-2133-and-2400-games "RAM speed barely improves performance"), `1600Mhz` sticks will be fine. There is no point in paying more for the RAM than for the entire laptop.
+If you find cheap `2133Mhz` RAM, go for it. Otherwise, given [RAM speed barely improves performance](https://techbuyersguru.com/does-ram-speed-matter-ddr3-1600-vs-1866-2133-and-2400-games "RAM speed barely improves performance"), `1600Mhz` sticks will be fine. There is no point in paying more for the RAM than for the entire laptop.
 
 ### HDD and SSD Storage
 
@@ -221,30 +221,30 @@ How? By using the following tricks:
 
 *   **WwAN M2 Port**: the WWAN card m2 port support an m2 2242 SSD. You can easily find a `256GB` m2 2242 SSD for about `50€`,
 
-![Thinkpad T440p 2133Mhz RAM](https://web.archive.org/web/20231019205252im_/https://octoperf.com/img/blog/thinkpad-t440p-buyers-guide/thinkpad-t440p-m2-ssd.jpg "Thinkpad T440p 2133Mhz RAM")
+![Thinkpad T440p 2133Mhz RAM](../assets/img/2024-10-21/thinkpad-t440p-m2-ssd.jpg "Thinkpad T440p 2133Mhz RAM")
 
 _M2 slot can be filled with an M2 2242 SSD (up to 256GB)_
 
 *   **2.5 inches disk bay**: it’s the built-in disk bay which can be used to either put an HDD or an SSD,
-*   **Optical Drive Replacement**: by using an an [HDD Drive Caddy Adapter](https://web.archive.org/web/20231019205252/https://www.ebay.com/itm/2nd-HDD-Hard-Drive-Caddy-Adapter-for-Lenovo-Thinkpad-T440p-T540-W540-optical-bay/262756118572?hash=item3d2d7c302c:g:iuwAAOSw4GVYS2ll "HDD Drive Caddy Adapter"), you can mount a second HDD or SSD by removing the optical drive (which has no more use nowadays).
+*   **Optical Drive Replacement**: by using an an [HDD Drive Caddy Adapter](https://www.ebay.com/itm/2nd-HDD-Hard-Drive-Caddy-Adapter-for-Lenovo-Thinkpad-T440p-T540-W540-optical-bay/262756118572?hash=item3d2d7c302c:g:iuwAAOSw4GVYS2ll "HDD Drive Caddy Adapter"), you can mount a second HDD or SSD by removing the optical drive (which has no more use nowadays).
 
 ### SATA Bay
 
-![Thinkpad T440p 2133Mhz RAM](https://web.archive.org/web/20231019205252im_/https://octoperf.com/img/blog/thinkpad-t440p-buyers-guide/t440p-optical-drive-replacement.jpg "Thinkpad T440p 2133Mhz RAM")
+![Thinkpad T440p 2133Mhz RAM](../assets/img/2024-10-21/t440p-optical-drive-replacement.jpg "Thinkpad T440p 2133Mhz RAM")
 
 _Removing Optical Drive to fit an HDD bay_
 
-Generic SATA bay aren’t usually of best quality. According to [saperkus](https://web.archive.org/web/20231019205252/https://www.reddit.com/user/saperkus "saperkus"), after a year or two of usage the HDD may not be recognized every few reboots. He suggest [ThinkPad 9.5mm SATA Hard Drive Bay Adapter IV](https://web.archive.org/web/20231019205252/https://support.lenovo.com/nl/en/solutions/pd029625 "ThinkPad 9.5mm SATA Hard Drive Bay Adapter IV") may be a much better deal. A [gallery on imgur](https://web.archive.org/web/20231019205252/https://imgur.com/a/MZ82cZr "gallery on imgur") shows how to install it.
+Generic SATA bay aren’t usually of best quality. According to [saperkus](https://www.reddit.com/user/saperkus "saperkus"), after a year or two of usage the HDD may not be recognized every few reboots. He suggest [ThinkPad 9.5mm SATA Hard Drive Bay Adapter IV](https://support.lenovo.com/nl/en/solutions/pd029625 "ThinkPad 9.5mm SATA Hard Drive Bay Adapter IV") may be a much better deal. A [gallery on imgur](https://imgur.com/a/MZ82cZr "gallery on imgur") shows how to install it.
 
-![Thinkpad SATA Bay](https://web.archive.org/web/20231019205252im_/https://octoperf.com/img/blog/thinkpad-t440p-buyers-guide/sata-bay.jpg "Thinkpad SATA Bay")
+![Thinkpad SATA Bay](../assets/img/2024-10-21/sata-bay.jpg "Thinkpad SATA Bay")
 
 _Generic (Chinese) SATA Bay which replaces the optical drive_
 
-![Thinkpad Official SATA Bay](https://web.archive.org/web/20231019205252im_/https://octoperf.com/img/blog/thinkpad-t440p-buyers-guide/thinkpad-official-sata-adapter.jpg "Thinkpad Official SATA Bay")
+![Thinkpad Official SATA Bay](../assets/img/2024-10-21/thinkpad-official-sata-adapter.jpg "Thinkpad Official SATA Bay")
 
-_ThinkPad 9.5mm [SATA Hard Drive Bay Adapter IV](https://web.archive.org/web/20231019205252/https://support.lenovo.com/nl/en/solutions/pd029625) (FRU `04X1602`)_
+_ThinkPad 9.5mm [SATA Hard Drive Bay Adapter IV](https://support.lenovo.com/nl/en/solutions/pd029625) (FRU `04X1602`)_
 
-That makes it pretty easy to fit 2x1TB SSD along with a 256GB m2 SSD inside the machine for a **whopping 2TB SSD Storage**! Or, you could fit 2x 2TB HDDs to reach more than `4TB` or storage inside a `14 inches` laptop. This way, you can for example setup a RAID1 using [mdadm](https://web.archive.org/web/20231019205252/https://en.wikipedia.org/wiki/Mdadm "mdadm") on linux with the 2x1TB HDDs while enjoying the lightning speed of the SSD for the operating system.
+That makes it pretty easy to fit 2x1TB SSD along with a 256GB m2 SSD inside the machine for a **whopping 2TB SSD Storage**! Or, you could fit 2x 2TB HDDs to reach more than `4TB` or storage inside a `14 inches` laptop. This way, you can for example setup a RAID1 using [mdadm](https://en.wikipedia.org/wiki/Mdadm "mdadm") on linux with the 2x1TB HDDs while enjoying the lightning speed of the SSD for the operating system.
 
 Keep in mind `M.2 2242 SSD` with only SATA interface are supported. Forget about `NVMe` ones. Some models to consider:
 
@@ -257,7 +257,7 @@ The T440p comes with a `135W` AC Adapter (part number `20AN000GUS`) by default. 
 
 ### LCD Panel
 
-Most T440p come with the crappy `1366x768` or `1600x900` TN LCD Panel. This TN panel has really poor colorimetric results and view angles. Most people change it for a better panel. According to a [LCD list found on reddit](https://web.archive.org/web/20231019205252/https://www.reddit.com/r/thinkpad/comments/86pw7g/best_t440p_ips_fhd_panel_march_2018/ "LCD list found on reddit"), these are the panels you could use:
+Most T440p come with the crappy `1366x768` or `1600x900` TN LCD Panel. This TN panel has really poor colorimetric results and view angles. Most people change it for a better panel. According to a [LCD list found on reddit](https://www.reddit.com/r/thinkpad/comments/86pw7g/best_t440p_ips_fhd_panel_march_2018/ "LCD list found on reddit"), these are the panels you could use:
 
 Make
 
@@ -285,7 +285,7 @@ Power
 
 AUO
 
-[B140HAN01.1](https://web.archive.org/web/20231019205252/http://www.panelook.com/B140HAN01.1_AUO_14.0_LCM_overview_18919.html "B140HAN01.1") (AUO113D)
+[B140HAN01.1](http://www.panelook.com/B140HAN01.1_AUO_14.0_LCM_overview_18919.html "B140HAN01.1") (AUO113D)
 
 IPS
 
@@ -309,7 +309,7 @@ Matte
 
 AUO
 
-[B140HAN01.2](https://web.archive.org/web/20231019205252/http://www.panelook.com/modeldetail.php?id=18920 "B140HAN01.2") (AUO123D)
+[B140HAN01.2](http://www.panelook.com/modeldetail.php?id=18920 "B140HAN01.2") (AUO123D)
 
 IPS
 
@@ -333,7 +333,7 @@ Matte
 
 AUO
 
-[B140HAN01.3](https://web.archive.org/web/20231019205252/http://www.panelook.com/modeldetail.php?id=23640 "B140HAN01.3") (AUO133D)
+[B140HAN01.3](http://www.panelook.com/modeldetail.php?id=23640 "B140HAN01.3") (AUO133D)
 
 IPS
 
@@ -357,7 +357,7 @@ Matte
 
 AUO
 
-[B140HAN01.4](https://web.archive.org/web/20231019205252/http://www.panelook.com/modeldetail.php?id=29921 "B140HAN01.4")
+[B140HAN01.4](http://www.panelook.com/modeldetail.php?id=29921 "B140HAN01.4")
 
 IPS
 
@@ -381,7 +381,7 @@ NA
 
 LG
 
-[LP140WF3-SPD1](https://web.archive.org/web/20231019205252/http://www.panelook.com/modeldetail.php?id=25943 "LP140WF3-SPD1") (LGD046D)
+[LP140WF3-SPD1](http://www.panelook.com/modeldetail.php?id=25943 "LP140WF3-SPD1") (LGD046D)
 
 IPS
 
@@ -405,7 +405,7 @@ Matte
 
 Innolux
 
-[N140HCE-EN1 Rev. C2](https://web.archive.org/web/20231019205252/http://www.panelook.com/modeldetail.php?id=28930 "N140HCE-EN1 Rev. C2") (CMN14D2)
+[N140HCE-EN1 Rev. C2](http://www.panelook.com/modeldetail.php?id=28930 "N140HCE-EN1 Rev. C2") (CMN14D2)
 
 IPS
 
@@ -427,70 +427,70 @@ Matte
 
 3.98W
 
-![Thinkpad T440p LG IPS](https://web.archive.org/web/20231019205252im_/https://octoperf.com/img/blog/thinkpad-t440p-buyers-guide/lg-display-fru.jpg "Thinkpad T440p LG IPS")
+![Thinkpad T440p LG IPS](../assets/img/2024-10-21/lg-display-fru.jpg "Thinkpad T440p LG IPS")
 
 _Showing LG LP140WF3-SPD1 LCD panel whose FRU is `04x5916`_
 
-It’s an [IPS panel](https://web.archive.org/web/20231019205252/https://en.wikipedia.org/wiki/IPS_panel "IPS panel"). IPS panels have much better colorimetry and view angles than TN panels, but higher response time. After discussing with someone customizing a lot of T440p and selling them on Ebay, he suggested the `LP140WF3-SPD1 (LGD046D)` (FRU 04x5916) is the best for this laptop. Several users have reported **better brightness** and much **better colorimetry**, even compared to `B140HAN01.2 or B140HAN01.3`.
+It’s an [IPS panel](https://en.wikipedia.org/wiki/IPS_panel "IPS panel"). IPS panels have much better colorimetry and view angles than TN panels, but higher response time. After discussing with someone customizing a lot of T440p and selling them on Ebay, he suggested the `LP140WF3-SPD1 (LGD046D)` (FRU 04x5916) is the best for this laptop. Several users have reported **better brightness** and much **better colorimetry**, even compared to `B140HAN01.2 or B140HAN01.3`.
 
-![Thinkpad T440p 2133Mhz RAM](https://web.archive.org/web/20231019205252im_/https://octoperf.com/img/blog/thinkpad-t440p-buyers-guide/tn-vs-ips.jpg "Thinkpad T440p 2133Mhz RAM")
+![Thinkpad T440p 2133Mhz RAM](../assets/img/2024-10-21/tn-vs-ips.jpg "Thinkpad T440p 2133Mhz RAM")
 
-_[TN Panel (left) vs IPS Panel (right)](https://web.archive.org/web/20231019205252/https://www.reddit.com/r/thinkpad/comments/9uolol/t420_tn_vs_t420_ips/) on a Thinkpad T420. TN looks blueish while IPS is much more natural!_
+_[TN Panel (left) vs IPS Panel (right)](https://www.reddit.com/r/thinkpad/comments/9uolol/t420_tn_vs_t420_ips/) on a Thinkpad T420. TN looks blueish while IPS is much more natural!_
 
-This is definitely a must have upgrade since the original TN panel is really awful. Those panels can be found around `50€` including shipping on Ebay too. If you plan to buy [N140HCE-EN1](https://web.archive.org/web/20231019205252/http://www.panelook.com/modeldetail.php?id=28930 "N140HCE-EN1") (CMN14D2), make sure to get `Rev. C2` (thanks [daftguy](https://web.archive.org/web/20231019205252/https://www.reddit.com/r/thinkpad/comments/9v8r8m/thinkpad_t440p_ultimate_buyers_guide/e9a88k2 "daftguy")) as Rev `C1` and Rev `B3` have screws holes placed differently. The screen won’t fit in that case.
+This is definitely a must have upgrade since the original TN panel is really awful. Those panels can be found around `50€` including shipping on Ebay too. If you plan to buy [N140HCE-EN1](http://www.panelook.com/modeldetail.php?id=28930 "N140HCE-EN1") (CMN14D2), make sure to get `Rev. C2` (thanks [daftguy](https://www.reddit.com/r/thinkpad/comments/9v8r8m/thinkpad_t440p_ultimate_buyers_guide/e9a88k2 "daftguy")) as Rev `C1` and Rev `B3` have screws holes placed differently. The screen won’t fit in that case.
 
 My two cents on how to find a good panel:
 
 *   **Avoid non-IPS**: some sellers are selling _non-IPS_ screens. IPS screens have better view angles and much better colorimetry,
-*   **Avoid Compatible Brands**: compatible LCDs are usually cheaper chinese copies with issues like [backlight bleeding](https://web.archive.org/web/20231019205252/http://www.lightbleedtest.com/ "backlight bleeding"), dead pixels or bad color calibration. Double check the seller’s description doesn’t include something like _You may receive a compatible LCD if out of stock_,
-*   **Seek 72% Color Gamut**: the LCD panels mentioned above have `72%` color gamut (which is pretty good). If you find another brand, use [PaneLook](https://web.archive.org/web/20231019205252/http://www.panelook.com/ "PaneLook") to check the LCD specs,
-*   **Be prepared to pay a higher price**: original [LP140WF3-SPD1](https://web.archive.org/web/20231019205252/http://www.panelook.com/modeldetail.php?id=25943 "LP140WF3-SPD1") or [N140HCE-EN1 Rev. C2](https://web.archive.org/web/20231019205252/http://www.panelook.com/modeldetail.php?id=28930 "N140HCE-EN1 Rev. C2") are usually more expensive than compatible brands. But always double check, some sellers buy compatible screens at high prices too,
-*   **Buy on different websites**: If you can’t find any on _Ebay_, try [AliExpress](https://web.archive.org/web/20231019205252/https://aliexpress.com/ "AliExpress").
+*   **Avoid Compatible Brands**: compatible LCDs are usually cheaper chinese copies with issues like [backlight bleeding](http://www.lightbleedtest.com/ "backlight bleeding"), dead pixels or bad color calibration. Double check the seller’s description doesn’t include something like _You may receive a compatible LCD if out of stock_,
+*   **Seek 72% Color Gamut**: the LCD panels mentioned above have `72%` color gamut (which is pretty good). If you find another brand, use [PaneLook](http://www.panelook.com/ "PaneLook") to check the LCD specs,
+*   **Be prepared to pay a higher price**: original [LP140WF3-SPD1](http://www.panelook.com/modeldetail.php?id=25943 "LP140WF3-SPD1") or [N140HCE-EN1 Rev. C2](http://www.panelook.com/modeldetail.php?id=28930 "N140HCE-EN1 Rev. C2") are usually more expensive than compatible brands. But always double check, some sellers buy compatible screens at high prices too,
+*   **Buy on different websites**: If you can’t find any on _Ebay_, try [AliExpress](https://aliexpress.com/ "AliExpress").
 
 Always make sure the item description doesn’t talk about _compatible_ LCD. Here is a video explaining how to replace the LCD (takes about 15 minutes).
 
 _T440p LCD can be replaced easily!_
 
-You can also Download the [T440p maintenance manual](https://web.archive.org/web/20231019205252/https://download.lenovo.com/ibmdl/pub/pc/pccbbs/mobiles_pdf/t440p_hmm_en_sp40a25467_01.pdf "T440p maintenance manual") and check the instructions from _Chapter 9, sub-section 2010_.
+You can also Download the [T440p maintenance manual](https://download.lenovo.com/ibmdl/pub/pc/pccbbs/mobiles_pdf/t440p_hmm_en_sp40a25467_01.pdf "T440p maintenance manual") and check the instructions from _Chapter 9, sub-section 2010_.
 
 ### Trackpad
 
-Some people complain about the flat touchpad introduced on the T440 series. The [T450s touchpad](https://web.archive.org/web/20231019205252/https://www.ebay.com/itm/132408842188 "T450s touchpad") can be retrofitted on the T440p.
+Some people complain about the flat touchpad introduced on the T440 series. The [T450s touchpad](https://www.ebay.com/itm/132408842188 "T450s touchpad") can be retrofitted on the T440p.
 
-![Thinkpad Trackpad Replacement](https://web.archive.org/web/20231019205252im_/https://octoperf.com/img/blog/thinkpad-t440p-buyers-guide/thinkpad-t440p-trackpad-replacement.jpg "Thinkpad Trackpad Replacement")
+![Thinkpad Trackpad Replacement](../assets/img/2024-10-21/thinkpad-t440p-trackpad-replacement.jpg "Thinkpad Trackpad Replacement")
 
-_Old vs new trackpad (see [reddit topic](https://web.archive.org/web/20231019205252/https://www.reddit.com/r/thinkpad/comments/8o08vr/finally_t440p_silly_trackpad_replacement/))_
+_Old vs new trackpad (see [reddit topic](https://www.reddit.com/r/thinkpad/comments/8o08vr/finally_t440p_silly_trackpad_replacement/))_
 
 The thing is the touchpad exists with two brands:
 
-*   [Synaptics](https://web.archive.org/web/20231019205252/https://www.synaptics.com/resources "Synaptics") (preferred),
-*   And [Alps](https://web.archive.org/web/20231019205252/https://www.alps.com/ "Alps").
+*   [Synaptics](https://www.synaptics.com/resources "Synaptics") (preferred),
+*   And [Alps](https://www.alps.com/ "Alps").
 
 Here is how to differentiate them: look at the back.
 
-![Thinkpad Alps Trackpad](https://web.archive.org/web/20231019205252im_/https://octoperf.com/img/blog/thinkpad-t440p-buyers-guide/synaptics-vs-alps.jpg "Thinkpad Alps Trackpad")
+![Thinkpad Alps Trackpad](../assets/img/2024-10-21/synaptics-vs-alps.jpg "Thinkpad Alps Trackpad")
 
 _Synaptics vs Alps Trackpad_
 
 Let’s see the differences between them.
 
-![Thinkpad Synaptics Trackpad](https://web.archive.org/web/20231019205252im_/https://octoperf.com/img/blog/thinkpad-t440p-buyers-guide/synaptics-trackpad.jpg "Thinkpad Synaptics Trackpad")
+![Thinkpad Synaptics Trackpad](../assets/img/2024-10-21/synaptics-trackpad.jpg "Thinkpad Synaptics Trackpad")
 
 _Thinkpad T450 Synaptics Trackpad_
 
-![Thinkpad Synaptics Trackpad](https://web.archive.org/web/20231019205252im_/https://octoperf.com/img/blog/thinkpad-t440p-buyers-guide/synaptics-trackpad-2.jpg "Thinkpad Synaptics Trackpad")
+![Thinkpad Synaptics Trackpad](../assets/img/2024-10-21/synaptics-trackpad-2.jpg "Thinkpad Synaptics Trackpad")
 
 _Also a Thinkpad T450 Synaptics Trackpad_
 
-Synaptics. Notice the (red/blue) buttons at the top, the double-lined sticker with B149220xx, the ‘dots’ in the metal backplate, the embossed number near the bottom. The **Synaptics** trackpad has rugged metal backplate and visible button clips. Sadly, it’s even [more complicated than that](https://web.archive.org/web/20231019205252/https://imgur.com/a/z5TgiBI "more complicated than that").
+Synaptics. Notice the (red/blue) buttons at the top, the double-lined sticker with B149220xx, the ‘dots’ in the metal backplate, the embossed number near the bottom. The **Synaptics** trackpad has rugged metal backplate and visible button clips. Sadly, it’s even [more complicated than that](https://imgur.com/a/z5TgiBI "more complicated than that").
 
-![Thinkpad Alps Trackpad](https://web.archive.org/web/20231019205252im_/https://octoperf.com/img/blog/thinkpad-t440p-buyers-guide/alps-trackpad.jpg "Thinkpad Alps Trackpad")
+![Thinkpad Alps Trackpad](../assets/img/2024-10-21/alps-trackpad.jpg "Thinkpad Alps Trackpad")
 
 _Thinkpad T450 Alps Trackpad_
 
 The **Alps** trackpad has smooth metal backplate.
 
-![Thinkpad Synaptics Trackpad](https://web.archive.org/web/20231019205252im_/https://octoperf.com/img/blog/thinkpad-t440p-buyers-guide/possible-alps-trackpad.jpg "Thinkpad Synaptics Trackpad")
+![Thinkpad Synaptics Trackpad](../assets/img/2024-10-21/possible-alps-trackpad.jpg "Thinkpad Synaptics Trackpad")
 
 _Alps or Synaptics?_
 
@@ -500,10 +500,10 @@ This is either another Alps Crap-Pad or a Synaptics Knock-Off. It has the dots, 
 
 You will possibly have the following issues:
 
-*   **Drivers on Windows 10**: For W10 drivers, you need to **change the Group Policy** to [stop W10 from updating drivers all the time](https://web.archive.org/web/20231019205252/https://www.rizonesoft.com/disable-windows-10-updates-group-policies/ "stop W10 from updating drivers all the time"). Otherwise, on each reboot, Windows 10 will overwrite the driver with the _broken_ one rendering the trackpad unusable,
+*   **Drivers on Windows 10**: For W10 drivers, you need to **change the Group Policy** to [stop W10 from updating drivers all the time](https://www.rizonesoft.com/disable-windows-10-updates-group-policies/ "stop W10 from updating drivers all the time"). Otherwise, on each reboot, Windows 10 will overwrite the driver with the _broken_ one rendering the trackpad unusable,
 *   **Difficult to replace**: the touchpad replacement requires you to tear down the computer completely.
 
-Most users report the Synaptics touchpad works better than Alps. Here is a [possible fix](https://web.archive.org/web/20231019205252/https://www.reddit.com/r/thinkpad/comments/3gyadr/solution_to_three_key_trackpad_driver_windows/ "possible fix") to the trackpad driver issue on Windows 10. If you’re using Linux or even macOS on your T440p, you won’t experience the drivers issue faced with Windows 10.
+Most users report the Synaptics touchpad works better than Alps. Here is a [possible fix](https://www.reddit.com/r/thinkpad/comments/3gyadr/solution_to_three_key_trackpad_driver_windows/ "possible fix") to the trackpad driver issue on Windows 10. If you’re using Linux or even macOS on your T440p, you won’t experience the drivers issue faced with Windows 10.
 
 Thanks to T440/p CLUNKPAD: Pics and installation of T450 Synaptics and Alps Touchpad+buttons, here are the procedures to install those trackpads (after replacement) on a t440p on Windows 7/10.
 
@@ -513,36 +513,36 @@ Only Works for **Windows 10 Pro** or **Windows 10 Enterprise Edition**:
 
 *   Open _Device Manager_:
 
-![Windows Start Menu](https://web.archive.org/web/20231019205252im_/https://octoperf.com/img/blog/thinkpad-t440p-buyers-guide/windows-start-menu.png "Windows Start Menu")
+![Windows Start Menu](../assets/img/2024-10-21/windows-start-menu.png "Windows Start Menu")
 
 *   Right-click on the Touchpad (**not the network adapter like shown**) and select properties,
 
-![Windows Device Manager](https://web.archive.org/web/20231019205252im_/https://octoperf.com/img/blog/thinkpad-t440p-buyers-guide/windows-device-manager.png "Windows Device Manager")
+![Windows Device Manager](../assets/img/2024-10-21/windows-device-manager.png "Windows Device Manager")
 
 *   Select the _Details tab_ and _Hardware Ids_ from the _Property_ select box,
 
-![Windows Device Properties](https://web.archive.org/web/20231019205252im_/https://octoperf.com/img/blog/thinkpad-t440p-buyers-guide/windows-device-properties.png "Windows Device Properties")
+![Windows Device Properties](../assets/img/2024-10-21/windows-device-properties.png "Windows Device Properties")
 
 *   Copy those ids into a text editor to keep them for later use,
 *   Open `Windows Group Manager` via Start Menu, then type `gpedit.msc`,
 
-![Windows Group Manager](https://web.archive.org/web/20231019205252im_/https://octoperf.com/img/blog/thinkpad-t440p-buyers-guide/windows-group-manager.png "Windows Group Manager")
+![Windows Group Manager](../assets/img/2024-10-21/windows-group-manager.png "Windows Group Manager")
 
 *   Select `System > Device Installation > Device Installation Restrictions` and setting `Prevent Installation of devices that match any of these Device IDs`,
 
-![Windows Device Installation Restrictions](https://web.archive.org/web/20231019205252im_/https://octoperf.com/img/blog/thinkpad-t440p-buyers-guide/windows-device-installation-restrictions.png "Windows Device Installation Restrictions")
+![Windows Device Installation Restrictions](../assets/img/2024-10-21/windows-device-installation-restrictions.png "Windows Device Installation Restrictions")
 
 *   Then switch it to `Enabled`, then click on `Show...` button to edit devices IDs,
 
-![Windows Prevent Installation Driver](https://web.archive.org/web/20231019205252im_/https://octoperf.com/img/blog/thinkpad-t440p-buyers-guide/windows-prevent-driver-installation-device.png "Windows Prevent Installation Driver")
+![Windows Prevent Installation Driver](../assets/img/2024-10-21/windows-prevent-driver-installation-device.png "Windows Prevent Installation Driver")
 
 *   Put the previously copied hardware ids of the touchpad:
 
-![Windows Device Hardware Ids](https://web.archive.org/web/20231019205252im_/https://octoperf.com/img/blog/thinkpad-t440p-buyers-guide/windows-device-hardware-ids.png "Windows Device Hardware Ids")
+![Windows Device Hardware Ids](../assets/img/2024-10-21/windows-device-hardware-ids.png "Windows Device Hardware Ids")
 
 *   Click on ‘OK’.
 
-You should then get an error message when Windows Update tries to install a new driver for that device. That’s expected! For more information, see [How to Prevent Windows from Automatically updating drivers](https://web.archive.org/web/20231019205252/https://www.howtogeek.com/263851/how-to-prevent-windows-from-automatically-updating-specific-drivers/ "How to Prevent Windows from Automatically updating drivers").
+You should then get an error message when Windows Update tries to install a new driver for that device. That’s expected! For more information, see [How to Prevent Windows from Automatically updating drivers](https://www.howtogeek.com/263851/how-to-prevent-windows-from-automatically-updating-specific-drivers/ "How to Prevent Windows from Automatically updating drivers").
 
 #### T450 Synaptics Driver in a T440/T440p
 
@@ -561,7 +561,7 @@ You should then get an error message when Windows Update tries to install a new 
 
 How to install an **ALPS** touchpad+buttons driver in a T440/T440p:
 
-1.  Download this (Lenovo Yoga 14) ALPS driver: [gh09ww.exe](https://web.archive.org/web/20231019205252/https://download.lenovo.com/ibmdl/pub/pc/pccbbs/mobiles/jfgh09ww.exe "gh09ww.exe"), do not install yet!
+1.  Download this (Lenovo Yoga 14) ALPS driver: [gh09ww.exe](https://download.lenovo.com/ibmdl/pub/pc/pccbbs/mobiles/jfgh09ww.exe "gh09ww.exe"), do not install yet!
 2.  Go to `Control Panel\Programs` and **Uninstall your current Synaptics/Alps drivers**,
 3.  Reboot,
 4.  Doubleclick the ALPS driver you just downloaded, run it, but **UNtick the option to install now**. It will unpack to `C:\DRIVERS\Win\ALPSUNAV`,
@@ -576,7 +576,7 @@ Keyboards can be replaced too. I’m going to replace the `QWERTY` backlit keybo
 
 There are four keyboard vendors who made keyboards for the t440p:
 
-*   [Chicony](https://web.archive.org/web/20231019205252/http://www.chicony.com.tw/ "Chicony"): FRU `04x0101`,
+*   [Chicony](http://www.chicony.com.tw/ "Chicony"): FRU `04x0101`,
 *   LiteON: FRU `04x0139`,
 *   Primax,
 *   And Sunrex.
@@ -585,17 +585,17 @@ According to a user:
 
 > I was able to compare two of them - **Chicony** (FRU `04x0101`) and **LiteON** (backlit `QWERTY US` layout, FRU `04x0139`). **LiteOn was superior** in case of build quality, typing feeling and backlit (it wasn’t hurting my eyes, like Chicony’s keyboard).
 
-You can also find a comparison between [Chicony and LiteOn Keyboard](https://web.archive.org/web/20231019205252/https://blog.turboturbo.net/2016/10/31/lenovo-thinkpad-keyboard-quality-chicony-vs-liteon/ "Chicony and LiteOn Keyboard") where the user prefers the **Chicony**. I think this is really a matter of personal taste. I guess most people will be fine with both of them.
+You can also find a comparison between [Chicony and LiteOn Keyboard](https://blog.turboturbo.net/2016/10/31/lenovo-thinkpad-keyboard-quality-chicony-vs-liteon/ "Chicony and LiteOn Keyboard") where the user prefers the **Chicony**. I think this is really a matter of personal taste. I guess most people will be fine with both of them.
 
 ### Wi-fi Card
 
-![Thinkpad T440p wi-fi card](https://web.archive.org/web/20231019205252im_/https://octoperf.com/img/blog/thinkpad-t440p-buyers-guide/thinkpad-t440p-wifi-card.jpg "Thinkpad T440p wi-fi card")
+![Thinkpad T440p wi-fi card](../assets/img/2024-10-21/thinkpad-t440p-wifi-card.jpg "Thinkpad T440p wi-fi card")
 
 _Wifi card is easy to physically replace_
 
-The most commonly replacement card being used is the [DW1820A](https://web.archive.org/web/20231019205252/https://fr.aliexpress.com/item/DW1820A-BCM94350ZAE-802-11ac-BT4-1-867-Mbps-wifi-Adaptateur-BCM94350-M-2-NGFF-DW1820-WiFi/32918457901.html "DW1820A"), especially if you want to **hackintosh the T440p**. Other than that, you may want to replace the original wifi card because it doesn’t support the `802.11AC` protocol, which claims up to `867Mbps` bandwidth.
+The most commonly replacement card being used is the [DW1820A](https://fr.aliexpress.com/item/DW1820A-BCM94350ZAE-802-11ac-BT4-1-867-Mbps-wifi-Adaptateur-BCM94350-M-2-NGFF-DW1820-WiFi/32918457901.html "DW1820A"), especially if you want to **hackintosh the T440p**. Other than that, you may want to replace the original wifi card because it doesn’t support the `802.11AC` protocol, which claims up to `867Mbps` bandwidth.
 
-The thing is, you probably need a bios mod otherwise the laptop may reject the wi-fi card due to _Wi-fi whitelist_. Not sure why Lenovo annoys the users with Wi-fi white lists, anyway I found [bios 2.32 to 2.35](https://web.archive.org/web/20231019205252/https://www.bios-mods.com/forum/Thread-REQUEST-Lenovo-Thinkpad-T440p-Whitelist-removal?page=4 "bios 2.32 to 2.35") may have buggy whitelist:
+The thing is, you probably need a bios mod otherwise the laptop may reject the wi-fi card due to _Wi-fi whitelist_. Not sure why Lenovo annoys the users with Wi-fi white lists, anyway I found [bios 2.32 to 2.35](https://www.bios-mods.com/forum/Thread-REQUEST-Lenovo-Thinkpad-T440p-Whitelist-removal?page=4 "bios 2.32 to 2.35") may have buggy whitelist:
 
 > There is a bug in `2.32-2.35` BIOS versions on T440 and T440s that allows to use an unbranded Wi-Fi (looks like the whitelist isn’t checked due to the bug). Most probably there is the same bug on T440p.
 
@@ -616,22 +616,22 @@ Software Upgrades
 
 ### Bios Mod
 
-Remember the [bios mod I did on the Helios 500](https://web.archive.org/web/20231019205252/https://octoperf.com/blog/2018/09/02/acer-predator-helios-500-mods/#helios-500-bios-mod "bios mod I did on the Helios 500")? You can do the [same on the T440p](https://web.archive.org/web/20231019205252/https://www.techinferno.com/index.php?/forums/topic/12229-lenovo-thinkpad-t440p-unlocked-bios-menu-wlan-wi-fi-whitelist-mod/ "same on the T440p"). Another forum to look for is [Bios Mods](https://web.archive.org/web/20231019205252/https://bios-mods.com/ "Bios Mods"). _Dude2002_ is a well known guy who can mod you bios within 30min once submitted!
+Remember the [bios mod I did on the Helios 500](https://octoperf.com/blog/2018/09/02/acer-predator-helios-500-mods/#helios-500-bios-mod "bios mod I did on the Helios 500")? You can do the [same on the T440p](https://www.techinferno.com/index.php?/forums/topic/12229-lenovo-thinkpad-t440p-unlocked-bios-menu-wlan-wi-fi-whitelist-mod/ "same on the T440p"). Another forum to look for is [Bios Mods](https://bios-mods.com/ "Bios Mods"). _Dude2002_ is a well known guy who can mod you bios within 30min once submitted!
 
-![Thinkpad T440p Bios Chip location](https://web.archive.org/web/20231019205252im_/https://octoperf.com/img/blog/thinkpad-t440p-buyers-guide/t440p-bios-chip.jpg "Thinkpad T440p Bios Chip location")
+![Thinkpad T440p Bios Chip location](../assets/img/2024-10-21/t440p-bios-chip.jpg "Thinkpad T440p Bios Chip location")
 
 _Bios chip is located near RAM sticks, directly accessible by removing cover_
 
 Bios mods are for a good reasons:
 
-*   **Wi-fi Whitelist**: if you wish to install a new wifi-card (to replace the stock Intel card) like the [DW1560](https://web.archive.org/web/20231019205252/https://fr.aliexpress.com/item/New-Broadcom-BCM94352Z-Dual-band-Wireless-AC-NGFF-802-11ac-867Mbps-WIFI-Bluetooth-BT-4-0/32717370245.html "DW1560"). By default, the bios blocks any _unauthorized_ wifi card which is not white-listed by Lenovo,
-*   **Advanced Menu Unlock**: advanced menu unlocking can enable features like CPU and RAM [overclocking](https://web.archive.org/web/20231019205252/https://en.wikipedia.org/wiki/Overclocking "overclocking") and other very advanced features (like adjusting DVMT memory for hackintosh).
+*   **Wi-fi Whitelist**: if you wish to install a new wifi-card (to replace the stock Intel card) like the [DW1560](https://fr.aliexpress.com/item/New-Broadcom-BCM94352Z-Dual-band-Wireless-AC-NGFF-802-11ac-867Mbps-WIFI-Bluetooth-BT-4-0/32717370245.html "DW1560"). By default, the bios blocks any _unauthorized_ wifi card which is not white-listed by Lenovo,
+*   **Advanced Menu Unlock**: advanced menu unlocking can enable features like CPU and RAM [overclocking](https://en.wikipedia.org/wiki/Overclocking "overclocking") and other very advanced features (like adjusting DVMT memory for hackintosh).
 
-In most cases, modding the bios is useful to install [macOS on the T440p](https://web.archive.org/web/20231019205252/https://www.tonymacx86.com/threads/guide-lenovo-thinkpad-t440p.233282/ "macOS on the T440p"). **Undervolting the CPU** directly from bios is a plus too: you don’t have to mess with **Intel XTU** or **ThrottleStop** to lower the CPU voltage.
+In most cases, modding the bios is useful to install [macOS on the T440p](https://www.tonymacx86.com/threads/guide-lenovo-thinkpad-t440p.233282/ "macOS on the T440p"). **Undervolting the CPU** directly from bios is a plus too: you don’t have to mess with **Intel XTU** or **ThrottleStop** to lower the CPU voltage.
 
 ### Intel XTU / ThrottleStop
 
-[Intel XTU](https://web.archive.org/web/20231019205252/https://downloadcenter.intel.com/fr/download/24075/Intel-Extreme-Tuning-Utility-Intel-XTU- "Intel XTU") and [ThrottleStop](https://web.archive.org/web/20231019205252/https://www.techpowerup.com/download/techpowerup-throttlestop/ "ThrottleStop") are useful software to tweak the CPU settings. Most people use it to **undervolt the CPU**.
+[Intel XTU](https://downloadcenter.intel.com/fr/download/24075/Intel-Extreme-Tuning-Utility-Intel-XTU- "Intel XTU") and [ThrottleStop](https://www.techpowerup.com/download/techpowerup-throttlestop/ "ThrottleStop") are useful software to tweak the CPU settings. Most people use it to **undervolt the CPU**.
 
 > Undervolting consists of lowering the CPU voltage to decrease CPU power consumption. Main benefits are high battery life, cooler CPU operation and lower fan noise.
 
@@ -643,19 +643,19 @@ _Lowering CPU Temp is interesting to extend CPU and battery life_
 
 The T440p is also popular because macOS can be installed on it thanks to Rehabman.
 
-![Thinkpad T440p Hackintosh](https://web.archive.org/web/20231019205252im_/https://octoperf.com/img/blog/thinkpad-t440p-buyers-guide/thinkpad-t440p-hackintosh.jpg "Thinkpad T440p Hackintosh")
+![Thinkpad T440p Hackintosh](../assets/img/2024-10-21/thinkpad-t440p-hackintosh.jpg "Thinkpad T440p Hackintosh")
 
 _High Sierra 10.13.6 and Mojave 10.14.1 have been reported to work fine too!_
 
-There is an [excellent guide on TonyMacx86](https://web.archive.org/web/20231019205252/https://www.tonymacx86.com/threads/guide-lenovo-thinkpad-t440.245562/ "excellent guide on TonyMacx86") and you should also find tons of help on [InsanelyMac](https://web.archive.org/web/20231019205252/https://www.insanelymac.com/forum/137-installation/ "InsanelyMac").
+There is an [excellent guide on TonyMacx86](https://www.tonymacx86.com/threads/guide-lenovo-thinkpad-t440.245562/ "excellent guide on TonyMacx86") and you should also find tons of help on [InsanelyMac](https://www.insanelymac.com/forum/137-installation/ "InsanelyMac").
 
-the T440p will easily match the performance of a [2018 MacBook Pro 13 inches](https://web.archive.org/web/20231019205252/https://www.apple.com/shop/buy-mac/macbook-pro "2018 MacBook Pro 13 inches") which costs `1800+€` with a quad core [Intel 8th generation 8259u](https://web.archive.org/web/20231019205252/https://ark.intel.com/products/135935/Intel-Core-i5-8259U-Processor-6M-Cache-up-to-3-80-GHz- "Intel 8th generation 8259u"). All of that for about `500€`, which is about `4x` cheaper than the macbook.
+the T440p will easily match the performance of a [2018 MacBook Pro 13 inches](https://www.apple.com/shop/buy-mac/macbook-pro "2018 MacBook Pro 13 inches") which costs `1800+€` with a quad core [Intel 8th generation 8259u](https://ark.intel.com/products/135935/Intel-Core-i5-8259U-Processor-6M-Cache-up-to-3-80-GHz- "Intel 8th generation 8259u"). All of that for about `500€`, which is about `4x` cheaper than the macbook.
 
 The downside? It requires advanced technical knowledge to get a t440p working on macOS. It’s not unfeasable, but it’s difficult for beginners. If you don’t feel comfortable doing this, I encourage you to **buy a macbook pro**. Much easier, but costly.
 
 > When you build a hackintosh, you essentially trade ease of use for money.
 
-Funny thing, some people are even [ditching their Macbook to get used thinkpads](https://web.archive.org/web/20231019205252/https://www.reddit.com/r/thinkpad/comments/8e2gpg/sold_my_macbook_pro_retina_in_january_and_got_my/ "ditching their Macbook to get used thinkpads"). The reason?
+Funny thing, some people are even [ditching their Macbook to get used thinkpads](https://www.reddit.com/r/thinkpad/comments/8e2gpg/sold_my_macbook_pro_retina_in_january_and_got_my/ "ditching their Macbook to get used thinkpads"). The reason?
 
 > I just missed being able to upgrade my laptop and the T440p offered that.
 

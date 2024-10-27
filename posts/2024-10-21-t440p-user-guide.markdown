@@ -22,11 +22,11 @@ The first thing to do obviously is to acquire a _used T440p_. And there are many
 This model also rapidly caught my attention because it’s:
 
 *   **Rock Solid**: it’s been designed to meet military specs ([MIL-SPEC](https://en.wikipedia.org/wiki/United_States_Military_Standard "MIL-SPEC")) including extreme vibration, humidity, temperature and altitude tests. Much more resistant than any _crappy laptop_ you can buy for `500€`,
-*   **Easily Upgradable**: installing a new [Intel Haswell CPU](https://ark.intel.com/fr/products/series/75023/4th-Generation-Intel-Core-i7-Processors#@mobile "Intel Haswell CPU"), RAM or SSD is _like a breeze_,
-*   **Dirt Cheap**: you can grab a used unit with an i5 / 4GB RAM / spinning HDD for around `150€` on [Ebay](https://ebay.com/ "Ebay"),
+*   **Easily Upgradable**: installing a new [Intel Haswell CPU](https://ark.intel.com/content/www/us/en/ark/products/series/75023/4th-generation-intel-core-i7-processors.html "Intel Haswell CPU"), RAM or SSD is _like a breeze_, 
+*   **Dirt Cheap**: you can grab a used unit with an i5 / 4GB RAM / spinning HDD for around `150€` on [Ebay](https://www.ebay.com/ "Ebay"),
 *   **Powerful**: well, once CPU, RAM, Disk and LCD have been upgraded,
 *   **Proven Reliability**: when you buy new hardware, you’re never quite sure if it will last. When it’s `4` years old and still working like a charm, it’s a different story,
-*   **Repairable**: laptops today are [increasingly difficult to repair](https://repair.org/stand-up/ "increasingly difficult to repair"), that’s a shame. I want something I can fix myself without any special tools (other than screwdrivers) needed,
+*   **Repairable**: laptops today are [increasingly difficult to repair](https://www.repair.org/stand-up/ "increasingly difficult to repair"), that’s a shame. I want something I can fix myself without any special tools (other than screwdrivers) needed,
 *   And **Quiet**: I don’t like to work near a `Jet Turbine` constantly spinning up and down each time I press a keyboard key,
 
 But, there’s also some bad news:
@@ -48,12 +48,12 @@ Overall, the T440p build quality is great, even [better than the T430](https://m
 
 ![Ebay Auctions](../assets/img/2024-10-21/ebay-auction.jpg "Ebay Auctions")
 
-Fortunately, that’s pretty easy. There are [tons of them on Ebay](https://www.ebay.fr/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313.TR12.TRC2.A0.H0.Xt440p.TRS0&_nkw=t440p&_sacat=0 "tons of them on Ebay"). In the USA, you can find some on [Craigslist](https://craigslist.org/ "Craigslist") too. In France, we have [Leboncoin](https://leboncoin.com/ "Leboncoin") which is pretty similar.
+Fortunately, that’s pretty easy. There are [tons of them on Ebay](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313.TR12.TRC2.A0.H0.Xt440p.TRS0&_nkw=t440p&_sacat=0 "tons of them on Ebay"). In the USA, you can find some on [Craigslist](https://www.craigslist.org/ "Craigslist") too. In France, we have [Leboncoin](https://leboncoin.com/ "Leboncoin") which is pretty similar.
 
 **Ebay** is my favorite place to scour for used laptops:
 
-*   **Tons of sellers**: while ebay has widely declined in use, it’s still an awesome place for [used computer hardware](https://www.ebay.com/bhp/computer-parts "used computer hardware"). You can find pretty much every single piece of hardware there. There are private used as well a companies selling there,
-*   **Secure Transactions**: always make sure to pay via [Paypal](https://paypal.com/ "Paypal"). If you don’t have any `Paypal` account, go create one now. Paypal protects you in case you never receive the good or if it’s damaged.
+*   **Tons of sellers**: while ebay has widely declined in use, it’s still an awesome place for [used computer hardware](https://www.ebay.com/b/Computer-Components-Parts/175673/bn_1643095 "used computer hardware"). You can find pretty much every single piece of hardware there. There are private used as well a companies selling there,
+*   **Secure Transactions**: always make sure to pay via [Paypal](https://www.paypal.com/ "Paypal"). If you don’t have any `Paypal` account, go create one now. Paypal protects you in case you never receive the good or if it’s damaged.
 
 > If you see items listed on ebay with a **price too low to be true**, with _Wire Transfer_ payment, this is **probably a scam**. Don’t buy anything on Ebay without Paypal or you could end up being scammed.
 
@@ -69,7 +69,7 @@ I made the greatest deals by buying stuff via `Free Auctions` or `Make an Offer`
 
 ### Which Price
 
-A used T440p with [Intel I5 4300m](https://ark.intel.com/fr/products/76347/Intel-Core-i5-4300M-Processor-3M-Cache-up-to-3-30-GHz- "Intel I5 4300m"), 4GB RAM and an HDD (usually `320GB`) can be found around `150€` shipped to your home. You will see many units sold as `Immediate Buy` for much more. Simply ignore them.
+A used T440p with [Intel I5 4300m](https://ark.intel.com/content/www/us/en/ark/products/76347/intel-core-i5-4300m-processor-3m-cache-up-to-3-30-ghz.html "Intel I5 4300m"), 4GB RAM and an HDD (usually `320GB`) can be found around `150€` shipped to your home. You will see many units sold as `Immediate Buy` for much more. Simply ignore them.
 
 **Greatest deals** are around `100€` shipped for a used unit in good condition. (more about that later)
 
@@ -130,33 +130,33 @@ _Disassembly is easy: only 2 screws to get access to almost all the components!_
 
 You instantly gain access to most of the components:
 
-*   **CPU**: The [central processing unit](https://en.wikipedia.org/wiki/Central_processing_unit "central processing unit") is the brain of the computer, performing all the computation. Performance varies depending on the type of CPU you use. Can be upgraded up to [I7 4910MQ](https://ark.intel.com/fr/products/78939/Intel-Core-i7-4910MQ-Processor-8M-Cache-up-to-3-90-GHz- "I7 4910MQ"),
+*   **CPU**: The [central processing unit](https://en.wikipedia.org/wiki/Central_processing_unit "central processing unit") is the brain of the computer, performing all the computation. Performance varies depending on the type of CPU you use. Can be upgraded up to [I7 4910MQ](https://ark.intel.com/content/www/us/en/ark/products/78939/intel-core-i7-4910mq-processor-8m-cache-up-to-3-90-ghz.html "I7 4910MQ"),
 *   **CPU Heatsink**: removable without tearing-down the entire computer,
 *   **RAM**: 2 sodimm DDR3L (`1.35v`) supporting up to `16GB 2133Mhz DDR3` (See _Corsair Vengeance 2133Mhz DDR3 Sodimm_),
 *   **Storage**: supports one SATA3 HDD or [SSD](https://en.wikipedia.org/wiki/Solid-state_drive "SSD"). Prefer the later one, performance difference between HDD and SSD is like **night and day**,
-*   **And WLAN card**: contains an Intel card by default, people willing to hackintosh it will use [DW1560](https://www.ebay.fr/itm/New-Broadcom-BCM94352Z-M-2-NGFF-802-11AC-867Mbps-BT-4-0-DW1560-f-Mac-Hackintosh-/252319175707 "DW1560") wifi card instead (compatible with macOS).
+*   **And WLAN card**: contains an Intel card by default, people willing to hackintosh it will use [DW1560](https://www.ebay.com/itm/New-Broadcom-BCM94352Z-M-2-NGFF-802-11AC-867Mbps-BT-4-0-DW1560-f-Mac-Hackintosh-/252319175707 "DW1560") wifi card instead (compatible with macOS).
 
 ### CPU
 
-The factory CPU is usually a boring I5 4300m, sometimes an [I7 4600M](https://ark.intel.com/fr/products/76349/Intel-Core-i7-4600M-Processor-4M-Cache-up-to-3-60-GHz- "I7 4600M"). Both are dual core CPUs who lack a bit horsepower, but come with a nice `37W TDP`.What is that exactly?
+The factory CPU is usually a boring I5 4300m, sometimes an [I7 4600M](https://ark.intel.com/content/www/us/en/ark/products/76349/intel-core-i7-4600m-processor-4m-cache-up-to-3-60-ghz.html "I7 4600M"). Both are dual core CPUs who lack a bit horsepower, but come with a nice `37W TDP`.What is that exactly?
 
 > CPU TDP is an estimation of the heat being generated by the CPU while running at full throttle. Given we’re in a laptop with limited cooling capabilities, `37W TDP` is nice to keep temperature low (as well as fan noise).
 
-The T440P supports [Haswell Mobile family](https://ark.intel.com/products/codename/42174/Haswell#@mobile "Haswell Mobile family") CPUs on socket `FCPGA946`. Basically, any mobile `I7 4XXXMQ` will do just fine. there are pretty interesting replacement CPUs to consider:
+The T440P supports [Haswell Mobile family](https://ark.intel.com/content/www/us/en/ark/products/codename/42174/products-formerly-haswell.html "Haswell Mobile family") CPUs on socket `FCPGA946`. Basically, any mobile `I7 4XXXMQ` will do just fine. there are pretty interesting replacement CPUs to consider:
 
-*   [I7 4702MQ](https://ark.intel.com/products/75119/Intel-Core-i7-4702MQ-Processor-6M-Cache-up-to-3-20-GHz- "I7 4702MQ"): 4 cores, 8 threads, 3.2Ghz Turbo, 37W TDP. This is a reduced TDP quad-core CPU which is topping at `3.2Ghz` turbo boost. A very good performance to heat ratio,
-*   [I7 4712MQ](https://ark.intel.com/products/78933/Intel-Core-i7-4712MQ-Processor-6M-Cache-up-to-3-30-GHz- "I7 4712MQ"): 4 cores, 8 threads, 3.3Ghz Turbo, 37W TDP. Slightly faster than the 4702MQ, 100Mhz more. Also a great balance between CPU power and heat.
+*   [I7 4702MQ](https://ark.intel.com/content/www/us/en/ark/products/75119/intel-core-i7-4702mq-processor-6m-cache-up-to-3-20-ghz.html "I7 4702MQ"): 4 cores, 8 threads, 3.2Ghz Turbo, 37W TDP. This is a reduced TDP quad-core CPU which is topping at `3.2Ghz` turbo boost. A very good performance to heat ratio,
+*   [I7 4712MQ](https://ark.intel.com/content/www/us/en/ark/products/78933/intel-core-i7-4712mq-processor-6m-cache-up-to-3-30-ghz.html "I7 4712MQ"): 4 cores, 8 threads, 3.3Ghz Turbo, 37W TDP. Slightly faster than the 4702MQ, 100Mhz more. Also a great balance between CPU power and heat.
 
 Those CPUs have `6MB SmartCache` and all support up to `32GB RAM` (4x slots needed, thought). Both can be found around `100€` on ebay. But, those are pretty rare. If you want a bit more [horsepower](https://en.wikipedia.org/wiki/Horsepower "horsepower"), you can take a look at those CPUS:
 
-*   [I7 4810MQ](https://ark.intel.com/products/78937/Intel-Core-i7-4810MQ-Processor-6M-Cache-up-to-3-80-GHz- "I7 4810MQ"): 4 cores, 8 threads, 3.8Ghz Turbo, 47W TDP,
-*   or even [I7 4910MQ](https://ark.intel.com/products/78939/Intel-Core-i7-4910MQ-Processor-8M-Cache-up-to-3-90-GHz- "I7 4910MQ"): 4 cores, 8 threads, 3.9Ghz Turbo, 47W TDP.
+*   [I7 4810MQ](https://ark.intel.com/content/www/us/en/ark/products/78937/intel-core-i7-4810mq-processor-6m-cache-up-to-3-80-ghz.html "I7 4810MQ"): 4 cores, 8 threads, 3.8Ghz Turbo, 47W TDP,
+*   or even [I7 4910MQ](https://ark.intel.com/content/www/us/en/ark/products/78939/intel-core-i7-4910mq-processor-8m-cache-up-to-3-90-ghz.html "I7 4910MQ"): 4 cores, 8 threads, 3.9Ghz Turbo, 47W TDP.
 
-I’m not even mentioning the intermediate CPUs like `4700MQ`, `4800MQ` or `4900MQ`. All those have a 47W TDP: they generate more heat, which means more fan noise to cool them down. While the **T440P** can handle those CPUs, I strongely recommend you to use a good thermal paste like [Artic MX4](https://www.arctic.ac/eu_en/mx-4.html "Artic MX4").
+I’m not even mentioning the intermediate CPUs like `4700MQ`, `4800MQ` or `4900MQ`. All those have a 47W TDP: they generate more heat, which means more fan noise to cool them down. While the **T440P** can handle those CPUs, I strongely recommend you to use a good thermal paste like [Artic MX4](https://www.arctic.de/en/MX-4/ACTCP00007B "Artic MX4").
 
-> A word on [Grizzly Thermal Conductonaut](http://www.thermal-grizzly.com/en/products/26-conductonaut-en "Grizzly Thermal Conductonaut"): while providing much better thermal conductivity, this thermal paste is electrically conductive. Any leak from the CPU core and it can short the motherboard. **I wouldn’t recommend it**: if it leaks from the CPU, it could short the motherboard.
+> A word on [Grizzly Thermal Conductonaut](https://www.thermal-grizzly.com/en/Conductonaut/S-TG-C "Grizzly Thermal Conductonaut"): while providing much better thermal conductivity, this thermal paste is electrically conductive. Any leak from the CPU core and it can short the motherboard. **I wouldn’t recommend it**: if it leaks from the CPU, it could short the motherboard.
 
-> On the other side, [Grizzly Thermal Kryonaut](http://www.thermal-grizzly.com/en/products/16-kryonaut-en "Grizzly Thermal Kryonaut") is one of the best thermal paste available with `12,5 W/mk` thermal conductivity. See expected gains for more information.
+> On the other side, [Grizzly Thermal Kryonaut](https://www.thermal-grizzly.com/en/Kryonaut/S-TG-K "Grizzly Thermal Kryonaut") is one of the best thermal paste available with `12,5 W/mk` thermal conductivity. See expected gains for more information.
 
 Those CPUs have an [integrated 4600HD graphic card](https://www.notebookcheck.net/Intel-HD-Graphics-4600.86106.0.html "integrated 4600HD graphic card") which is plenty enough for a development workstation, web browsing, video and photo editing.
 
@@ -173,11 +173,11 @@ Officially, those CPUs are not listed by Lenovo as compatible. But all have repo
 The T440P is available in 2 versions:
 
 *   **Intel HD Graphics**: the graphic card used is the one integrated to the CPU. In this case heatsink with part number `00HM902` is used,
-*   **Intel HD4600 + NVidia GT730M**: using [Nvidia Optimus](https://en.wikipedia.org/wiki/Nvidia_Optimus "Nvidia Optimus"), graphic card being used is dynamically switching from HD4600 to [Nvidia GT730M](https://www.geforce.com/hardware/notebook-gpus/geforce-gt-730m "Nvidia GT730M") depending on the load. Heatsink part number `00HM903` is used.
+*   **Intel HD4600 + NVidia GT730M**: using [Nvidia Optimus](https://en.wikipedia.org/wiki/Nvidia_Optimus "Nvidia Optimus"), graphic card being used is dynamically switching from HD4600 to [Nvidia GT730M](https://www.nvidia.com/en-gb/geforce/gaming-laptops/geforce-gt-730m/description/ "Nvidia GT730M") depending on the load. Heatsink part number `00HM903` is used.
 
 [Some users reported](https://www.reddit.com/r/thinkpad/comments/7joaev/the_t440p_is_among_the_best_thinkpads_ive_ever/ "Some users reported") the GT730m was _only slightly_ faster than the HD4600, while still being unable to run most video games. Given GT730m is an added component prone to failure (and graphic cards fail often), it’s probably better to **stick with an HD4600 only motherboard**. The simpler the better!
 
-> If you plan to install [macOS](https://www.apple.com/macos/ "macOS"), it’s better to stick with the HD4600 version only. [Nvidia Optimus](https://en.wikipedia.org/wiki/Nvidia_Optimus "Nvidia Optimus") GPU switching isn’t supported on macOS (they use a proprietary equivalent named GMUX).
+> If you plan to install [macOS](https://en.wikipedia.org/wiki/MacOS "macOS"), it’s better to stick with the HD4600 version only. [Nvidia Optimus](https://en.wikipedia.org/wiki/Nvidia_Optimus "Nvidia Optimus") GPU switching isn’t supported on macOS (they use a proprietary equivalent named GMUX).
 
 Meanwhile, you can still upgrade the fan to the Nvidia variant at the same time ;)
 
@@ -191,7 +191,7 @@ From user experience, the **Delta** and **Toshiba** variants are the quietest. `
 
 _With Nvidia GPU cooling left, and iGPU only on the right_
 
-According to a user who [upgraded the heatsink](https://imgur.com/a/apRoNVf "upgraded the heatsink"):
+According to a user who [upgraded the heatsink](https://imgur.com/a/t440p-dgpu-heatsing-on-igpu-version-apRoNVf "upgraded the heatsink"):
 
 > The only problem for me is that the dGPU (Nvidia Discrete GPU) fan makes a terrible noise in my opinion, so I decided to replace it by the iGPU (Intel only) fan.
 
@@ -234,7 +234,7 @@ _M2 slot can be filled with an M2 2242 SSD (up to 256GB)_
 
 _Removing Optical Drive to fit an HDD bay_
 
-Generic SATA bay aren’t usually of best quality. According to [saperkus](https://www.reddit.com/user/saperkus "saperkus"), after a year or two of usage the HDD may not be recognized every few reboots. He suggest [ThinkPad 9.5mm SATA Hard Drive Bay Adapter IV](https://support.lenovo.com/nl/en/solutions/pd029625 "ThinkPad 9.5mm SATA Hard Drive Bay Adapter IV") may be a much better deal. A [gallery on imgur](https://imgur.com/a/MZ82cZr "gallery on imgur") shows how to install it.
+Generic SATA bay aren’t usually of best quality. According to [saperkus](https://www.reddit.com/user/saperkus "saperkus"), after a year or two of usage the HDD may not be recognized every few reboots. He suggest [ThinkPad 9.5mm SATA Hard Drive Bay Adapter IV](https://support.lenovo.com/us/en/solutions/pd029625 "ThinkPad 9.5mm SATA Hard Drive Bay Adapter IV") may be a much better deal. A [gallery on imgur](https://imgur.com/a/thinkpad-9-5mm-sata-hard-drive-bay-adapter-iv-MZ82cZr "gallery on imgur") shows how to install it.
 
 ![Thinkpad SATA Bay](../assets/img/2024-10-21/sata-bay.jpg "Thinkpad SATA Bay")
 
@@ -242,7 +242,7 @@ _Generic (Chinese) SATA Bay which replaces the optical drive_
 
 ![Thinkpad Official SATA Bay](../assets/img/2024-10-21/thinkpad-official-sata-adapter.jpg "Thinkpad Official SATA Bay")
 
-_ThinkPad 9.5mm [SATA Hard Drive Bay Adapter IV](https://support.lenovo.com/nl/en/solutions/pd029625) (FRU `04X1602`)_
+_ThinkPad 9.5mm [SATA Hard Drive Bay Adapter IV](https://support.lenovo.com/us/en/solutions/pd029625) (FRU `04X1602`)_
 
 That makes it pretty easy to fit 2x1TB SSD along with a 256GB m2 SSD inside the machine for a **whopping 2TB SSD Storage**! Or, you could fit 2x 2TB HDDs to reach more than `4TB` or storage inside a `14 inches` laptop. This way, you can for example setup a RAID1 using [mdadm](https://en.wikipedia.org/wiki/Mdadm "mdadm") on linux with the 2x1TB HDDs while enjoying the lightning speed of the SSD for the operating system.
 
@@ -285,7 +285,7 @@ Power
 
 AUO
 
-[B140HAN01.1](http://www.panelook.com/B140HAN01.1_AUO_14.0_LCM_overview_18919.html "B140HAN01.1") (AUO113D)
+[B140HAN01.1](https://www.panelook.com/B140HAN01.1_AUO_14.0_LCM_overview_18919.html "B140HAN01.1") (AUO113D)
 
 IPS
 
@@ -309,7 +309,7 @@ Matte
 
 AUO
 
-[B140HAN01.2](http://www.panelook.com/modeldetail.php?id=18920 "B140HAN01.2") (AUO123D)
+[B140HAN01.2](https://www.panelook.com/modeldetail.php?id=18920 "B140HAN01.2") (AUO123D)
 
 IPS
 
@@ -333,7 +333,7 @@ Matte
 
 AUO
 
-[B140HAN01.3](http://www.panelook.com/modeldetail.php?id=23640 "B140HAN01.3") (AUO133D)
+[B140HAN01.3](https://www.panelook.com/modeldetail.php?id=23640 "B140HAN01.3") (AUO133D)
 
 IPS
 
@@ -357,7 +357,7 @@ Matte
 
 AUO
 
-[B140HAN01.4](http://www.panelook.com/modeldetail.php?id=29921 "B140HAN01.4")
+[B140HAN01.4](https://www.panelook.com/modeldetail.php?id=29921 "B140HAN01.4")
 
 IPS
 
@@ -381,7 +381,7 @@ NA
 
 LG
 
-[LP140WF3-SPD1](http://www.panelook.com/modeldetail.php?id=25943 "LP140WF3-SPD1") (LGD046D)
+[LP140WF3-SPD1](https://www.panelook.com/modeldetail.php?id=25943 "LP140WF3-SPD1") (LGD046D)
 
 IPS
 
@@ -405,7 +405,7 @@ Matte
 
 Innolux
 
-[N140HCE-EN1 Rev. C2](http://www.panelook.com/modeldetail.php?id=28930 "N140HCE-EN1 Rev. C2") (CMN14D2)
+[N140HCE-EN1 Rev. C2](https://www.panelook.com/modeldetail.php?id=28930 "N140HCE-EN1 Rev. C2") (CMN14D2)
 
 IPS
 
@@ -437,15 +437,15 @@ It’s an [IPS panel](https://en.wikipedia.org/wiki/IPS_panel "IPS panel"). IPS 
 
 _[TN Panel (left) vs IPS Panel (right)](https://www.reddit.com/r/thinkpad/comments/9uolol/t420_tn_vs_t420_ips/) on a Thinkpad T420. TN looks blueish while IPS is much more natural!_
 
-This is definitely a must have upgrade since the original TN panel is really awful. Those panels can be found around `50€` including shipping on Ebay too. If you plan to buy [N140HCE-EN1](http://www.panelook.com/modeldetail.php?id=28930 "N140HCE-EN1") (CMN14D2), make sure to get `Rev. C2` (thanks [daftguy](https://www.reddit.com/r/thinkpad/comments/9v8r8m/thinkpad_t440p_ultimate_buyers_guide/e9a88k2 "daftguy")) as Rev `C1` and Rev `B3` have screws holes placed differently. The screen won’t fit in that case.
+This is definitely a must have upgrade since the original TN panel is really awful. Those panels can be found around `50€` including shipping on Ebay too. If you plan to buy [N140HCE-EN1](https://www.panelook.com/modeldetail.php?id=28930 "N140HCE-EN1") (CMN14D2), make sure to get `Rev. C2` (thanks [daftguy](https://www.reddit.com/r/thinkpad/comments/9v8r8m/thinkpad_t440p_ultimate_buyers_guide/e9a88k2 "daftguy")) as Rev `C1` and Rev `B3` have screws holes placed differently. The screen won’t fit in that case.
 
 My two cents on how to find a good panel:
 
 *   **Avoid non-IPS**: some sellers are selling _non-IPS_ screens. IPS screens have better view angles and much better colorimetry,
-*   **Avoid Compatible Brands**: compatible LCDs are usually cheaper chinese copies with issues like [backlight bleeding](http://www.lightbleedtest.com/ "backlight bleeding"), dead pixels or bad color calibration. Double check the seller’s description doesn’t include something like _You may receive a compatible LCD if out of stock_,
-*   **Seek 72% Color Gamut**: the LCD panels mentioned above have `72%` color gamut (which is pretty good). If you find another brand, use [PaneLook](http://www.panelook.com/ "PaneLook") to check the LCD specs,
-*   **Be prepared to pay a higher price**: original [LP140WF3-SPD1](http://www.panelook.com/modeldetail.php?id=25943 "LP140WF3-SPD1") or [N140HCE-EN1 Rev. C2](http://www.panelook.com/modeldetail.php?id=28930 "N140HCE-EN1 Rev. C2") are usually more expensive than compatible brands. But always double check, some sellers buy compatible screens at high prices too,
-*   **Buy on different websites**: If you can’t find any on _Ebay_, try [AliExpress](https://aliexpress.com/ "AliExpress").
+*   **Avoid Compatible Brands**: compatible LCDs are usually cheaper chinese copies with issues like [backlight bleeding](https://lightbleedtest.com/ "backlight bleeding"), dead pixels or bad color calibration. Double check the seller’s description doesn’t include something like _You may receive a compatible LCD if out of stock_,
+*   **Seek 72% Color Gamut**: the LCD panels mentioned above have `72%` color gamut (which is pretty good). If you find another brand, use [PaneLook](https://www.panelook.com/ "PaneLook") to check the LCD specs,
+*   **Be prepared to pay a higher price**: original [LP140WF3-SPD1](https://www.panelook.com/modeldetail.php?id=25943 "LP140WF3-SPD1") or [N140HCE-EN1 Rev. C2](https://www.panelook.com/modeldetail.php?id=28930 "N140HCE-EN1 Rev. C2") are usually more expensive than compatible brands. But always double check, some sellers buy compatible screens at high prices too,
+*   **Buy on different websites**: If you can’t find any on _Ebay_, try [AliExpress](https://best.aliexpress.com/ "AliExpress").
 
 Always make sure the item description doesn’t talk about _compatible_ LCD. Here is a video explaining how to replace the LCD (takes about 15 minutes).
 
@@ -463,8 +463,8 @@ _Old vs new trackpad (see [reddit topic](https://www.reddit.com/r/thinkpad/comme
 
 The thing is the touchpad exists with two brands:
 
-*   [Synaptics](https://www.synaptics.com/resources "Synaptics") (preferred),
-*   And [Alps](https://www.alps.com/ "Alps").
+*   [Synaptics](https://www.synaptics.com/ "Synaptics") (preferred),
+*   And [Alps](https://www.alpsalpine.com/e/ "Alps").
 
 Here is how to differentiate them: look at the back.
 
@@ -482,7 +482,7 @@ _Thinkpad T450 Synaptics Trackpad_
 
 _Also a Thinkpad T450 Synaptics Trackpad_
 
-Synaptics. Notice the (red/blue) buttons at the top, the double-lined sticker with B149220xx, the ‘dots’ in the metal backplate, the embossed number near the bottom. The **Synaptics** trackpad has rugged metal backplate and visible button clips. Sadly, it’s even [more complicated than that](https://imgur.com/a/z5TgiBI "more complicated than that").
+Synaptics. Notice the (red/blue) buttons at the top, the double-lined sticker with B149220xx, the ‘dots’ in the metal backplate, the embossed number near the bottom. The **Synaptics** trackpad has rugged metal backplate and visible button clips. Sadly, it’s even [more complicated than that](https://imgur.com/a/lenovo-trackpad-touchpad-with-3-buttons-t440-t540-z5TgiBI "more complicated than that").
 
 ![Thinkpad Alps Trackpad](../assets/img/2024-10-21/alps-trackpad.jpg "Thinkpad Alps Trackpad")
 
@@ -576,8 +576,8 @@ Keyboards can be replaced too. I’m going to replace the `QWERTY` backlit keybo
 
 There are four keyboard vendors who made keyboards for the t440p:
 
-*   [Chicony](http://www.chicony.com.tw/ "Chicony"): FRU `04x0101`,
-*   LiteON: FRU `04x0139`,
+*   [Chicony](https://www.chicony.com/chicony/en "Chicony"): FRU `04x0101`,
+*   [LiteON](https://www.liteon.com/): FRU `04x0139`,
 *   Primax,
 *   And Sunrex.
 
@@ -593,9 +593,9 @@ You can also find a comparison between [Chicony and LiteOn Keyboard](https://blo
 
 _Wifi card is easy to physically replace_
 
-The most commonly replacement card being used is the [DW1820A](https://fr.aliexpress.com/item/DW1820A-BCM94350ZAE-802-11ac-BT4-1-867-Mbps-wifi-Adaptateur-BCM94350-M-2-NGFF-DW1820-WiFi/32918457901.html "DW1820A"), especially if you want to **hackintosh the T440p**. Other than that, you may want to replace the original wifi card because it doesn’t support the `802.11AC` protocol, which claims up to `867Mbps` bandwidth.
+The most commonly replacement card being used is the `DW1820A`, especially if you want to **hackintosh the T440p**. Other than that, you may want to replace the original wifi card because it doesn’t support the `802.11AC` protocol, which claims up to `867Mbps` bandwidth.
 
-The thing is, you probably need a bios mod otherwise the laptop may reject the wi-fi card due to _Wi-fi whitelist_. Not sure why Lenovo annoys the users with Wi-fi white lists, anyway I found [bios 2.32 to 2.35](https://www.bios-mods.com/forum/Thread-REQUEST-Lenovo-Thinkpad-T440p-Whitelist-removal?page=4 "bios 2.32 to 2.35") may have buggy whitelist:
+The thing is, you probably need a bios mod otherwise the laptop may reject the wi-fi card due to _Wi-fi whitelist_. Not sure why Lenovo annoys the users with Wi-fi white lists, anyway I found [bios 2.32 to 2.35](https://www.bios-mods.com/forum/showthread.php?tid=21474&page=4 "bios 2.32 to 2.35") may have buggy whitelist:
 
 > There is a bug in `2.32-2.35` BIOS versions on T440 and T440s that allows to use an unbranded Wi-Fi (looks like the whitelist isn’t checked due to the bug). Most probably there is the same bug on T440p.
 
@@ -616,7 +616,7 @@ Software Upgrades
 
 ### Bios Mod
 
-Remember the [bios mod I did on the Helios 500](https://octoperf.com/blog/2018/09/02/acer-predator-helios-500-mods/#helios-500-bios-mod "bios mod I did on the Helios 500")? You can do the [same on the T440p](https://www.techinferno.com/index.php?/forums/topic/12229-lenovo-thinkpad-t440p-unlocked-bios-menu-wlan-wi-fi-whitelist-mod/ "same on the T440p"). Another forum to look for is [Bios Mods](https://bios-mods.com/ "Bios Mods"). _Dude2002_ is a well known guy who can mod you bios within 30min once submitted!
+Remember the bios mod I did on the Helios 500? You can do the [same on the T440p](https://www.techinferno.com/index.php?/topic/12229-lenovo-thinkpad-t440p-t440s-t540-e440-e540-unlocked-bios-menu-wlan-wi-fi-whitelist-mod/ "same on the T440p"). Another forum to look for is [Bios Mods](https://www.bios-mods.com/ "Bios Mods"). _Dude2002_ is a well known guy who can mod you bios within 30min once submitted!
 
 ![Thinkpad T440p Bios Chip location](../assets/img/2024-10-21/t440p-bios-chip.jpg "Thinkpad T440p Bios Chip location")
 
@@ -624,14 +624,14 @@ _Bios chip is located near RAM sticks, directly accessible by removing cover_
 
 Bios mods are for a good reasons:
 
-*   **Wi-fi Whitelist**: if you wish to install a new wifi-card (to replace the stock Intel card) like the [DW1560](https://fr.aliexpress.com/item/New-Broadcom-BCM94352Z-Dual-band-Wireless-AC-NGFF-802-11ac-867Mbps-WIFI-Bluetooth-BT-4-0/32717370245.html "DW1560"). By default, the bios blocks any _unauthorized_ wifi card which is not white-listed by Lenovo,
+*   **Wi-fi Whitelist**: if you wish to install a new wifi-card (to replace the stock Intel card) like the `DW1560`. By default, the bios blocks any _unauthorized_ wifi card which is not white-listed by Lenovo,
 *   **Advanced Menu Unlock**: advanced menu unlocking can enable features like CPU and RAM [overclocking](https://en.wikipedia.org/wiki/Overclocking "overclocking") and other very advanced features (like adjusting DVMT memory for hackintosh).
 
 In most cases, modding the bios is useful to install [macOS on the T440p](https://www.tonymacx86.com/threads/guide-lenovo-thinkpad-t440p.233282/ "macOS on the T440p"). **Undervolting the CPU** directly from bios is a plus too: you don’t have to mess with **Intel XTU** or **ThrottleStop** to lower the CPU voltage.
 
 ### Intel XTU / ThrottleStop
 
-[Intel XTU](https://downloadcenter.intel.com/fr/download/24075/Intel-Extreme-Tuning-Utility-Intel-XTU- "Intel XTU") and [ThrottleStop](https://www.techpowerup.com/download/techpowerup-throttlestop/ "ThrottleStop") are useful software to tweak the CPU settings. Most people use it to **undervolt the CPU**.
+[Intel XTU](https://downloadmirror.intel.com/831304/XTUSetup_10.0.0.76.exe "Intel XTU") and [ThrottleStop](https://www.techpowerup.com/download/techpowerup-throttlestop/ "ThrottleStop") are useful software to tweak the CPU settings. Most people use it to **undervolt the CPU**.
 
 > Undervolting consists of lowering the CPU voltage to decrease CPU power consumption. Main benefits are high battery life, cooler CPU operation and lower fan noise.
 
@@ -649,7 +649,7 @@ _High Sierra 10.13.6 and Mojave 10.14.1 have been reported to work fine too!_
 
 There is an [excellent guide on TonyMacx86](https://www.tonymacx86.com/threads/guide-lenovo-thinkpad-t440.245562/ "excellent guide on TonyMacx86") and you should also find tons of help on [InsanelyMac](https://www.insanelymac.com/forum/137-installation/ "InsanelyMac").
 
-the T440p will easily match the performance of a [2018 MacBook Pro 13 inches](https://www.apple.com/shop/buy-mac/macbook-pro "2018 MacBook Pro 13 inches") which costs `1800+€` with a quad core [Intel 8th generation 8259u](https://ark.intel.com/products/135935/Intel-Core-i5-8259U-Processor-6M-Cache-up-to-3-80-GHz- "Intel 8th generation 8259u"). All of that for about `500€`, which is about `4x` cheaper than the macbook.
+the T440p will easily match the performance of a 2018 MacBook Pro 13 inches which costs `1800+€` with a quad core Intel 8th generation 8259u. All of that for about `500€`, which is about `4x` cheaper than the macbook.
 
 The downside? It requires advanced technical knowledge to get a t440p working on macOS. It’s not unfeasable, but it’s difficult for beginners. If you don’t feel comfortable doing this, I encourage you to **buy a macbook pro**. Much easier, but costly.
 

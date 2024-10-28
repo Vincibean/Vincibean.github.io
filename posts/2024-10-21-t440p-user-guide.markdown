@@ -147,7 +147,7 @@ The T440P supports [Haswell Mobile family](https://ark.intel.com/content/www/us/
 *   [I7 4702MQ](https://ark.intel.com/content/www/us/en/ark/products/75119/intel-core-i7-4702mq-processor-6m-cache-up-to-3-20-ghz.html "I7 4702MQ"): 4 cores, 8 threads, 3.2Ghz Turbo, 37W TDP. This is a reduced TDP quad-core CPU which is topping at `3.2Ghz` turbo boost. A very good performance to heat ratio,
 *   [I7 4712MQ](https://ark.intel.com/content/www/us/en/ark/products/78933/intel-core-i7-4712mq-processor-6m-cache-up-to-3-30-ghz.html "I7 4712MQ"): 4 cores, 8 threads, 3.3Ghz Turbo, 37W TDP. Slightly faster than the 4702MQ, 100Mhz more. Also a great balance between CPU power and heat.
 
-Those CPUs have `6MB SmartCache` and all support up to `32GB RAM` (4x slots needed, thought). Both can be found around `100€` on ebay. But, those are pretty rare. If you want a bit more [horsepower](https://en.wikipedia.org/wiki/Horsepower "horsepower"), you can take a look at those CPUS:
+Those CPUs have `6MB SmartCache` and all support up to `32GB RAM` (4x slots needed, thought). Both can be found around `100€` on ebay. But, those are pretty rare. If you want a bit more horsepower, you can take a look at those CPUS:
 
 *   [I7 4810MQ](https://ark.intel.com/content/www/us/en/ark/products/78937/intel-core-i7-4810mq-processor-6m-cache-up-to-3-80-ghz.html "I7 4810MQ"): 4 cores, 8 threads, 3.8Ghz Turbo, 47W TDP,
 *   or even [I7 4910MQ](https://ark.intel.com/content/www/us/en/ark/products/78939/intel-core-i7-4910mq-processor-8m-cache-up-to-3-90-ghz.html "I7 4910MQ"): 4 cores, 8 threads, 3.9Ghz Turbo, 47W TDP.

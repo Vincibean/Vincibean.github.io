@@ -48,7 +48,7 @@ Overall, the T440p build quality is great, even [better than the T430](https://m
 
 ![Ebay Auctions](../assets/img/2024-10-21/ebay-auction.jpg "Ebay Auctions")
 
-Fortunately, that’s pretty easy. There are [tons of them on Ebay](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313.TR12.TRC2.A0.H0.Xt440p.TRS0&_nkw=t440p&_sacat=0 "tons of them on Ebay"). In the USA, you can find some on [Craigslist](https://www.craigslist.org/ "Craigslist") too. In France, we have [Leboncoin](https://leboncoin.com/ "Leboncoin") which is pretty similar.
+Fortunately, that’s pretty easy. There are [tons of them on Ebay](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313.TR12.TRC2.A0.H0.Xt440p.TRS0&_nkw=t440p&_sacat=0 "tons of them on Ebay"). In the USA, you can find some on [Craigslist](https://www.craigslist.org/ "Craigslist") too.
 
 **Ebay** is my favorite place to scour for used laptops:
 
@@ -105,11 +105,11 @@ If you intend to buy a damaged laptop (but fully functional), make sure it’s l
 
 Don’t be afraid by items described in `German` or any other language. The wider you expand your research field, the most likely you are going to find the greatest deals. You just have to be aware that:
 
-*   **Keyboard may need to be replaced**: In France, we have [AZERTY](https://en.wikipedia.org/wiki/AZERTY "AZERTY") keyboards, in Germany it’s `QWERTZ` and most other countries use `QWERTY` keyboards,
-*   **Power Adapter may be needed**: UK units for example may need a replacement power cable as the electrical norms are not the same. Check the AC adapter supports both `110v` and `220v` input,
+*   **Keyboard may need to be replaced**: In France, they have [AZERTY](https://en.wikipedia.org/wiki/AZERTY "AZERTY") keyboards, in Germany it’s `QWERTZ` and most other countries use `QWERTY` keyboards,
+*   **Power Adapter may be needed**: UK units for example may need a replacement power cable as the electrical norms may not be the same. Check the AC adapter supports both `110v` and `220v` input,
 *   **Operating System language**: while Windows 10 Pro language can be changed, beware of `Family Edition` which cannot.
 
-Other than those points, laptops should be identical between countries. Make sure to add the price of those changes into the balance when evaluating an item total price. Laptop Keyboards are usually expensive (`50€+`). If you are keen to use a `QWERTY` keyboard, it’s can save you quite a bit of money.
+Other than those points, laptops should be identical between countries. Make sure to add the price of those changes into the balance when evaluating an item total price. Laptop Keyboards are usually expensive (`50€+`). If you are keen to use a `QWERTY` keyboard, it can save you quite a bit of money.
 
 Hardware Upgrades
 -----------------
@@ -288,7 +288,7 @@ My two cents on how to find a good panel:
 *   **Be prepared to pay a higher price**: original [LP140WF3-SPD1](https://www.panelook.com/modeldetail.php?id=25943 "LP140WF3-SPD1") or [N140HCE-EN1 Rev. C2](https://www.panelook.com/modeldetail.php?id=28930 "N140HCE-EN1 Rev. C2") are usually more expensive than compatible brands. But always double check, some sellers buy compatible screens at high prices too,
 *   **Buy on different websites**: If you can’t find any on _Ebay_, try [AliExpress](https://best.aliexpress.com/ "AliExpress").
 
-Always make sure the item description doesn’t talk about _compatible_ LCD. Here is a video explaining how to replace the LCD (takes about 15 minutes).
+Always make sure the item description doesn’t talk about _compatible_ LCD. [Here](https://youtu.be/vYM41z9oJnY) is a video explaining how to replace the LCD (takes about 15 minutes).
 
 _T440p LCD can be replaced easily!_
 
@@ -413,7 +413,7 @@ How to install an **ALPS** touchpad+buttons driver in a T440/T440p:
 
 ### Keyboard
 
-Keyboards can be replaced too. I’m going to replace the `QWERTY` backlit keyboard with a _French Azerty_ (FRU `04x0112`).
+Keyboards can be replaced too.
 
 There are four keyboard vendors who made keyboards for the t440p:
 
@@ -457,7 +457,7 @@ Software Upgrades
 
 ### Bios Mod
 
-Remember the bios mod I did on the Helios 500? You can do the [same on the T440p](https://www.techinferno.com/index.php?/topic/12229-lenovo-thinkpad-t440p-t440s-t540-e440-e540-unlocked-bios-menu-wlan-wi-fi-whitelist-mod/ "same on the T440p"). Another forum to look for is [Bios Mods](https://www.bios-mods.com/ "Bios Mods"). _Dude2002_ is a well known guy who can mod you bios within 30min once submitted!
+You can do a Bios mod on the T440p thanks to [this forum](https://www.techinferno.com/index.php?/topic/12229-lenovo-thinkpad-t440p-t440s-t540-e440-e540-unlocked-bios-menu-wlan-wi-fi-whitelist-mod/ "same on the T440p"). Another forum to look for is [Bios Mods](https://www.bios-mods.com/ "Bios Mods"). _Dude2002_ is a well known guy who can mod you bios within 30min once submitted!
 
 ![Thinkpad T440p Bios Chip location](../assets/img/2024-10-21/t440p-bios-chip.jpg "Thinkpad T440p Bios Chip location")
 

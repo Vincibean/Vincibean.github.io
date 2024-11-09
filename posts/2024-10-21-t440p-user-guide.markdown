@@ -2,20 +2,38 @@
 title: Thinkpad T440p Ultimate Buyer's Guide
 ---
 
-[Jérôme Loisel](https://github.com/jloisel)
+Introduction
+-------------
 
-Like most people, I like fast laptops. But damn, those can be really expensive! Is there an alternative? The short answer is: **Yes**.
+This is a reupload of an original article from [Jérôme Loisel](https://github.com/jloisel). 
 
-Unknown to most people, the [Thinkpad T440p](https://www.notebookcheck.net/Review-Lenovo-ThinkPad-T440p-20AN-006VGE-Notebook.108423.0.html "Thinkpad T440p") is a classic business laptop made in November `2013` (5 years!) by [Lenovo](https://www.lenovo.com/ "Lenovo"). It’s one of the most customizable [Thinkpad T Series](https://en.wikipedia.org/wiki/ThinkPad_T_series "Thinkpad T Series") I’ve ever seen!
+It used to be hosted on https://octoperf.com/blog/2018/11/07/thinkpad-t440p-buyers-guide/ , but eventually got removed. I'm not sure why. I suspect it has to do with the fact that, I think, Jerome doesn't work for OctoPerf (the owner of the domain) anymore. 
 
-Let’s see how we can **mod and upgrade** a used [T440p](http://www.thinkwiki.org/wiki/Category:T440p "T440p") to build a **cheap but powerful laptop** (about `500€`) that can match nowadays high-end laptop performance.
+I've always found this article extremely helpful, so I rushed to see if the [Wayback Machine](https://web.archive.org/) had a copy of it. Luckily, it did, and you can find it [here](https://web.archive.org/web/20231019205252/https://octoperf.com/blog/2018/11/07/thinkpad-t440p-buyers-guide/).
+
+So far so good, right?
+
+However, on October 9, 2024, the Wayback Machine went down due to a distributed denial-of-service attack (see [here](https://arstechnica.com/information-technology/2024/10/archive-org-a-repository-storing-the-entire-history-of-the-internet-has-been-hacked/) and [here](https://www.theverge.com/2024/10/14/24269741/internet-archive-online-read-only-data-breach-outage) for more information). That made me very nervous. All of a sudden I realized that I was running the risk of losing that guide forever.
+
+This blog post is my attempt to preserve that guide, even in the (admittedly unlikely) scenario that the Wayback Machine ceased to exist.
+
+I've edited some parts of it, like the parts that depend on _when_ the original article was written (no, even after modding it the T440p cannot "match nowadays high-end laptop performance") or the parts that depend on _where_ the original article was written (I don't think I'll ever need to know that in France the keyboard layout is `AZERTY` instead of `QWERTY`, and you probably won't need either). I've also removed some sections that, while they could be interesting to some, aren't particularly interesting to me; an example of this is how to [Hackintosh](https://en.wikipedia.org/wiki/Hackintosh) the T440p. 
+
+With that said, please enjoy this revised version of the original article, and if you find it useful please make sure to thank [Jérôme Loisel](https://github.com/jloisel); on the other hand, all errors are mine and if you find any please let me know. 
+
+Thinkpad T440p Ultimate Buyer's Guide
+-------------
+
+The [Thinkpad T440p](https://www.notebookcheck.net/Review-Lenovo-ThinkPad-T440p-20AN-006VGE-Notebook.108423.0.html "Thinkpad T440p") is a classic business laptop made in November 2013 by [Lenovo](https://www.lenovo.com/ "Lenovo"). It’s one of the most customizable [Thinkpad T Series](https://en.wikipedia.org/wiki/ThinkPad_T_series "Thinkpad T Series") I’ve ever seen!
+
+Let’s see how we can mod and upgrade a used [T440p](http://www.thinkwiki.org/wiki/Category:T440p "T440p") to build a cheap but powerful laptop.
 
 Buying a Unit
 -------------
 
-Since I discovered the joy of upgrading and modding laptops, the `T440p` standed out of the crowd as the best laptop for my needs. Of course, if you don’t like to mess with hardware, you won’t feel comfortable here. But, trust me, there is a **huge satisfaction** when you entirely tear-down a laptop, mod it, reassemble that beast and see it boot again as if nothing happened.
+Since I discovered the joy of upgrading and modding laptops, the `T440p` standed out of the crowd as the best laptop for my needs. Of course, if you don’t like to mess with hardware, you won’t feel comfortable here. But, trust me, there is a huge satisfaction when you entirely tear-down a laptop, mod it, reassemble that beast and see it boot again as if nothing happened.
 
-The first thing to do obviously is to acquire a _used T440p_. And there are many things to check when buying a used laptop. That’s why I wrote this article!
+The first thing to do obviously is to acquire a used T440p. And there are many things to check when buying a used laptop. That’s why I wrote this article!
 
 ### Why the 440p?
 
@@ -479,26 +497,6 @@ In most cases, modding the bios is useful to install [macOS on the T440p](https:
 Of course, you can’t lower the CPU voltage beyong a certain threshold because the CPU will become unstable. Your system may crash. The good news is you can’t harm the hardware by doing so. Better than 1000 words, here is a video explaining how to undervolt your CPU.
 
 _Lowering CPU Temp is interesting to extend CPU and battery life_
-
-### Hackintosh
-
-The T440p is also popular because macOS can be installed on it thanks to Rehabman.
-
-![Thinkpad T440p Hackintosh](../assets/img/2024-10-21/thinkpad-t440p-hackintosh.jpg "Thinkpad T440p Hackintosh")
-
-_High Sierra 10.13.6 and Mojave 10.14.1 have been reported to work fine too!_
-
-There is an [excellent guide on TonyMacx86](https://www.tonymacx86.com/threads/guide-lenovo-thinkpad-t440.245562/ "excellent guide on TonyMacx86") and you should also find tons of help on [InsanelyMac](https://www.insanelymac.com/forum/137-installation/ "InsanelyMac").
-
-the T440p will easily match the performance of a 2018 MacBook Pro 13 inches which costs `1800+€` with a quad core Intel 8th generation 8259u. All of that for about `500€`, which is about `4x` cheaper than the macbook.
-
-The downside? It requires advanced technical knowledge to get a t440p working on macOS. It’s not unfeasable, but it’s difficult for beginners. If you don’t feel comfortable doing this, I encourage you to **buy a macbook pro**. Much easier, but costly.
-
-> When you build a hackintosh, you essentially trade ease of use for money.
-
-Funny thing, some people are even [ditching their Macbook to get used thinkpads](https://www.reddit.com/r/thinkpad/comments/8e2gpg/sold_my_macbook_pro_retina_in_january_and_got_my/ "ditching their Macbook to get used thinkpads"). The reason?
-
-> I just missed being able to upgrade my laptop and the T440p offered that.
 
 Final Thoughts
 --------------

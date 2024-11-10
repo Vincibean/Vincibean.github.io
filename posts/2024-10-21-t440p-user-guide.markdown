@@ -144,6 +144,8 @@ You instantly gain access to most of the components:
 *   **Storage**: supports one SATA3 HDD or [SSD](https://en.wikipedia.org/wiki/Solid-state_drive "SSD"). Prefer the later one, performance difference between HDD and SSD is like night and day,
 *   **And WLAN card**: contains an Intel card by default, people willing to hackintosh it will use [DW1560](https://www.ebay.com/itm/New-Broadcom-BCM94352Z-M-2-NGFF-802-11AC-867Mbps-BT-4-0-DW1560-f-Mac-Hackintosh-/252319175707 "DW1560") wifi card instead (compatible with macOS).
 
+If you need further access of course you will have to dig deeper. [Here](https://youtu.be/frlKmVP-4dc?feature=shared) is a good video showcasing the full disassembly process.
+
 ### CPU
 
 The factory CPU is usually a boring I5 4300m, sometimes an [I7 4600M](https://ark.intel.com/content/www/us/en/ark/products/76349/intel-core-i7-4600m-processor-4m-cache-up-to-3-60-ghz.html "I7 4600M"). Both are dual core CPUs who lack a bit horsepower, but come with a nice `37W TDP`.What is that exactly?

@@ -64,8 +64,6 @@ Overall, the T440p build quality is great, even [better than the T430](https://m
 
 ### Where to Buy
 
-![Ebay Auctions](../assets/img/2024-10-21/ebay-auction.jpg "Ebay Auctions")
-
 Fortunately, that’s pretty easy. There are [tons of them on Ebay](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313.TR12.TRC2.A0.H0.Xt440p.TRS0&_nkw=t440p&_sacat=0 "tons of them on Ebay"). In the USA, you can find some on [Craigslist](https://www.craigslist.org/ "Craigslist") too.
 
 Ebay is my favorite place to scour for used laptops:
@@ -93,8 +91,6 @@ Greatest deals are around 100€ shipped for a used unit in good condition. (mor
 
 > **Tip**: when looking for items on ebay, use the search `Show Only > Sold Items` option. Example: [Sold T440p](https://www.ebay.com/sch/i.html?_from=R40&_nkw=t440p&_sacat=0&rt=nc&LH_Sold=1&LH_Complete=1 "Sold T440p"). That way, you can estimate the current price at which items are sold.
 
-![Ebay Items Sold](../assets/img/2024-10-21/ebay-sold-thinkpad-t440p.png "Ebay Items Sold")
-
 It seems like this guide is transforming into an Ebay buyer’s guide! Just to make things clear: I’m not endorsed by Ebay in any sort. It’s just that Ebay is a great place to buy used computer parts.
 
 Always be vigilent when the price seems too low. Double-check the description of the unit. Usually, lower priced units have either been damaged or missing parts. That naturally brings us to the next part:
@@ -102,8 +98,6 @@ Always be vigilent when the price seems too low. Double-check the description of
 Pay attention to used computer Grade.
 
 ### Used Laptop Grades
-
-![Damaged Phone](../assets/img/2024-10-21/damaged-phone.jpeg "Damaged Phone")
 
 [Used Laptop Grades](https://filmar.com/2017/01/15/grade-a-laptop/ "Used Laptop Grades") is a letter (`A`, `B` or `C`) which defines the overall state of the laptop:
 
@@ -490,7 +484,7 @@ Modding the bios is also useful to undervolt the CPU directly from the Bios: you
 
 Undervolting consists of lowering the CPU voltage to decrease CPU power consumption. Main benefits are high battery life, cooler CPU operation and lower fan noise.
 
-Of course, you can’t lower the CPU voltage beyong a certain threshold because the CPU will become unstable. Your system may crash. The good news is you can’t harm the hardware by doing so. Better than 1000 words, here is a video explaining how to undervolt your CPU.
+Of course, you can’t lower the CPU voltage beyong a certain threshold because the CPU will become unstable. Your system may crash. The good news is you can’t harm the hardware by doing so. Better than 1000 words, [here](https://youtu.be/vfIxf73RGEg) is a video explaining how to undervolt your CPU.
 
 Lowering CPU Temp is interesting to extend CPU and battery life
 

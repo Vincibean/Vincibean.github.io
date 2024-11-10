@@ -586,8 +586,8 @@ Sources
 - <https://support.lenovo.com/us/en/solutions/pd029625>
 - <https://imgur.com/a/thinkpad-9-5mm-sata-hard-drive-bay-adapter-iv-MZ82cZr>
 - <https://support.lenovo.com/us/en/solutions/pd029625>
-- <https://en.wikipedia.org/wiki/Mdadm >
-- <https://www.reddit.com/r/thinkpad/comments/86pw7g/best_t440p_ips_fhd_panel_march_2018/ >
+- <https://en.wikipedia.org/wiki/Mdadm>
+- <https://www.reddit.com/r/thinkpad/comments/86pw7g/best_t440p_ips_fhd_panel_march_2018/>
 - <https://www.panelook.com/B140HAN01.1_AUO_14.0_LCM_overview_18919.html>
 - <https://www.panelook.com/modeldetail.php?id=18920>
 - <https://www.panelook.com/modeldetail.php?id=23640>
@@ -618,6 +618,6 @@ Sources
 - <https://www.bios-mods.com/forum/showthread.php?tid=21474&page=4>
 - <https://www.techinferno.com/index.php?/topic/12229-lenovo-thinkpad-t440p-t440s-t540-e440-e540-unlocked-bios-menu-wlan-wi-fi-whitelist-mod>
 - <https://www.bios-mods.com/>
-- <https://downloadmirror.intel.com/831304/XTUSetup_10.0.0.76.exe >
+- <https://downloadmirror.intel.com/831304/XTUSetup_10.0.0.76.exe>
 - <https://www.techpowerup.com/download/techpowerup-throttlestop/>
 - <https://youtu.be/vfIxf73RGEg>

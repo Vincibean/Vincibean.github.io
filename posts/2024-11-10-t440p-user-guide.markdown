@@ -159,7 +159,7 @@ Let’s see all the components which the `T440P` contains and how each can be up
 
 ### Disassembly
 
-![Thinkpad T440p Disassembly](../assets/img/2024-10-21/lenovo-thinkpad-t440p-disassembly.jpg "Thinkpad T440p Disassembly")
+![Thinkpad T440p Disassembly](../assets/img/2024-11-10/lenovo-thinkpad-t440p-disassembly.jpg "Thinkpad T440p Disassembly")
 
 _Disassembly is easy: only 2 screws to get access to almost all the components!_
 
@@ -230,7 +230,7 @@ According to [Lenovo T440P specs](https://download.lenovo.com/parts/ThinkPad/t44
 
 From user experience, the **Delta** and **Toshiba** variants are the quietest. `Toshiba fan, deprecated` should be avoided as those are fans reputable for making a lot of noise.
 
-![Thinkpad T440p Disassembly](../assets/img/2024-10-21/t440p-fan-comparison.jpg "Thinkpad T440p Disassembly")
+![Thinkpad T440p Disassembly](../assets/img/2024-11-10/t440p-fan-comparison.jpg "Thinkpad T440p Disassembly")
 
 _With Nvidia GPU cooling left, and iGPU only on the right_
 
@@ -244,7 +244,7 @@ So the best solution is probably a mix: use the iGPU fan, while using the dGPU h
 
 The T440p supports So-dimm DDR3L (1.35v) RAM modules with up to 16GB Total RAM (2x 8GB). Max supported speed is [2133Mhz](https://www.reddit.com/r/thinkpad/comments/5q2l2k/if_you_still_in_doubt_about_overclocked_ram/ "2133Mhz") according to some users who successfully ran G-skill 2133Mhz 8GB CAS11 sticks.
 
-![Thinkpad T440p 2133Mhz RAM](../assets/img/2024-10-21/thinkpad-t440p-2133mhz-ram.jpg "Thinkpad T440p 2133Mhz RAM")
+![Thinkpad T440p 2133Mhz RAM](../assets/img/2024-11-10/thinkpad-t440p-2133mhz-ram.jpg "Thinkpad T440p 2133Mhz RAM")
 
 _G Skill 2133Mhz RAM installed and running!_
 
@@ -264,7 +264,7 @@ How? By using the following tricks:
 
 *   **WWAN M2 Port**: the WWAN card m2 port support an m2 2242 SSD. You can easily find a `256GB` m2 2242 SSD for about `50€`,
 
-![Thinkpad T440p 2133Mhz RAM](../assets/img/2024-10-21/thinkpad-t440p-m2-ssd.jpg "Thinkpad T440p 2133Mhz RAM")
+![Thinkpad T440p 2133Mhz RAM](../assets/img/2024-11-10/thinkpad-t440p-m2-ssd.jpg "Thinkpad T440p 2133Mhz RAM")
 
 _M2 slot can be filled with an M2 2242 SSD (up to 256GB)_
 
@@ -273,17 +273,17 @@ _M2 slot can be filled with an M2 2242 SSD (up to 256GB)_
 
 ### SATA Bay
 
-![Thinkpad T440p 2133Mhz RAM](../assets/img/2024-10-21/t440p-optical-drive-replacement.jpg "Thinkpad T440p 2133Mhz RAM")
+![Thinkpad T440p 2133Mhz RAM](../assets/img/2024-11-10/t440p-optical-drive-replacement.jpg "Thinkpad T440p 2133Mhz RAM")
 
 _Removing Optical Drive to fit an HDD bay_
 
 Generic SATA bay aren’t usually of best quality. According to [saperkus](https://www.reddit.com/user/saperkus "saperkus"), after a year or two of usage the HDD may not be recognized every few reboots. He suggest [ThinkPad 9.5mm SATA Hard Drive Bay Adapter IV](https://support.lenovo.com/us/en/solutions/pd029625 "ThinkPad 9.5mm SATA Hard Drive Bay Adapter IV") may be a much better deal. A [gallery on imgur](https://imgur.com/a/thinkpad-9-5mm-sata-hard-drive-bay-adapter-iv-MZ82cZr "gallery on imgur") shows how to install it.
 
-![Thinkpad SATA Bay](../assets/img/2024-10-21/sata-bay.jpg "Thinkpad SATA Bay")
+![Thinkpad SATA Bay](../assets/img/2024-11-10/sata-bay.jpg "Thinkpad SATA Bay")
 
 _Generic (Chinese) SATA Bay which replaces the optical drive_
 
-![Thinkpad Official SATA Bay](../assets/img/2024-10-21/thinkpad-official-sata-adapter.jpg "Thinkpad Official SATA Bay")
+![Thinkpad Official SATA Bay](../assets/img/2024-11-10/thinkpad-official-sata-adapter.jpg "Thinkpad Official SATA Bay")
 
 _ThinkPad 9.5mm [SATA Hard Drive Bay Adapter IV](https://support.lenovo.com/us/en/solutions/pd029625) (FRU `04X1602`)_
 
@@ -311,13 +311,13 @@ Most T440p come with the crappy `1366x768` or `1600x900` TN LCD Panel. This TN p
 | LG      | [LP140WF3-SPD1](https://www.panelook.com/modeldetail.php?id=25943 "LP140WF3-SPD1") (LGD046D)                 | IPS  | FHD  | ?   | Matte | 262K  | 25ms  | 700:1 | 80         | 300 cd/m² | 4.6W  |
 | Innolux | [N140HCE-EN1 Rev. C2](https://www.panelook.com/modeldetail.php?id=28930 "N140HCE-EN1 Rev. C2") (CMN14D2)     | IPS  | FHD  | ?   | Matte | 262K  | 25ms  | 700:1 | 89         | 300 cd/m² | 3.98W |
 
-![Thinkpad T440p LG IPS](../assets/img/2024-10-21/lg-display-fru.jpg "Thinkpad T440p LG IPS")
+![Thinkpad T440p LG IPS](../assets/img/2024-11-10/lg-display-fru.jpg "Thinkpad T440p LG IPS")
 
 _Showing LG LP140WF3-SPD1 LCD panel whose FRU is `04x5916`_
 
 It’s an [IPS panel](https://en.wikipedia.org/wiki/IPS_panel "IPS panel"). IPS panels have much better colorimetry and view angles than TN panels, but higher response time. After discussing with someone customizing a lot of T440p and selling them on Ebay, he suggested the `LP140WF3-SPD1 (LGD046D)` (FRU 04x5916) is the best for this laptop. Several users have reported better brightness and much better colorimetry, even compared to `B140HAN01.2` or `B140HAN01.3`.
 
-![Thinkpad T440p 2133Mhz RAM](../assets/img/2024-10-21/tn-vs-ips.jpg "Thinkpad T440p 2133Mhz RAM")
+![Thinkpad T440p 2133Mhz RAM](../assets/img/2024-11-10/tn-vs-ips.jpg "Thinkpad T440p 2133Mhz RAM")
 
 _[TN Panel (left) vs IPS Panel (right)](https://www.reddit.com/r/thinkpad/comments/9uolol/t420_tn_vs_t420_ips/) on a Thinkpad T420. TN looks blueish while IPS is much more natural!_
 
@@ -341,7 +341,7 @@ You can also Download the [T440p maintenance manual](https://download.lenovo.com
 
 Some people complain about the flat touchpad introduced on the T440 series. The [T450s touchpad](https://www.ebay.com/itm/132408842188 "T450s touchpad") can be retrofitted on the T440p.
 
-![Thinkpad Trackpad Replacement](../assets/img/2024-10-21/thinkpad-t440p-trackpad-replacement.jpg "Thinkpad Trackpad Replacement")
+![Thinkpad Trackpad Replacement](../assets/img/2024-11-10/thinkpad-t440p-trackpad-replacement.jpg "Thinkpad Trackpad Replacement")
 
 _Old vs new trackpad (see [reddit topic](https://www.reddit.com/r/thinkpad/comments/8o08vr/finally_t440p_silly_trackpad_replacement/))_
 
@@ -352,29 +352,29 @@ The thing is the touchpad exists with two brands:
 
 Here is how to differentiate them: look at the back.
 
-![Thinkpad Alps Trackpad](../assets/img/2024-10-21/synaptics-vs-alps.jpg "Thinkpad Alps Trackpad")
+![Thinkpad Alps Trackpad](../assets/img/2024-11-10/synaptics-vs-alps.jpg "Thinkpad Alps Trackpad")
 
 _Synaptics vs Alps Trackpad_
 
 Let’s see the differences between them.
 
-![Thinkpad Synaptics Trackpad](../assets/img/2024-10-21/synaptics-trackpad.jpg "Thinkpad Synaptics Trackpad")
+![Thinkpad Synaptics Trackpad](../assets/img/2024-11-10/synaptics-trackpad.jpg "Thinkpad Synaptics Trackpad")
 
 _Thinkpad T450 Synaptics Trackpad_
 
-![Thinkpad Synaptics Trackpad](../assets/img/2024-10-21/synaptics-trackpad-2.jpg "Thinkpad Synaptics Trackpad")
+![Thinkpad Synaptics Trackpad](../assets/img/2024-11-10/synaptics-trackpad-2.jpg "Thinkpad Synaptics Trackpad")
 
 _Also a Thinkpad T450 Synaptics Trackpad_
 
 Synaptics. Notice the (red/blue) buttons at the top, the double-lined sticker with B149220xx, the ‘dots’ in the metal backplate, the embossed number near the bottom. The **Synaptics** trackpad has rugged metal backplate and visible button clips. Sadly, it’s even [more complicated than that](https://imgur.com/a/lenovo-trackpad-touchpad-with-3-buttons-t440-t540-z5TgiBI "more complicated than that").
 
-![Thinkpad Alps Trackpad](../assets/img/2024-10-21/alps-trackpad.jpg "Thinkpad Alps Trackpad")
+![Thinkpad Alps Trackpad](../assets/img/2024-11-10/alps-trackpad.jpg "Thinkpad Alps Trackpad")
 
 _Thinkpad T450 Alps Trackpad_
 
 The **Alps** trackpad has smooth metal backplate.
 
-![Thinkpad Synaptics Trackpad](../assets/img/2024-10-21/possible-alps-trackpad.jpg "Thinkpad Synaptics Trackpad")
+![Thinkpad Synaptics Trackpad](../assets/img/2024-11-10/possible-alps-trackpad.jpg "Thinkpad Synaptics Trackpad")
 
 _Alps or Synaptics?_
 
@@ -397,32 +397,32 @@ Only Works for **Windows 10 Pro** or **Windows 10 Enterprise Edition**:
 
 *   Open _Device Manager_:
 
-![Windows Start Menu](../assets/img/2024-10-21/windows-start-menu.png "Windows Start Menu")
+![Windows Start Menu](../assets/img/2024-11-10/windows-start-menu.png "Windows Start Menu")
 
 *   Right-click on the Touchpad (not the network adapter like shown) and select properties,
 
-![Windows Device Manager](../assets/img/2024-10-21/windows-device-manager.png "Windows Device Manager")
+![Windows Device Manager](../assets/img/2024-11-10/windows-device-manager.png "Windows Device Manager")
 
 *   Select the _Details tab_ and _Hardware Ids_ from the _Property_ select box,
 
-![Windows Device Properties](../assets/img/2024-10-21/windows-device-properties.png "Windows Device Properties")
+![Windows Device Properties](../assets/img/2024-11-10/windows-device-properties.png "Windows Device Properties")
 
 *   Copy those ids into a text editor to keep them for later use,
 *   Open `Windows Group Manager` via Start Menu, then type `gpedit.msc`,
 
-![Windows Group Manager](../assets/img/2024-10-21/windows-group-manager.png "Windows Group Manager")
+![Windows Group Manager](../assets/img/2024-11-10/windows-group-manager.png "Windows Group Manager")
 
 *   Select `System > Device Installation > Device Installation Restrictions` and setting `Prevent Installation of devices that match any of these Device IDs`,
 
-![Windows Device Installation Restrictions](../assets/img/2024-10-21/windows-device-installation-restrictions.png "Windows Device Installation Restrictions")
+![Windows Device Installation Restrictions](../assets/img/2024-11-10/windows-device-installation-restrictions.png "Windows Device Installation Restrictions")
 
 *   Then switch it to `Enabled`, then click on `Show...` button to edit devices IDs,
 
-![Windows Prevent Installation Driver](../assets/img/2024-10-21/windows-prevent-driver-installation-device.png "Windows Prevent Installation Driver")
+![Windows Prevent Installation Driver](../assets/img/2024-11-10/windows-prevent-driver-installation-device.png "Windows Prevent Installation Driver")
 
 *   Put the previously copied hardware ids of the touchpad:
 
-![Windows Device Hardware Ids](../assets/img/2024-10-21/windows-device-hardware-ids.png "Windows Device Hardware Ids")
+![Windows Device Hardware Ids](../assets/img/2024-11-10/windows-device-hardware-ids.png "Windows Device Hardware Ids")
 
 *   Click on ‘OK’.
 
@@ -473,7 +473,7 @@ You can also find a comparison between [Chicony and LiteOn Keyboard](https://blo
 
 ### Wi-Fi Card
 
-![Thinkpad T440p wi-fi card](../assets/img/2024-10-21/thinkpad-t440p-wifi-card.jpg "Thinkpad T440p wi-fi card")
+![Thinkpad T440p wi-fi card](../assets/img/2024-11-10/thinkpad-t440p-wifi-card.jpg "Thinkpad T440p wi-fi card")
 
 _Wi-Fi card is easy to physically replace_
 
@@ -502,7 +502,7 @@ Software Upgrades
 
 You can do a Bios mod on the T440p thanks to [this forum](https://www.techinferno.com/index.php?/topic/12229-lenovo-thinkpad-t440p-t440s-t540-e440-e540-unlocked-bios-menu-wlan-wi-fi-whitelist-mod/ "same on the T440p"). Another forum to look for is [Bios Mods](https://www.bios-mods.com/ "Bios Mods"). _Dude2002_ is a well known guy who used to be able to mod your bios within 30min once submitted!
 
-![Thinkpad T440p Bios Chip location](../assets/img/2024-10-21/t440p-bios-chip.jpg "Thinkpad T440p Bios Chip location")
+![Thinkpad T440p Bios Chip location](../assets/img/2024-11-10/t440p-bios-chip.jpg "Thinkpad T440p Bios Chip location")
 
 _Bios chip is located near RAM sticks, directly accessible by removing cover_
 

@@ -2,10 +2,43 @@
 title: Thinkpad T440p Ultimate Buyer's Guide
 ---
 
+- [Introduction](#introduction)
+- [Thinkpad T440p Ultimate Buyer's Guide](#thinkpad-t440p-ultimate-buyer-s-guide)
+- [Buying a Unit](#buying-a-unit)
+  * [Why the 440p?](#why-the-440p-)
+  * [Where to Buy](#where-to-buy)
+  * [Which Price](#which-price)
+  * [Used Laptop Grades](#used-laptop-grades)
+  * [Local or Foreign Units](#local-or-foreign-units)
+- [Hardware Upgrades](#hardware-upgrades)
+  * [Disassembly](#disassembly)
+  * [CPU](#cpu)
+  * [HD4600 or GT730m](#hd4600-or-gt730m)
+  * [Heatsink / Fan](#heatsink-fan)
+  * [RAM](#ram)
+  * [HDD and SSD Storage](#hdd-and-ssd-storage)
+  * [SATA Bay](#sata-bay)
+  * [AC Adapter](#ac-adapter)
+  * [LCD Panel](#lcd-panel)
+  * [Trackpad](#trackpad)
+    + [Disable Windows 10 Drivers Update](#disable-windows-10-drivers-update)
+    + [T450 Synaptics Driver in a T440/T440p](#t450-synaptics-driver-in-a-t440-t440p)
+    + [ALPS driver in a T440/T440p](#alps-driver-in-a-t440-t440p)
+  * [Keyboard](#keyboard)
+  * [Wi-Fi Card](#wi-fi-card)
+  * [Battery](#battery)
+- [Software Upgrades](#software-upgrades)
+  * [Bios Mod](#bios-mod)
+  * [Intel XTU / ThrottleStop](#intel-xtu---throttlestop)
+- [Final Thoughts](#final-thoughts)
+- [Acknowledgements](#acknowledgements)
+- [Sources](#sources)
+
+
 Introduction
 -------------
 
-This is a reupload of an original article from [Jérôme Loisel](https://github.com/jloisel). 
+This is a reupload of an original article by [Jérôme Loisel](https://github.com/jloisel). 
 
 It used to be hosted on https://octoperf.com/blog/2018/11/07/thinkpad-t440p-buyers-guide/ , but eventually got removed. I'm not sure why. I suspect it has to do with the fact that, I think, Jerome doesn't work for OctoPerf (the owner of the domain) anymore. 
 
@@ -500,7 +533,7 @@ The Thinkpad T440p is a fantastic machine which really deserves to be known by t
 Acknowledgements
 ----------------
 
-As I previosly mentioned, this is just a reupload of an original article from [Jérôme Loisel](https://github.com/jloisel). 
+As I previosly mentioned, this is just a reupload of an original article by [Jérôme Loisel](https://github.com/jloisel). 
 
 I simply wanted to preserve that guide, even in the (admittedly unlikely) scenario that the Wayback Machine ceased to exist.
 

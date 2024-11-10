@@ -40,7 +40,7 @@ Introduction
 
 This is a reupload of an original article by [Jérôme Loisel](https://github.com/jloisel). 
 
-It used to be hosted on https://octoperf.com/blog/2018/11/07/thinkpad-t440p-buyers-guide/ , but eventually got removed. I'm not sure why. I suspect it has to do with the fact that, I think, Jerome doesn't work for OctoPerf (the owner of the domain) anymore. 
+It used to be hosted on <https://octoperf.com/blog/2018/11/07/thinkpad-t440p-buyers-guide/> , but eventually got removed. I'm not sure why. I suspect it has to do with the fact that, I think, Jerome doesn't work for OctoPerf (the owner of the domain) anymore. 
 
 I've always found this article extremely helpful, so I rushed to see if the [Wayback Machine](https://web.archive.org/) had a copy of it. Luckily, it did, and you can find it [here](https://web.archive.org/web/20231019205252/https://octoperf.com/blog/2018/11/07/thinkpad-t440p-buyers-guide/).
 
@@ -544,80 +544,80 @@ Because of that, if you found this article useful please make sure to thank [Jé
 Sources
 -------
 
-- https://web.archive.org/web/20231019205252/https://octoperf.com/blog/2018/11/07/thinkpad-t440p-buyers-guide/).
-- https://arstechnica.com/information-technology/2024/10/archive-org-a-repository-storing-the-entire-history-of-the-internet-has-been-hacked/
-- https://www.theverge.com/2024/10/14/24269741/internet-archive-online-read-only-data-breach-outage
-- https://www.notebookcheck.net/Review-Lenovo-ThinkPad-T440p-20AN-006VGE-Notebook.108423.0.html
-- https://en.wikipedia.org/wiki/ThinkPad_T_series
-- http://www.thinkwiki.org/wiki/Category:T440p
-- https://en.wikipedia.org/wiki/United_States_Military_Standard
-- https://ark.intel.com/content/www/us/en/ark/products/series/75023/4th-generation-intel-core-i7-processors.html
-- https://www.repair.org/stand-up/
-- https://www.tnpanel.com/
-- https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313.TR12.TRC2.A0.H0.Xt440p.TRS0&_nkw=t440p&_sacat=0
-- https://www.ebay.com/b/Computer-Components-Parts/175673/bn_1643095
-- https://ark.intel.com/content/www/us/en/ark/products/76347/intel-core-i5-4300m-processor-3m-cache-up-to-3-30-ghz.html
-- https://www.ebay.com/sch/i.html?_from=R40&_nkw=t440p&_sacat=0&rt=nc&LH_Sold=1&LH_Complete=1
-- https://filmar.com/2017/01/15/grade-a-laptop/
-- http://www.myfixguide.com/manual/lenovo-thinkpad-t440-disassembly/
-- https://ark.intel.com/content/www/us/en/ark/products/78939/intel-core-i7-4910mq-processor-8m-cache-up-to-3-90-ghz.html
-- https://www.ebay.com/itm/New-Broadcom-BCM94352Z-M-2-NGFF-802-11AC-867Mbps-BT-4-0-DW1560-f-Mac-Hackintosh-/252319175707
-- https://ark.intel.com/content/www/us/en/ark/products/76349/intel-core-i7-4600m-processor-4m-cache-up-to-3-60-ghz.html
-- https://ark.intel.com/content/www/us/en/ark/products/codename/42174/products-formerly-haswell.html
-- https://ark.intel.com/content/www/us/en/ark/products/75119/intel-core-i7-4702mq-processor-6m-cache-up-to-3-20-ghz.html
-- https://ark.intel.com/content/www/us/en/ark/products/78933/intel-core-i7-4712mq-processor-6m-cache-up-to-3-30-ghz.html
-- https://ark.intel.com/content/www/us/en/ark/products/78937/intel-core-i7-4810mq-processor-6m-cache-up-to-3-80-ghz.html
-- https://ark.intel.com/content/www/us/en/ark/products/78939/intel-core-i7-4910mq-processor-8m-cache-up-to-3-90-ghz.html
-- https://www.arctic.de/en/MX-4/ACTCP00007B
-- https://www.thermal-grizzly.com/en/Conductonaut/S-TG-C
-- https://www.thermal-grizzly.com/en/Kryonaut/S-TG-K
-- https://www.notebookcheck.net/Intel-HD-Graphics-4600.86106.0.html
-- https://www.techspot.com/article/1638-what-is-thermal-throttling/
-- https://en.wikipedia.org/wiki/Nvidia_Optimus
-- https://www.nvidia.com/en-gb/geforce/gaming-laptops/geforce-gt-730m/description/
-- https://www.reddit.com/r/thinkpad/comments/7joaev/the_t440p_is_among_the_best_thinkpads_ive_ever/
-- https://en.wikipedia.org/wiki/Nvidia_Optimus
-- https://download.lenovo.com/parts/ThinkPad/t440p_frubom_20160614.pdf
-- https://imgur.com/a/t440p-dgpu-heatsing-on-igpu-version-apRoNVf
-- https://www.reddit.com/r/thinkpad/comments/5q2l2k/if_you_still_in_doubt_about_overclocked_ram/
-- https://techbuyersguru.com/does-ram-speed-matter-ddr3-1600-vs-1866-2133-and-2400-games
-- https://www.ebay.com/itm/2nd-HDD-Hard-Drive-Caddy-Adapter-for-Lenovo-Thinkpad-T440p-T540-W540-optical-bay/262756118572?hash=item3d2d7c302c:g:iuwAAOSw4GVYS2ll
-- https://www.reddit.com/user/saperkus
-- https://support.lenovo.com/us/en/solutions/pd029625
-- https://imgur.com/a/thinkpad-9-5mm-sata-hard-drive-bay-adapter-iv-MZ82cZr
-- https://support.lenovo.com/us/en/solutions/pd029625
-- https://en.wikipedia.org/wiki/Mdadm 
-- https://www.reddit.com/r/thinkpad/comments/86pw7g/best_t440p_ips_fhd_panel_march_2018/ 
-- https://www.panelook.com/B140HAN01.1_AUO_14.0_LCM_overview_18919.html
-- https://www.panelook.com/modeldetail.php?id=18920
-- https://www.panelook.com/modeldetail.php?id=23640
-- https://www.panelook.com/modeldetail.php?id=29921
-- https://www.panelook.com/modeldetail.php?id=25943
-- https://www.panelook.com/modeldetail.php?id=28930
-- https://en.wikipedia.org/wiki/IPS_panel
-- https://www.reddit.com/r/thinkpad/comments/9uolol/t420_tn_vs_t420_ips/
-- https://www.panelook.com/modeldetail.php?id=28930
-- https://www.reddit.com/r/thinkpad/comments/9v8r8m/thinkpad_t440p_ultimate_buyers_guide/e9a88k2
-- https://lightbleedtest.com/
-- https://www.panelook.com/modeldetail.php?id=25943
-- https://www.panelook.com/modeldetail.php?id=28930
-- https://youtu.be/vYM41z9oJnY
-- https://download.lenovo.com/ibmdl/pub/pc/pccbbs/mobiles_pdf/t440p_hmm_en_sp40a25467_01.pdf
-- https://www.ebay.com/itm/132408842188
-- https://www.reddit.com/r/thinkpad/comments/8o08vr/finally_t440p_silly_trackpad_replacement/
-- https://www.synaptics.com/
-- https://www.alpsalpine.com/e/
-- https://imgur.com/a/lenovo-trackpad-touchpad-with-3-buttons-t440-t540-z5TgiBI
-- https://www.rizonesoft.com/disable-windows-10-updates-group-policies/
-- https://www.reddit.com/r/thinkpad/comments/3gyadr/solution_to_three_key_trackpad_driver_windows/
-- https://www.howtogeek.com/263851/how-to-prevent-windows-from-automatically-updating-specific-drivers/
-- https://download.lenovo.com/ibmdl/pub/pc/pccbbs/mobiles/jfgh09ww.exe
-- https://www.chicony.com/chicony/en
-- https://www.liteon.com/
-- https://blog.turboturbo.net/2016/10/31/lenovo-thinkpad-keyboard-quality-chicony-vs-liteon/
-- https://www.bios-mods.com/forum/showthread.php?tid=21474&page=4
-- https://www.techinferno.com/index.php?/topic/12229-lenovo-thinkpad-t440p-t440s-t540-e440-e540-unlocked-bios-menu-wlan-wi-fi-whitelist-mod
-- https://www.bios-mods.com/
-- https://downloadmirror.intel.com/831304/XTUSetup_10.0.0.76.exe 
-- https://www.techpowerup.com/download/techpowerup-throttlestop/
-- https://youtu.be/vfIxf73RGEg
+- <https://web.archive.org/web/20231019205252/https://octoperf.com/blog/2018/11/07/thinkpad-t440p-buyers-guide/>
+- <https://arstechnica.com/information-technology/2024/10/archive-org-a-repository-storing-the-entire-history-of-the-internet-has-been-hacked/>
+- <https://www.theverge.com/2024/10/14/24269741/internet-archive-online-read-only-data-breach-outage>
+- <https://www.notebookcheck.net/Review-Lenovo-ThinkPad-T440p-20AN-006VGE-Notebook.108423.0.html>
+- <https://en.wikipedia.org/wiki/ThinkPad_T_series>
+- <http://www.thinkwiki.org/wiki/Category:T440p>
+- <https://en.wikipedia.org/wiki/United_States_Military_Standard>
+- <https://ark.intel.com/content/www/us/en/ark/products/series/75023/4th-generation-intel-core-i7-processors.html>
+- <https://www.repair.org/stand-up/>
+- <https://www.tnpanel.com/>
+- <https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313.TR12.TRC2.A0.H0.Xt440p.TRS0&_nkw=t440p&_sacat=0>
+- <https://www.ebay.com/b/Computer-Components-Parts/175673/bn_1643095>
+- <https://ark.intel.com/content/www/us/en/ark/products/76347/intel-core-i5-4300m-processor-3m-cache-up-to-3-30-ghz.html>
+- <https://www.ebay.com/sch/i.html?_from=R40&_nkw=t440p&_sacat=0&rt=nc&LH_Sold=1&LH_Complete=1>
+- <https://filmar.com/2017/01/15/grade-a-laptop/>
+- <http://www.myfixguide.com/manual/lenovo-thinkpad-t440-disassembly/>
+- <https://ark.intel.com/content/www/us/en/ark/products/78939/intel-core-i7-4910mq-processor-8m-cache-up-to-3-90-ghz.html>
+- <https://www.ebay.com/itm/New-Broadcom-BCM94352Z-M-2-NGFF-802-11AC-867Mbps-BT-4-0-DW1560-f-Mac-Hackintosh-/252319175707>
+- <https://ark.intel.com/content/www/us/en/ark/products/76349/intel-core-i7-4600m-processor-4m-cache-up-to-3-60-ghz.html>
+- <https://ark.intel.com/content/www/us/en/ark/products/codename/42174/products-formerly-haswell.html>
+- <https://ark.intel.com/content/www/us/en/ark/products/75119/intel-core-i7-4702mq-processor-6m-cache-up-to-3-20-ghz.html>
+- <https://ark.intel.com/content/www/us/en/ark/products/78933/intel-core-i7-4712mq-processor-6m-cache-up-to-3-30-ghz.html>
+- <https://ark.intel.com/content/www/us/en/ark/products/78937/intel-core-i7-4810mq-processor-6m-cache-up-to-3-80-ghz.html>
+- <https://ark.intel.com/content/www/us/en/ark/products/78939/intel-core-i7-4910mq-processor-8m-cache-up-to-3-90-ghz.html>
+- <https://www.arctic.de/en/MX-4/ACTCP00007B>
+- <https://www.thermal-grizzly.com/en/Conductonaut/S-TG-C>
+- <https://www.thermal-grizzly.com/en/Kryonaut/S-TG-K>
+- <https://www.notebookcheck.net/Intel-HD-Graphics-4600.86106.0.html>
+- <https://www.techspot.com/article/1638-what-is-thermal-throttling/>
+- <https://en.wikipedia.org/wiki/Nvidia_Optimus>
+- <https://www.nvidia.com/en-gb/geforce/gaming-laptops/geforce-gt-730m/description/>
+- <https://www.reddit.com/r/thinkpad/comments/7joaev/the_t440p_is_among_the_best_thinkpads_ive_ever/>
+- <https://en.wikipedia.org/wiki/Nvidia_Optimus>
+- <https://download.lenovo.com/parts/ThinkPad/t440p_frubom_20160614.pdf>
+- <https://imgur.com/a/t440p-dgpu-heatsing-on-igpu-version-apRoNVf>
+- <https://www.reddit.com/r/thinkpad/comments/5q2l2k/if_you_still_in_doubt_about_overclocked_ram/>
+- <https://techbuyersguru.com/does-ram-speed-matter-ddr3-1600-vs-1866-2133-and-2400-games>
+- <https://www.ebay.com/itm/2nd-HDD-Hard-Drive-Caddy-Adapter-for-Lenovo-Thinkpad-T440p-T540-W540-optical-bay/262756118572?hash=item3d2d7c302c:g:iuwAAOSw4GVYS2ll>
+- <https://www.reddit.com/user/saperkus>
+- <https://support.lenovo.com/us/en/solutions/pd029625>
+- <https://imgur.com/a/thinkpad-9-5mm-sata-hard-drive-bay-adapter-iv-MZ82cZr>
+- <https://support.lenovo.com/us/en/solutions/pd029625>
+- <https://en.wikipedia.org/wiki/Mdadm >
+- <https://www.reddit.com/r/thinkpad/comments/86pw7g/best_t440p_ips_fhd_panel_march_2018/ >
+- <https://www.panelook.com/B140HAN01.1_AUO_14.0_LCM_overview_18919.html>
+- <https://www.panelook.com/modeldetail.php?id=18920>
+- <https://www.panelook.com/modeldetail.php?id=23640>
+- <https://www.panelook.com/modeldetail.php?id=29921>
+- <https://www.panelook.com/modeldetail.php?id=25943>
+- <https://www.panelook.com/modeldetail.php?id=28930>
+- <https://en.wikipedia.org/wiki/IPS_panel>
+- <https://www.reddit.com/r/thinkpad/comments/9uolol/t420_tn_vs_t420_ips/>
+- <https://www.panelook.com/modeldetail.php?id=28930>
+- <https://www.reddit.com/r/thinkpad/comments/9v8r8m/thinkpad_t440p_ultimate_buyers_guide/e9a88k2>
+- <https://lightbleedtest.com/>
+- <https://www.panelook.com/modeldetail.php?id=25943>
+- <https://www.panelook.com/modeldetail.php?id=28930>
+- <https://youtu.be/vYM41z9oJnY>
+- <https://download.lenovo.com/ibmdl/pub/pc/pccbbs/mobiles_pdf/t440p_hmm_en_sp40a25467_01.pdf>
+- <https://www.ebay.com/itm/132408842188>
+- <https://www.reddit.com/r/thinkpad/comments/8o08vr/finally_t440p_silly_trackpad_replacement/>
+- <https://www.synaptics.com/>
+- <https://www.alpsalpine.com/e/>
+- <https://imgur.com/a/lenovo-trackpad-touchpad-with-3-buttons-t440-t540-z5TgiBI>
+- <https://www.rizonesoft.com/disable-windows-10-updates-group-policies/>
+- <https://www.reddit.com/r/thinkpad/comments/3gyadr/solution_to_three_key_trackpad_driver_windows/>
+- <https://www.howtogeek.com/263851/how-to-prevent-windows-from-automatically-updating-specific-drivers/>
+- <https://download.lenovo.com/ibmdl/pub/pc/pccbbs/mobiles/jfgh09ww.exe>
+- <https://www.chicony.com/chicony/en>
+- <https://www.liteon.com/>
+- <https://blog.turboturbo.net/2016/10/31/lenovo-thinkpad-keyboard-quality-chicony-vs-liteon/>
+- <https://www.bios-mods.com/forum/showthread.php?tid=21474&page=4>
+- <https://www.techinferno.com/index.php?/topic/12229-lenovo-thinkpad-t440p-t440s-t540-e440-e540-unlocked-bios-menu-wlan-wi-fi-whitelist-mod>
+- <https://www.bios-mods.com/>
+- <https://downloadmirror.intel.com/831304/XTUSetup_10.0.0.76.exe >
+- <https://www.techpowerup.com/download/techpowerup-throttlestop/>
+- <https://youtu.be/vfIxf73RGEg>

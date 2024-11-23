@@ -14,7 +14,7 @@ cd void-packages
 ./xbps-src binary-bootstrap
 echo XBPS_ALLOW_RESTRICTED=yes >> etc/conf
 ./xbps-src pkg b43-firmware # for 6.30.163.46, b43-firmware-classic for 5.100.138
-sudo xbps-install -R hostdir/binpkgs/nonfree b43-firmware
+sudo xbps-install -R hostdir/binpkgs/nonfree b43-firmware # for 6.30.163.46, b43-firmware-classic for 5.100.138
 sudo poweroff # or reboot
 
 sudo sv down dhcpcd

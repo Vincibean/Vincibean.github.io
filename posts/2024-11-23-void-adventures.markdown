@@ -6,7 +6,12 @@ Introduction
 -------------
 
 ```bash
-xbps-install git
+sudo xbps-install void-repo-nonfree
+sudo xbps-install broadcom-wl-dkms
+
+# if that doesn't work, try this other driver after running:
+# sudo xbps-remove broadcom-wl-dkms
+sudo xbps-install git
 mkdir src
 cd src
 git clone https://github.com/void-linux/void-packages

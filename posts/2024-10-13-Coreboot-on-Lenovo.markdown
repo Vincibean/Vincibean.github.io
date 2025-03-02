@@ -155,7 +155,7 @@ Use the 6 female to female wire to connect the clip to the Pi:
 | Pi 17        | BIOS 8            |
 | Pi 19        | BIOS 5            |
 | Pi 21        | BIOS 2            |
-| Pi 23        | BIOS 7            |
+| Pi 23        | BIOS 6            |
 | Pi 24        | BIOS 1            |
 | Pi 25        | BIOS 4            |
 
@@ -240,7 +240,7 @@ diff 4mb_backup1.bin 4mb_backup2.bin
 
 Only if `diff` outputs nothing continue - else retry.
 
-Power off the Pi, disconnect the clip from the top chip and connect it to the bottom chip, then turn the Pi on again.
+Power off the Pi, disconnect the clip from the top chip and connect it to the bottom (8MB) chip, then turn the Pi on again.
 
 Open a terminal and move to the roms folder we created before:
 
@@ -251,7 +251,7 @@ cd ~/work/roms
 Once again, use flashrom to probe the chip and make sure it is connected:
 
 ```bash
-flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -c "W25Q32BV/W25Q32CV/W25Q32DV"
+flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -c "W25Q64BV/W25Q64CV/W25Q64FV"
 ```
 
 If no error message is displayed, we are ready to read the flash chip.

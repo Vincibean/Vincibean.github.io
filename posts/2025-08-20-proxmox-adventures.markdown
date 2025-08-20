@@ -1,0 +1,8 @@
+- https://www.dell.com/support/kbdoc/en-us/000123893/manual-nomodeset-kernel-boot-line-option-for-linux-booting
+- https://www.youtube.com/watch?v=qmSizZUbCOA
+- https://www.youtube.com/playlist?list=PLT98CRl2KxKHnlbYhtABg6cF50bYa8Ulo
+- https://serverfault.com/questions/31170/how-to-find-the-gateway-ip-address-in-linux
+  - ```To find the default gateway on an Arch Linux system, the ip route command is the most reliable method. Specifically, looking for the line with "default via" in the output will reveal the gateway's IP address.```
+- https://www.reddit.com/r/Proxmox/comments/13fc7o4/do_i_need_to_change_my_dns_server/
+- https://woshub.com/create-windows-vm-proxmox/
+- https://pve.proxmox.com/wiki/Windows_10_guest_best_practices

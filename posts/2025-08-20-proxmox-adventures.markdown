@@ -103,9 +103,9 @@ You are going to need Windows, of course. I used Windows 11. You can download it
 
 You are also going to need VirtIO drivers. You can find them [here](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/stable-virtio/virtio-win.iso) or [here](https://pve.proxmox.com/wiki/Windows_VirtIO_Drivers).
 
-The only things I had to do differently were: 
-- `machine: q35` is not needed
-- it is not possible to install Windows without an internet connection like in the guide; in order to fix this you just do a change the content of the CD-Rom drive and install the VirtIO drivers, like you did before for storage.
+The only things I had to do differently were:
+- that `machine: q35` when setting the options for the VM is not needed
+- it is not possible to install Windows without an internet connection like in the guide; in order to fix this you just do a change the content of the CD-Rom drive and install the VirtIO drivers, like you did before for storage
 
 
 ---
@@ -113,18 +113,18 @@ The only things I had to do differently were:
 That's it! That's what I've done so far.
 
 # Sources
-- https://www.howtogeek.com/what-is-a-homelab-and-how-do-you-start-one/
-- https://www.proxmox.com/en/
-- https://www.dell.com/support/kbdoc/en-us/000123893/manual-nomodeset-kernel-boot-line-option-for-linux-booting
-- https://www.youtube.com/watch?v=qmSizZUbCOA
-- https://www.youtube.com/playlist?list=PLT98CRl2KxKHnlbYhtABg6cF50bYa8Ulo
-- https://en.wikipedia.org/wiki/Gateway_(telecommunications)
-- https://serverfault.com/questions/31170/how-to-find-the-gateway-ip-address-in-linux
-- https://www.reddit.com/r/Proxmox/comments/13fc7o4/do_i_need_to_change_my_dns_server/
-- https://www.youtube.com/watch?v=S6jQx4AJlFw
-- https://www.microsoft.com/en-us/software-download/windows11
-- https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/stable-virtio/virtio-win.iso
-- https://pve.proxmox.com/wiki/Windows_VirtIO_Drivers
-- https://www.reddit.com/r/homelab/comments/b5xpua/the_ultimate_beginners_guide_to_gpu_passthrough/
-- https://woshub.com/create-windows-vm-proxmox/
-- https://pve.proxmox.com/wiki/Windows_10_guest_best_practices
+- [https://www.howtogeek.com/what-is-a-homelab-and-how-do-you-start-one/](https://www.howtogeek.com/what-is-a-homelab-and-how-do-you-start-one/)
+- [https://www.proxmox.com/en/](https://www.proxmox.com/en/)
+- [https://www.dell.com/support/kbdoc/en-us/000123893/manual-nomodeset-kernel-boot-line-option-for-linux-booting](https://www.dell.com/support/kbdoc/en-us/000123893/manual-nomodeset-kernel-boot-line-option-for-linux-booting)
+- [https://www.youtube.com/watch?v=qmSizZUbCOA](https://www.youtube.com/watch?v=qmSizZUbCOA)
+- [https://www.youtube.com/playlist?list=PLT98CRl2KxKHnlbYhtABg6cF50bYa8Ulo](https://www.youtube.com/playlist?list=PLT98CRl2KxKHnlbYhtABg6cF50bYa8Ulo)
+- [https://en.wikipedia.org/wiki/Gateway_(telecommunications)](https://en.wikipedia.org/wiki/Gateway_(telecommunications))
+- [https://serverfault.com/questions/31170/how-to-find-the-gateway-ip-address-in-linux](https://serverfault.com/questions/31170/how-to-find-the-gateway-ip-address-in-linux)
+- [https://www.reddit.com/r/Proxmox/comments/13fc7o4/do_i_need_to_change_my_dns_server/](https://www.reddit.com/r/Proxmox/comments/13fc7o4/do_i_need_to_change_my_dns_server/)
+- [https://www.youtube.com/watch?v=S6jQx4AJlFw](https://www.youtube.com/watch?v=S6jQx4AJlFw)
+- [https://www.microsoft.com/en-us/software-download/windows11](https://www.microsoft.com/en-us/software-download/windows11)
+- [https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/stable-virtio/virtio-win.iso](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/stable-virtio/virtio-win.iso)
+- [https://pve.proxmox.com/wiki/Windows_VirtIO_Drivers](https://pve.proxmox.com/wiki/Windows_VirtIO_Drivers)
+- [https://www.reddit.com/r/homelab/comments/b5xpua/the_ultimate_beginners_guide_to_gpu_passthrough/](https://www.reddit.com/r/homelab/comments/b5xpua/the_ultimate_beginners_guide_to_gpu_passthrough/)
+- [https://woshub.com/create-windows-vm-proxmox/](https://woshub.com/create-windows-vm-proxmox/)
+- [https://pve.proxmox.com/wiki/Windows_10_guest_best_practices](https://pve.proxmox.com/wiki/Windows_10_guest_best_practices)

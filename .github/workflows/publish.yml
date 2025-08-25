@@ -24,7 +24,7 @@ jobs:
       - name: Build with Hakyll
         uses: stephenswat/hakyll-build-pages@v1.0.7
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
 
   deploy:
     needs: build

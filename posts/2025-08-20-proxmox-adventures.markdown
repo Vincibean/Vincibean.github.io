@@ -105,6 +105,7 @@ You are also going to need VirtIO drivers. You can find them [here](https://fedo
 
 The only things I had to do differently were:
 - that `machine: q35` when setting the options for the VM is not needed
+- that `cpu: host,hidden=1,flags=+pcid` also doesn't seem to be needed. I'm not too sure about this though. Proxmox will happily provide its own (in my case, it is `cpu: x86-64-v2-AES`) and for me this seems to work just fine. Your mileage may vary.
 - it is not possible to install Windows without an internet connection like in the guide; in order to fix this you just do a change the content of the CD-Rom drive and install the VirtIO drivers, like you did before for storage
 
 

@@ -16,4 +16,6 @@ My main interests are:
 - gaming
 - hiking
 
-Feel free to have a chat with me on [Twitter/X](https://x.com/sepensai).
+You can check my [LinkedIn](https://uk.linkedin.com/in/andrew-bessi-130b1118b) and [GitHub](https://github.com/Vincibean) profile pages for more information, have a chat with me on [Twitter/X](https://x.com/sepensai) and send an email to [sepensi@gmail.com](mailto:sepensi@gmail.com) to contact me.
+
+This Website is Open Source and its [source code](https://github.com/Vincibean/Vincibean.github.io) is available on GitHub.

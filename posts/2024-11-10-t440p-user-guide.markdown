@@ -159,9 +159,7 @@ Let’s see all the components which the `T440P` contains and how each can be up
 
 ### Disassembly
 
-![Thinkpad T440p Disassembly](../assets/img/2024-11-10/lenovo-thinkpad-t440p-disassembly.jpg "Thinkpad T440p Disassembly")
-
-_Disassembly is easy: only 2 screws to get access to almost all the components!_
+![_Disassembly is easy: only 2 screws to get access to almost all the components!_](../assets/img/2024-11-10/lenovo-thinkpad-t440p-disassembly.jpg "Disassembly is easy: only 2 screws to get access to almost all the components!")
 
 [Thinkpad T440p Disassembly](http://www.myfixguide.com/manual/lenovo-thinkpad-t440-disassembly/ "Thinkpad T440p Disassembly") is an extremely easy process:
 
@@ -230,9 +228,7 @@ According to [Lenovo T440P specs](https://download.lenovo.com/parts/ThinkPad/t44
 
 From user experience, the **Delta** and **Toshiba** variants are the quietest. `Toshiba fan, deprecated` should be avoided as those are fans reputable for making a lot of noise.
 
-![Thinkpad T440p Disassembly](../assets/img/2024-11-10/t440p-fan-comparison.jpg "Thinkpad T440p Disassembly")
-
-_With Nvidia GPU cooling left, and iGPU only on the right_
+![_With Nvidia GPU cooling left, and iGPU only on the right_](../assets/img/2024-11-10/t440p-fan-comparison.jpg "With Nvidia GPU cooling left, and iGPU only on the right")
 
 According to a user who [upgraded the heatsink](https://imgur.com/a/t440p-dgpu-heatsing-on-igpu-version-apRoNVf "upgraded the heatsink"):
 
@@ -244,9 +240,7 @@ So the best solution is probably a mix: use the iGPU fan, while using the dGPU h
 
 The T440p supports So-dimm DDR3L (1.35v) RAM modules with up to 16GB Total RAM (2x 8GB). Max supported speed is [2133Mhz](https://www.reddit.com/r/thinkpad/comments/5q2l2k/if_you_still_in_doubt_about_overclocked_ram/ "2133Mhz") according to some users who successfully ran G-skill 2133Mhz 8GB CAS11 sticks.
 
-![Thinkpad T440p 2133Mhz RAM](../assets/img/2024-11-10/thinkpad-t440p-2133mhz-ram.jpg "Thinkpad T440p 2133Mhz RAM")
-
-_G Skill 2133Mhz RAM installed and running!_
+![_G Skill 2133Mhz RAM installed and running!_](../assets/img/2024-11-10/thinkpad-t440p-2133mhz-ram.jpg "G Skill 2133Mhz RAM installed and running!")
 
 While `2133Mhz` RAM can increase performance a bit, those sticks are extremely hard to find and very expensive (be prepared to pay up to `200€` for 16GB RAM). Standard `16GB 1600Mhz 1.35v Sodimm` cost about `80€` on Ebay.
 
@@ -264,28 +258,20 @@ How? By using the following tricks:
 
 *   **WWAN M2 Port**: the WWAN card m2 port support an m2 2242 SSD. You can easily find a `256GB` m2 2242 SSD for about `50€`,
 
-![Thinkpad T440p 2133Mhz RAM](../assets/img/2024-11-10/thinkpad-t440p-m2-ssd.jpg "Thinkpad T440p 2133Mhz RAM")
-
-_M2 slot can be filled with an M2 2242 SSD (up to 256GB)_
+![_M2 slot can be filled with an M2 2242 SSD (up to 256GB)_](../assets/img/2024-11-10/thinkpad-t440p-m2-ssd.jpg "M2 slot can be filled with an M2 2242 SSD (up to 256GB)")
 
 *   **2.5 inches disk bay**: it’s the built-in disk bay which can be used to either put an HDD or an SSD,
 *   **Optical Drive Replacement**: by using an an [HDD Drive Caddy Adapter](https://www.ebay.com/itm/2nd-HDD-Hard-Drive-Caddy-Adapter-for-Lenovo-Thinkpad-T440p-T540-W540-optical-bay/262756118572?hash=item3d2d7c302c:g:iuwAAOSw4GVYS2ll "HDD Drive Caddy Adapter"), you can mount a second HDD or SSD by removing the optical drive (which has no more use nowadays).
 
 ### SATA Bay
 
-![Thinkpad T440p 2133Mhz RAM](../assets/img/2024-11-10/t440p-optical-drive-replacement.jpg "Thinkpad T440p 2133Mhz RAM")
-
-_Removing Optical Drive to fit an HDD bay_
+![_Removing Optical Drive to fit an HDD bay_](../assets/img/2024-11-10/t440p-optical-drive-replacement.jpg "Removing Optical Drive to fit an HDD bay")
 
 Generic SATA bay aren’t usually of best quality. According to [saperkus](https://www.reddit.com/user/saperkus "saperkus"), after a year or two of usage the HDD may not be recognized every few reboots. He suggest [ThinkPad 9.5mm SATA Hard Drive Bay Adapter IV](https://support.lenovo.com/us/en/solutions/pd029625 "ThinkPad 9.5mm SATA Hard Drive Bay Adapter IV") may be a much better deal. A [gallery on imgur](https://imgur.com/a/thinkpad-9-5mm-sata-hard-drive-bay-adapter-iv-MZ82cZr "gallery on imgur") shows how to install it.
 
-![Thinkpad SATA Bay](../assets/img/2024-11-10/sata-bay.jpg "Thinkpad SATA Bay")
+![_Generic (Chinese) SATA Bay which replaces the optical drive_](../assets/img/2024-11-10/sata-bay.jpg "Generic (Chinese) SATA Bay which replaces the optical drive")
 
-_Generic (Chinese) SATA Bay which replaces the optical drive_
-
-![Thinkpad Official SATA Bay](../assets/img/2024-11-10/thinkpad-official-sata-adapter.jpg "Thinkpad Official SATA Bay")
-
-_ThinkPad 9.5mm [SATA Hard Drive Bay Adapter IV](https://support.lenovo.com/us/en/solutions/pd029625) (FRU `04X1602`)_
+![_ThinkPad 9.5mm [SATA Hard Drive Bay Adapter IV](https://support.lenovo.com/us/en/solutions/pd029625) (FRU `04X1602`)_](../assets/img/2024-11-10/thinkpad-official-sata-adapter.jpg "ThinkPad 9.5mm SATA Hard Drive Bay Adapter IV (FRU 04X1602)")
 
 That makes it pretty easy to fit 2x1TB SSD along with a 256GB m2 SSD inside the machine for a **whopping 2TB SSD Storage**! Or, you could fit 2x 2TB HDDs to reach more than `4TB` or storage inside a `14 inches` laptop. This way, you can for example setup a RAID1 using [mdadm](https://en.wikipedia.org/wiki/Mdadm "mdadm") on Linux with the 2x1TB HDDs while enjoying the lightning speed of the SSD for the operating system.
 
@@ -311,15 +297,11 @@ Most T440p come with the crappy `1366x768` or `1600x900` TN LCD Panel. This TN p
 | LG      | [LP140WF3-SPD1](https://www.panelook.com/modeldetail.php?id=25943 "LP140WF3-SPD1") (LGD046D)                 | IPS  | FHD  | ?   | Matte | 262K  | 25ms  | 700:1 | 80         | 300 cd/m² | 4.6W  |
 | Innolux | [N140HCE-EN1 Rev. C2](https://www.panelook.com/modeldetail.php?id=28930 "N140HCE-EN1 Rev. C2") (CMN14D2)     | IPS  | FHD  | ?   | Matte | 262K  | 25ms  | 700:1 | 89         | 300 cd/m² | 3.98W |
 
-![Thinkpad T440p LG IPS](../assets/img/2024-11-10/lg-display-fru.jpg "Thinkpad T440p LG IPS")
-
-_Showing LG LP140WF3-SPD1 LCD panel whose FRU is `04x5916`_
+![_Showing LG LP140WF3-SPD1 LCD panel whose FRU is `04x5916`_](../assets/img/2024-11-10/lg-display-fru.jpg "Showing LG LP140WF3-SPD1 LCD panel whose FRU is 04x5916")
 
 It’s an [IPS panel](https://en.wikipedia.org/wiki/IPS_panel "IPS panel"). IPS panels have much better colorimetry and view angles than TN panels, but higher response time. After discussing with someone customizing a lot of T440p and selling them on Ebay, he suggested the `LP140WF3-SPD1 (LGD046D)` (FRU 04x5916) is the best for this laptop. Several users have reported better brightness and much better colorimetry, even compared to `B140HAN01.2` or `B140HAN01.3`.
 
-![Thinkpad T440p 2133Mhz RAM](../assets/img/2024-11-10/tn-vs-ips.jpg "Thinkpad T440p 2133Mhz RAM")
-
-_[TN Panel (left) vs IPS Panel (right)](https://www.reddit.com/r/thinkpad/comments/9uolol/t420_tn_vs_t420_ips/) on a Thinkpad T420. TN looks blueish while IPS is much more natural!_
+![_[TN Panel (left) vs IPS Panel (right)](https://www.reddit.com/r/thinkpad/comments/9uolol/t420_tn_vs_t420_ips/) on a Thinkpad T420. TN looks blueish while IPS is much more natural!_](../assets/img/2024-11-10/tn-vs-ips.jpg "TN Panel (left) vs IPS Panel (right) on a Thinkpad T420. TN looks blueish while IPS is much more natural!")
 
 This is definitely a must have upgrade since the original TN panel is really awful. Those panels can be found around 50€ including shipping on Ebay too. If you plan to buy [N140HCE-EN1](https://www.panelook.com/modeldetail.php?id=28930 "N140HCE-EN1") (CMN14D2), make sure to get `Rev. C2` (thanks [daftguy](https://www.reddit.com/r/thinkpad/comments/9v8r8m/thinkpad_t440p_ultimate_buyers_guide/e9a88k2 "daftguy")) as Rev `C1` and Rev `B3` have screws holes placed differently. The screen won’t fit in that case.
 
@@ -341,9 +323,7 @@ You can also Download the [T440p maintenance manual](https://download.lenovo.com
 
 Some people complain about the flat touchpad introduced on the T440 series. The [T450s touchpad](https://www.ebay.com/itm/132408842188 "T450s touchpad") can be retrofitted on the T440p.
 
-![Thinkpad Trackpad Replacement](../assets/img/2024-11-10/thinkpad-t440p-trackpad-replacement.jpg "Thinkpad Trackpad Replacement")
-
-_Old vs new trackpad (see [reddit topic](https://www.reddit.com/r/thinkpad/comments/8o08vr/finally_t440p_silly_trackpad_replacement/))_
+![_Old vs new trackpad (see [reddit topic](https://www.reddit.com/r/thinkpad/comments/8o08vr/finally_t440p_silly_trackpad_replacement/))_](../assets/img/2024-11-10/thinkpad-t440p-trackpad-replacement.jpg "Old vs new trackpad")
 
 The thing is the touchpad exists with two brands:
 
@@ -352,31 +332,21 @@ The thing is the touchpad exists with two brands:
 
 Here is how to differentiate them: look at the back.
 
-![Thinkpad Alps Trackpad](../assets/img/2024-11-10/synaptics-vs-alps.jpg "Thinkpad Alps Trackpad")
-
-_Synaptics vs Alps Trackpad_
+![_Synaptics vs Alps Trackpad_](../assets/img/2024-11-10/synaptics-vs-alps.jpg "Synaptics vs Alps Trackpad")
 
 Let’s see the differences between them.
 
-![Thinkpad Synaptics Trackpad](../assets/img/2024-11-10/synaptics-trackpad.jpg "Thinkpad Synaptics Trackpad")
+![_Thinkpad T450 Synaptics Trackpad_](../assets/img/2024-11-10/synaptics-trackpad.jpg "Thinkpad T450 Synaptics Trackpad")
 
-_Thinkpad T450 Synaptics Trackpad_
-
-![Thinkpad Synaptics Trackpad](../assets/img/2024-11-10/synaptics-trackpad-2.jpg "Thinkpad Synaptics Trackpad")
-
-_Also a Thinkpad T450 Synaptics Trackpad_
+![_Also a Thinkpad T450 Synaptics Trackpad_](../assets/img/2024-11-10/synaptics-trackpad-2.jpg "Also a Thinkpad T450 Synaptics Trackpad")
 
 Synaptics. Notice the (red/blue) buttons at the top, the double-lined sticker with B149220xx, the ‘dots’ in the metal backplate, the embossed number near the bottom. The **Synaptics** trackpad has rugged metal backplate and visible button clips. Sadly, it’s even [more complicated than that](https://imgur.com/a/lenovo-trackpad-touchpad-with-3-buttons-t440-t540-z5TgiBI "more complicated than that").
 
-![Thinkpad Alps Trackpad](../assets/img/2024-11-10/alps-trackpad.jpg "Thinkpad Alps Trackpad")
-
-_Thinkpad T450 Alps Trackpad_
+![_Thinkpad T450 Alps Trackpad_](../assets/img/2024-11-10/alps-trackpad.jpg "Thinkpad T450 Alps Trackpad")
 
 The **Alps** trackpad has smooth metal backplate.
 
-![Thinkpad Synaptics Trackpad](../assets/img/2024-11-10/possible-alps-trackpad.jpg "Thinkpad Synaptics Trackpad")
-
-_Alps or Synaptics?_
+![_Alps or Synaptics?_](../assets/img/2024-11-10/possible-alps-trackpad.jpg "Alps or Synaptics?")
 
 This is either another Alps Crap-Pad or a Synaptics Knock-Off. It has the dots, but wrong buttons, wrong sticker, no embossed number.
 
@@ -473,9 +443,7 @@ You can also find a comparison between [Chicony and LiteOn Keyboard](https://blo
 
 ### Wi-Fi Card
 
-![Thinkpad T440p wi-fi card](../assets/img/2024-11-10/thinkpad-t440p-wifi-card.jpg "Thinkpad T440p wi-fi card")
-
-_Wi-Fi card is easy to physically replace_
+![_Wi-Fi card is easy to physically replace_](../assets/img/2024-11-10/thinkpad-t440p-wifi-card.jpg "Wi-Fi card is easy to physically replace")
 
 The most commonly replacement card being used is the `DW1820A`. Other than that, you may want to replace the original Wi-Fi card because it doesn’t support the `802.11AC` protocol, which claims up to `867Mbps` bandwidth.
 
@@ -502,9 +470,7 @@ Software Upgrades
 
 You can do a Bios mod on the T440p thanks to [this forum](https://www.techinferno.com/index.php?/topic/12229-lenovo-thinkpad-t440p-t440s-t540-e440-e540-unlocked-bios-menu-wlan-wi-fi-whitelist-mod/ "same on the T440p"). Another forum to look for is [Bios Mods](https://www.bios-mods.com/ "Bios Mods"). _Dude2002_ is a well known guy who used to be able to mod your bios within 30min once submitted!
 
-![Thinkpad T440p Bios Chip location](../assets/img/2024-11-10/t440p-bios-chip.jpg "Thinkpad T440p Bios Chip location")
-
-_Bios chip is located near RAM sticks, directly accessible by removing cover_
+![_Bios chip is located near RAM sticks, directly accessible by removing cover_](../assets/img/2024-11-10/t440p-bios-chip.jpg "Bios chip is located near RAM sticks, directly accessible by removing cover")
 
 Bios mods are for a good reasons:
 

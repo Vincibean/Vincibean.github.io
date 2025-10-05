@@ -80,6 +80,6 @@ However, after much tinkering, I think I've found a workaround: when flashing yo
 
 For instance, if you're using [Rufus](https://rufus.ie/en/), you should set it something like this:
 
-![Rufus in DD Image (disk image) mode](../assets/img/2025-10-01/rufus.png "Rufus in DD Image (disk image) mode")
+![Rufus in DD Image (disk image) mode](../assets/img/2025-10-05/rufus.png "Rufus in DD Image (disk image) mode")
 
 That's all! Hope this helps!

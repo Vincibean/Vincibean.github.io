@@ -1,0 +1,3 @@
+- https://gitlab.com/volian/nala/-/issues/343#note_2400453574
+
+- https://www.howtogeek.com/devops/how-to-enlarge-tmpfs-space-in-linux/

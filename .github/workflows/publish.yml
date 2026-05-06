@@ -20,7 +20,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
       - name: Build with Hakyll
         uses: stephenswat/hakyll-build-pages@v1.0.7
       - name: Upload artifact
